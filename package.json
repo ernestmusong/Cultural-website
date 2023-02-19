@@ -1,4 +1,5 @@
 {
+  "homepage": "http://ernestmusong.github.io/cultural-website",
   "name": "react-jwt-auth",
   "version": "0.1.0",
   "private": true,
@@ -23,6 +24,8 @@
     "validator": "^12.2.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -41,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
