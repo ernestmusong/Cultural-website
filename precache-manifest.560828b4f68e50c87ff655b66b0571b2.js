@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0b00be912aa0a48e52afc73a50d2705b",
+    "revision": "c01ce8d0114420aad58f1ce6c35cf980",
     "url": "/Cultural-website/index.html"
   },
   {
-    "revision": "b0520f68c3e77b5c95d4",
+    "revision": "bc8bc0cbeec5b2275422",
     "url": "/Cultural-website/static/css/2.aed5e149.chunk.css"
   },
   {
-    "revision": "128ad714ed2e136ffa35",
+    "revision": "f5e6f0c0ef7fd89e2e5d",
     "url": "/Cultural-website/static/css/main.57f80984.chunk.css"
   },
   {
-    "revision": "b0520f68c3e77b5c95d4",
-    "url": "/Cultural-website/static/js/2.cc32a54f.chunk.js"
+    "revision": "bc8bc0cbeec5b2275422",
+    "url": "/Cultural-website/static/js/2.1ca34a34.chunk.js"
   },
   {
     "revision": "9b318b6fb13190fe82c0677e9264b3c7",
-    "url": "/Cultural-website/static/js/2.cc32a54f.chunk.js.LICENSE.txt"
+    "url": "/Cultural-website/static/js/2.1ca34a34.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "128ad714ed2e136ffa35",
-    "url": "/Cultural-website/static/js/main.6dcc82cf.chunk.js"
+    "revision": "f5e6f0c0ef7fd89e2e5d",
+    "url": "/Cultural-website/static/js/main.1303b6a9.chunk.js"
   },
   {
-    "revision": "770afcebc6bec21f048b",
-    "url": "/Cultural-website/static/js/runtime-main.6ee463e8.js"
+    "revision": "6547303892ebd02f7a28",
+    "url": "/Cultural-website/static/js/runtime-main.465d4c9f.js"
   },
   {
     "revision": "91b4e95e2ddae48b78a9c8c0b6bee91f",

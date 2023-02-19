@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/Cultural-website/static/css/main.57f80984.chunk.css",
-    "main.js": "/Cultural-website/static/js/main.6dcc82cf.chunk.js",
-    "main.js.map": "/Cultural-website/static/js/main.6dcc82cf.chunk.js.map",
-    "runtime-main.js": "/Cultural-website/static/js/runtime-main.6ee463e8.js",
-    "runtime-main.js.map": "/Cultural-website/static/js/runtime-main.6ee463e8.js.map",
+    "main.js": "/Cultural-website/static/js/main.1303b6a9.chunk.js",
+    "main.js.map": "/Cultural-website/static/js/main.1303b6a9.chunk.js.map",
+    "runtime-main.js": "/Cultural-website/static/js/runtime-main.465d4c9f.js",
+    "runtime-main.js.map": "/Cultural-website/static/js/runtime-main.465d4c9f.js.map",
     "static/css/2.aed5e149.chunk.css": "/Cultural-website/static/css/2.aed5e149.chunk.css",
-    "static/js/2.cc32a54f.chunk.js": "/Cultural-website/static/js/2.cc32a54f.chunk.js",
-    "static/js/2.cc32a54f.chunk.js.map": "/Cultural-website/static/js/2.cc32a54f.chunk.js.map",
+    "static/js/2.1ca34a34.chunk.js": "/Cultural-website/static/js/2.1ca34a34.chunk.js",
+    "static/js/2.1ca34a34.chunk.js.map": "/Cultural-website/static/js/2.1ca34a34.chunk.js.map",
     "index.html": "/Cultural-website/index.html",
-    "precache-manifest.a14d7f8984d2cd11df34b19b6fad640a.js": "/Cultural-website/precache-manifest.a14d7f8984d2cd11df34b19b6fad640a.js",
+    "precache-manifest.560828b4f68e50c87ff655b66b0571b2.js": "/Cultural-website/precache-manifest.560828b4f68e50c87ff655b66b0571b2.js",
     "service-worker.js": "/Cultural-website/service-worker.js",
     "static/css/2.aed5e149.chunk.css.map": "/Cultural-website/static/css/2.aed5e149.chunk.css.map",
     "static/css/main.57f80984.chunk.css.map": "/Cultural-website/static/css/main.57f80984.chunk.css.map",
-    "static/js/2.cc32a54f.chunk.js.LICENSE.txt": "/Cultural-website/static/js/2.cc32a54f.chunk.js.LICENSE.txt",
+    "static/js/2.1ca34a34.chunk.js.LICENSE.txt": "/Cultural-website/static/js/2.1ca34a34.chunk.js.LICENSE.txt",
     "static/media/Dang-Brita.jpeg": "/Cultural-website/static/media/Dang-Brita.91b4e95e.jpeg",
     "static/media/back-to-school.jpeg": "/Cultural-website/static/media/back-to-school.8f130b32.jpeg",
     "static/media/becuda-logo.png": "/Cultural-website/static/media/becuda-logo.3c19cf4b.png",
@@ -31,10 +31,10 @@
     "static/media/web-project.jpeg": "/Cultural-website/static/media/web-project.a1af8518.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6ee463e8.js",
+    "static/js/runtime-main.465d4c9f.js",
     "static/css/2.aed5e149.chunk.css",
-    "static/js/2.cc32a54f.chunk.js",
+    "static/js/2.1ca34a34.chunk.js",
     "static/css/main.57f80984.chunk.css",
-    "static/js/main.6dcc82cf.chunk.js"
+    "static/js/main.1303b6a9.chunk.js"
   ]
 }
