@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/Cultural-website/static/css/main.57f80984.chunk.css",
+    "main.js": "/Cultural-website/static/js/main.6dcc82cf.chunk.js",
+    "main.js.map": "/Cultural-website/static/js/main.6dcc82cf.chunk.js.map",
+    "runtime-main.js": "/Cultural-website/static/js/runtime-main.6ee463e8.js",
+    "runtime-main.js.map": "/Cultural-website/static/js/runtime-main.6ee463e8.js.map",
+    "static/css/2.aed5e149.chunk.css": "/Cultural-website/static/css/2.aed5e149.chunk.css",
+    "static/js/2.cc32a54f.chunk.js": "/Cultural-website/static/js/2.cc32a54f.chunk.js",
+    "static/js/2.cc32a54f.chunk.js.map": "/Cultural-website/static/js/2.cc32a54f.chunk.js.map",
+    "index.html": "/Cultural-website/index.html",
+    "precache-manifest.a14d7f8984d2cd11df34b19b6fad640a.js": "/Cultural-website/precache-manifest.a14d7f8984d2cd11df34b19b6fad640a.js",
+    "service-worker.js": "/Cultural-website/service-worker.js",
+    "static/css/2.aed5e149.chunk.css.map": "/Cultural-website/static/css/2.aed5e149.chunk.css.map",
+    "static/css/main.57f80984.chunk.css.map": "/Cultural-website/static/css/main.57f80984.chunk.css.map",
+    "static/js/2.cc32a54f.chunk.js.LICENSE.txt": "/Cultural-website/static/js/2.cc32a54f.chunk.js.LICENSE.txt",
+    "static/media/Dang-Brita.jpeg": "/Cultural-website/static/media/Dang-Brita.91b4e95e.jpeg",
+    "static/media/back-to-school.jpeg": "/Cultural-website/static/media/back-to-school.8f130b32.jpeg",
+    "static/media/becuda-logo.png": "/Cultural-website/static/media/becuda-logo.3c19cf4b.png",
+    "static/media/chief-img.jpeg": "/Cultural-website/static/media/chief-img.f98d5bd2.jpeg",
+    "static/media/dominic-gce.jpg": "/Cultural-website/static/media/dominic-gce.f28a5ee2.jpg",
+    "static/media/eleven.jpeg": "/Cultural-website/static/media/eleven.8ee19191.jpeg",
+    "static/media/hero-image.jpeg": "/Cultural-website/static/media/hero-image.580a3dae.jpeg",
+    "static/media/jimwel.jpeg": "/Cultural-website/static/media/jimwel.e3885a7d.jpeg",
+    "static/media/kalv.jpeg": "/Cultural-website/static/media/kalv.1210c898.jpeg",
+    "static/media/kum-godlove.jpg": "/Cultural-website/static/media/kum-godlove.493b50e2.jpg",
+    "static/media/kum-herny.jpg": "/Cultural-website/static/media/kum-herny.de6859ec.jpg",
+    "static/media/mendi-georgette.jpeg": "/Cultural-website/static/media/mendi-georgette.8c8fff32.jpeg",
+    "static/media/radivin.jpeg": "/Cultural-website/static/media/radivin.ed4583a0.jpeg",
+    "static/media/water.jpg": "/Cultural-website/static/media/water.fc2c257a.jpg",
+    "static/media/web-project.jpeg": "/Cultural-website/static/media/web-project.a1af8518.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6ee463e8.js",
+    "static/css/2.aed5e149.chunk.css",
+    "static/js/2.cc32a54f.chunk.js",
+    "static/css/main.57f80984.chunk.css",
+    "static/js/main.6dcc82cf.chunk.js"
+  ]
+}
