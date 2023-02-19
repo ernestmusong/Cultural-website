@@ -150,7 +150,7 @@ class App extends Component {
 {/*Menu*/}
 <div id='links-container' className="links-container target" style={{ height: height, overflow: overFlow}}>
   <div className="links target"  >
-  <Link to="/" className='clear'  onClick={() => {this.clearHeight()}}>
+  <Link to="/home" className='clear'  onClick={() => {this.clearHeight()}}>
    Home
   </Link>
   <div className="dropdown">
@@ -302,7 +302,7 @@ class App extends Component {
 {/*End news bar*/}
           <PopupModal />
           <Switch>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/home" component={Home} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/profile" component={Profile} />
