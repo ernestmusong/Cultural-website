@@ -1,6 +1,6 @@
 {
-  "homepage": "http://ernestmusong.github.io/Cultural-website",
-  "name": "react-jwt-auth",
+  "homepage": "https://ernestmusong.github.io/Cultural-website",
+  "name": "cultural-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
