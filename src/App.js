@@ -296,7 +296,7 @@ class App extends Component {
 {/*News bar*/}
 <div className='info-wrapper'>
   <p className='info text-uppercase'>
- Welcome to befang cultural and development association...<span className="text-uppercase">becuda</span>
+ Welcome to the befang cultural and development association...<span className="text-uppercase">becuda</span>
   </p>
 </div>
 {/*End news bar*/}
