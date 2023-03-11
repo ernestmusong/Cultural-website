@@ -156,12 +156,8 @@ function Constitution() {
             <li>
                 1) All the members of the national Exco<br/> 2) All the members of the regional Exco <br/> 3) All the members of the branch Exco
             </li> <br/>
-            <li className='text-bold'>
-                7.3: Functioning 
-            </li>
-            <li>
-                7.3 a: The General Assembly 
-           </li>
+            <li className='text-bold'>7.3: Functioning </li>
+            <li>7.3 a: The General Assembly </li>
             <li>
                 1) It shall be the supreme organ of the association. <br/>
                 2) It shall have exclusive jurisdiction in the following matters: <br/>
@@ -174,16 +170,30 @@ function Constitution() {
                 year in the village (or in any other venue as shall from time to time be decided by the members)
                 on such date and time as shall be decided by the National Exco.
            </li><br/>
-           <li>7.3 b: The National Council</li>
+           <li>7.3 b: The National Executive Council</li>
            <li>
-            1) Members of the National Executive Council shall hold office for 3 calendar
-           years and shall re-eligible once. <br/>
-            2) The National Executive Council shall meet three times a year at such place,date and time as
-            shall be decided by the president. <br/> 
-            3) An extra-ordinary national Exco meeting may be summoned at such place, date and time
-            as shall be decided by the president or 2/3 of the members of the said committee if such members find that things
-            are not moving to the interest of the association and the president is reluctant to convene a meeting. <br/>
-
+               1) Members of the National Executive Council shall hold office for 3 calendar
+            years and shall be re-eligible once. <br/>
+               2) The National Executive Council shall meet three times a year at such place,date and time as
+               shall be decided by the president. <br/> 
+               3) An extra-ordinary national Exco meeting may be summoned at such place, date and time
+               as shall be decided by the president or 2/3 of the members of the said committee if such members find that things
+               are not moving to the interest of the association and the president is reluctant to convene a meeting. <br/>
+               4) The National Executive Council shall ensure the proper and efficient conduct of the association's activities and
+               the use of the associations's finances exclusively to attain its objectives at national level. <br/>
+               5) It shall formulate the general policies of the association, set its objectives and assure
+               their attainment in the most effective and efficient manner and within the means available to the 
+               association.
+           </li><br/>
+           <li>7.3 c: The Regional Executive Council</li>
+           <li>
+               1) All Regional Presidents are coopted members of the National Executive Council.<br/>
+               2) The Regional Presidents are direct representatives of the National Exco at regional
+               level and they are charged with coordinationg the activities of the assocition and
+               implementing the decisions taken at national level at their level. <br/>
+               3) The Regional Exco is the management organ of the association at regionl level and
+               therefore shall be charged with summoning and conducting regional activities, setting
+               up committees to undertake specific functions as defined by the Exco.
            </li>
          </ul> 
     </main>
