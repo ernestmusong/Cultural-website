@@ -3,7 +3,7 @@ import {Link } from "react-router-dom";
 
 const Event=({id, title, desc, img, date}) => {
     return (
-        <div className="post-container">
+        <article className="post-container">
          
             <img className="image" src={require('../../Images/projectImages/'+img)} alt="project" />
             <div className='post-tiltle-wrapper'>
@@ -14,7 +14,7 @@ const Event=({id, title, desc, img, date}) => {
                 <p className='text-uppercase text-danger'>{date}</p>      
                <Link to={`/event/${id}`}>Read more</Link>
             </div>
-      </div>
+      </article>
         
         
     )

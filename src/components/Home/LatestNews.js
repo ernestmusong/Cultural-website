@@ -8,11 +8,11 @@ const LatestNews =()=>{
     console.log(latestEvents)
   return(
     <>
-     <div className='latest-news mb-4'>
+     <section className='latest-news mb-4'>
             {latestEvents.map(event => (
               <Event key={event.id} {...event}/>
             ))}
-     </div>
+     </section>
      
      <button className='home-btn'>
            <Link to='/events'>go to news page</Link>
