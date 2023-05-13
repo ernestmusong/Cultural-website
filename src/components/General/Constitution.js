@@ -2,9 +2,6 @@ import React from 'react'
 
 function Constitution() {
   return (
-    <>
-    
-    
     <main>
     <h1 class="page-hero-text">constitution of the befang cultural and development association</h1>
          <h2>preamble</h2>
@@ -193,13 +190,41 @@ function Constitution() {
                implementing the decisions taken at national level at their level. <br/>
                3) The Regional Exco is the management organ of the association at regionl level and
                therefore shall be charged with summoning and conducting regional activities, setting
-               up committees to undertake specific functions as defined by the Exco.
+               up committees to undertake specific functions as defined by the Exco. <br/>
+               4) The Regional Executive Council is directly responsible to the National Exco and shall
+               therefore feed the latter with information necessary for the smooth running of the
+               association at national level. <br/>
+               5) The Regional Executive Council shall draw up, adopt, and implement rules and regulations
+               (bye-laws) which they think are good for the smooth functioning of their branches and which
+               are not repugnant to any of the provisions of the present constitution. <br/>
+               6) members of the Regional Executive Council shall hold office for a term of 2 calendar years
+               and shall be re-eligible once.
+           </li><br/>
+           <li>7.3 d: The Branch Executive Council</li>
+           <li>
+              1) All branch Presidents are coopted members of the Regional Executive Council. <br />
+              2) The Branch Exco is directly answerable to the Regional Executive Council. <br/>
+              3) Like the Regional Exco, the Branch Exco can formulate, adopt, and implement rules and
+              regulations to govern the running of their branch meetings provided they are not repugnant to
+              any of the provisions of the Regional bye-laws and/or the constitution of the
+              association.
+           </li><br/>
+           <li>7.3 e: The Conference of Delegates</li>
+           <li>
+              1) The conference of delegates shall have exclusive jurisdiction in the following
+              matters: <br/>
+              <span>- Election of the members of the national Exco</span><br/>
+              <span>- Voting of the budget of the Association</span><br/>
+              <span>- Creation of more regions and/or merger thereof</span><br/>
+              <span>- Registration fees</span><br/>
+              <span>- Annual contributions</span><br/>
+              2) The conference of delegates shall hold twice a year in its ordinary
+              session. However an extraordinary conference of delegates can be convoked by the
+              National President or 2/3 of its members in case the National President is
+              reluctant or has neglected to convene any of the aforecited meetings.
            </li>
          </ul> 
     </main>
-      
-
-    </>
   )
 }
 
