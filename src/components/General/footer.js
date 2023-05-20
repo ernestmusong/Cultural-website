@@ -16,7 +16,7 @@ export default class Footer extends Component {
                      </p>
                   </div>
                     <div>
-                       <p  className="footer-p text-center text-capitalize text-light">Created by <span className=" text-uppercase"><a href='https://engineeringec.com/' className=" text-uppercase" style={{color:"Var(--mainOrange)"}} target="_blank">green engineering and consultancy ltd</a></span> </p>
+                       <p  className="footer-p text-center text-capitalize text-light">Created by <span className=" text-uppercase"><a href='https://engineeringec.com/' className=" text-uppercase" style={{color:"Var(--mainOrange)"}} target="_blank" rel="noopener noreferrer">green engineering and consultancy ltd</a></span> </p>
                    </div>
                    <div>
                        <p  className="footer-p text-center text-b text-muted">Powered By React + Node + mongoDB </p>

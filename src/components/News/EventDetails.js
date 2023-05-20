@@ -21,12 +21,12 @@ const EventDetails = (props) => {
     
       useEffect(() =>{
         
-        let event = events.find(event => event.id == eventId)
+        let event = events.find(event => event.id === eventId)
           setEvent(event)
          }
         
          , [ eventId])
-         if(event.img == '') return null;
+         if(event.img === '') return null;
 
     return ( 
       <>

@@ -12,7 +12,7 @@ const Chief =()=>{
       
        
        
-      if (befangChiefs.chiefImg == "") return null;
+      if (befangChiefs.chiefImg === "") return null;
     return(
       <div className="container"  >
             <div className='row'>

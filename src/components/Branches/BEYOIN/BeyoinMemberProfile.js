@@ -21,13 +21,13 @@ const BeyoinMemberProfile = (props) => {
     
       useEffect(() =>{
         
-        let member = befangYouthsInitiative.beyoin.find(member => member.id == memberId)
+        let member = befangYouthsInitiative.beyoin.find(member => member.id === memberId)
           setMember(member)
          }
         
          , [memberId])
           
-         if(member.img == "") return null;
+         if(member.img === "") return null;
 
     return ( 
       <div className="container beyoin-member-profile">
@@ -38,8 +38,8 @@ const BeyoinMemberProfile = (props) => {
         <div className="col-10 my-3   col-md-6 mx-auto  text-capitalize">
           <h2 style={{color:"Var(--heroWhite)", fontSize: "1.2rem"}}>Name: {member.name} </h2>
           <h4 style={{color:"Var(--softWhite)", fontSize: "1.2rem"}}>Position: {member.title} </h4>
-          <h4 style={{color:"Var(--softWhite)", fontSize: "1.2rem"}}>Profession: {member.profession ==""? "Undefined!" : member.profession} </h4>
-            <p  style={{color: "#acaea9", fontSize:"12px"}}>{member.info ==""? `Please ${member.name} register on the website to complete your profile` : member.info}</p>
+          <h4 style={{color:"Var(--softWhite)", fontSize: "1.2rem"}}>Profession: {member.profession ===""? "Undefined!" : member.profession} </h4>
+            <p  style={{color: "#acaea9", fontSize:"12px"}}>{member.info ===""? `Please ${member.name} register on the website to complete your profile` : member.info}</p>
           <div className='d-flex'>
             <Link to="/social-groups/beyoin">
               <button className='btns'>Go back</button>

@@ -19,13 +19,13 @@ const DiasporaMemberProfile = (props) => {
     
       useEffect(() =>{
         
-        let diaspM = diaspora.befangDiaspora.find(mem => mem.id == diasporaId)
+        let diaspM = diaspora.befangDiaspora.find(mem => mem.id === diasporaId)
           setMem(diaspM)
          }
         
          , [diasporaId])
           
-         if(mem.img == "") return null;
+         if(mem.img === "") return null;
 
     return ( 
       <div className="container   beyoin-member-profile">
@@ -37,8 +37,8 @@ const DiasporaMemberProfile = (props) => {
           <h2 style={{color:"Var(--heroWhite)", fontSize: "1.2rem"}}>Name: {mem.name} </h2>
           <h4 style={{color:"Var(--softWhite)", fontSize: "1.2rem"}}>Position: {mem.title} </h4>
           <h4 style={{color:"Var(--softWhite)", fontSize: "1.2rem"}}>country: {mem.country} </h4>
-          <h4 style={{color:"Var(--softWhite)", fontSize: "1.2rem"}}>Profession: {mem.profession ==""? "Undefined!" : mem.profession} </h4>
-            <p  style={{color: "#acaea9", fontSize:"12px"}}>{mem.info ==""? `Please ${mem.name} register on the website to complete your profile` : mem.info}</p>
+          <h4 style={{color:"Var(--softWhite)", fontSize: "1.2rem"}}>Profession: {mem.profession ===""? "Undefined!" : mem.profession} </h4>
+            <p  style={{color: "#acaea9", fontSize:"12px"}}>{mem.info ===""? `Please ${mem.name} register on the website to complete your profile` : mem.info}</p>
           <div>
             <Link to="/diaspora">
               <button className='btns'>Go back</button>
