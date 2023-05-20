@@ -17,7 +17,7 @@ const TreasurerDetails=(props) => {
     
        useEffect(() =>{
          
-         let branch =Branches.find(branch => branch.id == branchId)
+         let branch =Branches.find(branch => branch.id === branchId)
            setBranch(branch)
           }
          

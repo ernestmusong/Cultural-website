@@ -20,12 +20,12 @@ const IconDetails = (props) => {
     
       useEffect(() =>{
         
-        let icon =GreatIcons.greatIcons.find(icon => icon.id == iconId)
+        let icon =GreatIcons.greatIcons.find(icon => icon.id === iconId)
           setIcon(icon)
          }
         
          , [ iconId])
-         if(icon.img == "") return null;
+         if(icon.img === "") return null;
 
     return ( 
       <div className="container  icon-details">

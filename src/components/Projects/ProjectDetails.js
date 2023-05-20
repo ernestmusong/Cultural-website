@@ -24,12 +24,12 @@ export default function ProjectDetails(props) {
     
       useEffect(() =>{
         
-        let project = projects.find(project => project.id == projectId)
+        let project = projects.find(project => project.id === projectId)
           setProject(project)
          }
         
          , [ projectId])
-         if(project.img == "") return null;
+         if(project.img === "") return null;
 
     return ( 
       <>
@@ -63,7 +63,7 @@ export default function ProjectDetails(props) {
             <Link to="/all-projects">
               <button className='btns'>back to projects</button>
             </Link>
-            {project.status == "open" ?
+            {project.status === "open" ?
             <Link to= {project.url}>
               <button className='btns' style={{background:"transparent", color: "var(--mainYellow)"}}>
                  Contribute  

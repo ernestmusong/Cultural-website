@@ -1,14 +1,14 @@
 import React from 'react'
 import Title3 from '../Headings/Title3';
 import Title4 from '../Headings/Title4';
-import {Branches, projects, contributors} from '../../db.json';
+import {Branches,  contributors} from '../../db.json';
 import ContributeNowLink from './ContributeNowLink';
 import CommingSoon from '../General/CommingSoon';
 
 const ListOfContributors=() => {
         let allContributors = contributors;
-        let allProjects=projects;
-        let projectName = allProjects.map(project => project.title)
+        // let allProjects=projects;
+        // let projectName = allProjects.map(project => project.title)
       
         let bamenda = contributors.filter(contributor => contributor.branch === "bamenda");
         let bAmts = bamenda.map(person => person.amount)
@@ -77,7 +77,7 @@ const ListOfContributors=() => {
         
             
            
-      if(allContributors.length == 3) return <CommingSoon title="there are no contributions at the moment." />;
+      if(allContributors.length === 3) return <CommingSoon title="there are no contributions at the moment." />;
   return (
     <>
         <div className='title3-wrapper'>
