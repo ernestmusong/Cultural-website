@@ -16,7 +16,7 @@ function Constitution() {
                 abbreviated as BECUDA
          </p>
          <h2>article 2: headquarters</h2>
-         <p>The headquaters shall be in Befang - Menchum Valleyy Sub Divisin - Menchum Division - 
+         <p>The headquaters shall be in Befang - Menchum Valley Sub Division - Menchum Division - 
             North West Region.
          </p>
          <h2>article 3: motto</h2>
@@ -43,11 +43,11 @@ function Constitution() {
          </ul>
          <h2>article 6: membership</h2>
          <ul>
-             <li>6.1 Membership is opened to all Befang indigenes as well as to non Begang indigenes
+             <li>6.1 Membership is opened to all Befang indigenes as well as to non Befang indigenes
                  interested in the goals and objectives of the association.
              </li>
              <li>
-                6.2 There shall be two types of membership namely: active members and passive members.
+                6.2 There shall be two types of memberships namely: active members and passive members.
                 </li>
              <li>6.2 a: An active member shall be one who has paid his registration and anual contribution
                 and takes active part in the association's business.
@@ -62,7 +62,7 @@ function Constitution() {
                 business.
              </li>
              <li>
-                6.2 d: A passive member shall not during the year in which he has failed to pay his 
+                6.2 d: A passive member shall not, during the year in which he has failed to pay his 
                 annual contributions, have the right to vote and shall not stand for any office in 
                 the association.
              </li>
@@ -224,6 +224,35 @@ function Constitution() {
               reluctant or has neglected to convene any of the aforecited meetings.
            </li>
          </ul> 
+         <h2>article 8 : regions</h2>
+         <ul>
+            <li>
+               8.1 For the purpose of the formation of the association's regional structures,
+               the national territory has been divided into the following regions: <br/>
+               a. The Littoral and South West Provinces shall constitude what shall be known and 
+               called "The Coastal region" with headquarters in Buea. <br/>
+               b. The center, South and Eastern Provinces shall constitude what shall be
+               known and called "The Yaounde region" with headquarters in Yaounde.<br/>
+               c. The Western Province, the Bamenda Municipality and its environs shall
+               constitute what shall be known and called "The Bamenda Region" with headquarters
+               in Bamenda. <br/>
+               d. The Far North, North, and Adamawa Provinces shall constitude what shall
+               be known and called "The Northern Region" with headquarters in Garoua. <br/>
+               e. The entire Menchum Division and its environs shall constitude what shall
+               be known and called "Mother Region" with headquarters in Befang. <br/>
+               8.2 provided that more regions may be created from time to time as need
+               arises and/or splits made and/or mergers effected as the case may be.
+            </li>
+         </ul>
+         <h2>article 9 : duties of officers of the association</h2>
+         <ul>
+            <li>
+               The duties of the officials especially at national level shall be spelt
+               out in a subsequent text. <br/>
+               For the time being, the traditional duties inherent to each post of responsibility
+               shall continue to apply.
+            </li>
+         </ul>
     </main>
   )
 }

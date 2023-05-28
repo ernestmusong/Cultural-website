@@ -72,7 +72,7 @@ main {
 }
 
 main h2 {
-  color: Var(--heroWhite) !important;
+  color: Var(--mainOrange) !important;
   font-size: 1.2rem !important;
   text-transform: uppercase;
   text-decoration: underline;
@@ -133,7 +133,7 @@ justify-content: space-around;
   text-transform: uppercase;
   font-weight: bolder;
   font-family: "Clip";
-  color: var(--heroWhite);
+  color: var(--mainOrange);
 }
 
 .text2 {
@@ -360,7 +360,7 @@ nav {
 
 .page-hero-text {
   text-align: center;
-  color: var(--heroWhite);
+  color: var(--mainOrange);
   text-transform: uppercase;
   font-family: "Clip";
   font-weight: bolder;
@@ -703,7 +703,7 @@ nav {
   }
 
    main h2 {
-    color: Var(--heroWhite) !important;
+    color: Var(--mainOrange) !important;
     font-size: 1rem !important;
     text-transform: uppercase;
     text-decoration: underline;
@@ -840,7 +840,7 @@ h4 {
     flex-wrap: wrap;
   }
 }
-/*End Media Queries */
+/*----------------------------------------------End Media Queries */
 label {
   display: block;
   margin-top: 10px;
