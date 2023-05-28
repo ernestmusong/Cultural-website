@@ -24,17 +24,12 @@ const BefangDiaspora=()=>{
                   </h1>
                     </div>
               </div>
-              {/* <div className="text-center" style={{ backgroundColor: "var(--darkBlue)"  , padding:"10px", display:"grid", placeItems:"center"}}>
-                    <div>
-                    <h6 className=" text-capitalize" style={{color: "var(--mainOrange)"}}>capital</h6>
-                  <h1 className="value">
-                   000FCFA
-                  </h1>
-                    </div>
-              </div> */}
+              
           </div>
           <h6 className='motto'>slogan : no place is sweet like home</h6>
           <Link className='text-uppercase' style={{color:"var(--mainOrange)"}} to='/contributors'>check your contributions here!</Link>
+          <br />
+          <Link className='text-uppercase' style={{color:"red"}} to='/comming-soon'>read our constitution</Link>
       </div>
       <WhoWeAre />
       <Title title="executive members of the Group" />
@@ -48,17 +43,7 @@ const BefangDiaspora=()=>{
      
       <Title title="all our members" />
       <div>
-      {befangDiaspora.map(member => (
-        <Member key={member.id} {...member}/>
-      ))}
-      </div>
-    </>
-  )
-}
-
-const Member=({id, name, country}) => {
-    return (
-          <table className="table table-bordered">
+      <table className="table table-bordered">
               <thead style={{backgroundColor:"#DCDCDC"}}>
                   <tr>
                       <th scope="col">Name</th>
@@ -66,12 +51,21 @@ const Member=({id, name, country}) => {
                   </tr>
               </thead>
               <tbody>
-                    <tr className="bg-light" key={id}>
-                        <td className='text-capitalize'>{name}<br/> <Link to={`/diaspora-member/${id}`} style={{color:"Var(--heroWhite)"}}>See Profile</Link></td>
-                        <td className='text-uppercase'>{country}</td> 
-                    </tr>
+                 {befangDiaspora.map(member => (<Member key={member.id} {...member}/>))}
               </tbody>
           </table>
+      </div>
+    </>
+  )
+}
+
+const Member=({id, name, country}) => {
+    return (
+           
+        <tr className="bg-light" key={id}>
+            <td className='text-capitalize'>{name}<br/> <Link to={`/diaspora-member/${id}`} style={{color:"Var(--mainOrange)"}}>See Profile</Link></td>
+            <td className='text-uppercase'>{country}</td> 
+        </tr>
     )
 }
 

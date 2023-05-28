@@ -200,7 +200,7 @@ class App extends Component {
   <div className="dropdown">
   <Link to="#" style={{zIndex:"-1"}}>culture</Link>
   <div className="dropdown-content">
-         <Link to="/befang-youths-initiative" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
+         <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
             marriage
           </Link>
           <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
@@ -328,8 +328,6 @@ class App extends Component {
              
           </Switch>
           <Footer />
-
-        { /*<AuthVerify logOut={this.logOut}/> */ }
 
         </>
     );
