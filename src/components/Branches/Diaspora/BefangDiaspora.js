@@ -27,9 +27,9 @@ const BefangDiaspora=()=>{
               
           </div>
           <h6 className='motto'>slogan : no place is sweet like home</h6>
-          <Link className='text-uppercase' style={{color:"var(--mainOrange)"}} to='/contributors'>check your contributions here!</Link>
+          <Link className='text-uppercase' style={{color:"var(--mainOrange)", textDecoration:"underline"}} to='/contributors'>check your contributions here!</Link>
           <br />
-          <Link className='text-uppercase' style={{color:"red"}} to='/comming-soon'>read our constitution</Link>
+          <Link className='text-uppercase' style={{color:"red", textDecoration:"underline"}} to='/comming-soon'>read our constitution</Link>
       </div>
       <WhoWeAre />
       <Title title="executive members of the Group" />
