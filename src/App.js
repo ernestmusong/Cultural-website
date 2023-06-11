@@ -187,7 +187,7 @@ class App extends Component {
   Projects
   </Link>
   <div className="dropdown">
-  <Link to="#" style={{zIndex:"-1"}}>sub groups</Link>
+  <Link to="#" style={{zIndex:"-1"}}>associations</Link>
   <div className="dropdown-content">
          <Link to="/befang-youths-initiative" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
             Befang Youths Initiative

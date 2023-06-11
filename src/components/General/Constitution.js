@@ -253,6 +253,53 @@ function Constitution() {
                shall continue to apply.
             </li>
          </ul>
+         <h2>article 10 : Elections</h2>
+         <ul>
+            <li>
+               10.1 Elections into the National Exco shall be conducted at the end of every 3
+               years during the conference of delegates to be convened for that particular purpose.
+            </li>
+            <li>
+               10.2 Any active member of the association can stand for election if nominated for an office.
+            </li>
+            <li>
+               10.3 During elections, those who nominated for an office shall be expected to stay out of
+               the assembly until after the counting of votes.
+            </li>
+            <li>
+               10.4 Voting shall be done by secret ballot and the candidate with the majority votes wins
+               the elections and shall immediately be declared to the General Assembly.
+            </li>
+            <li>
+               10.5 In case of a tie, the president of the electoral commitee shall be called upon to cast a
+               deciding vote.
+            </li>
+            <li>
+               10.6 Outgoing officers are eligible for elections and candidates absent during elections
+               might be elected in absentia if the association finds him competent or if the candidate has
+               a reasonable excuse for being absent.
+            </li>
+            <li>
+               10.7 To quality as a candidate for constesting elections, one other member must second the
+               proposed canditate.
+            </li>
+            <li>
+               10.8 If only one candidate is proposed for a post, he shall be declared elected by acclamation.
+            </li>
+            <li>
+               10.9 Candidates vying for a post of an executive must be morally upright and very active in their
+               various branches. 
+            </li>
+            <li>
+               10.10 If an officer resigns or dies during his term of office, the vacancy thus created shall be filled
+               by a competent Exco member for the remaining term of office or by-elections may be conducted to flll such a post. 
+            </li>
+            <li>
+               10.11 On the day of elections, and electoral committee shall be set up, made up of the chairman, secretary,
+               and a returning officer selected from among members present. 
+            </li>
+         </ul>
+         
     </main>
   )
 }
