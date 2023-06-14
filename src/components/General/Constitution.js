@@ -299,7 +299,167 @@ function Constitution() {
                and a returning officer selected from among members present. 
             </li>
          </ul>
-         
+         <h2>article 11 : SOURCES OF FUNDS</h2>
+         <ul>
+            <li>
+               11.1  The Association shall derive its funds from: <br />
+               a) Registration fees <br />
+               b) Annual subscriptions <br />
+               c) Special levies, fines and penalties <br />
+               d) Contributions to the development <br />
+               e) Revenue from any fund-raising activities of the Association <br/>
+               f) Any impromptu contributions from members that may be decided upon by the General Assembly <br />
+               g) Gifts and donations <br />
+               h) Any other proper sources approved by the General assembly
+            </li>
+            <li>
+              11.2 The dues indicated in article 6.3 above are compulsory and payable by all members of the association on
+              or before April 30<sup>th</sup> of each year.
+            </li>
+            <li>
+              11.3 Whenever need arises, the Association shall make a special levies on members to support expenditure prompted by a special event
+            </li>
+        </ul>
+        <h2>ARTICLE 12: USES OF FUNDS </h2>
+        <ul>
+         <li>
+            12.1 Registration fees, fines and penalties will be used in buying stationeries and  other needs for the associtation. 
+         </li>
+         <li>
+           12.2 Annual subscription and contributions to the development fund shall be allocated for development projects and the promotion of Socio-cultural activities.
+         </li>
+         <li>
+         12.3 The use of the revenue from fund-raising activities and impromptu contributions will be determined by the national Exco.
+         </li>
+         <li>
+         12.4	Donations and Gifts: This shall be used in accordance with the expressed wish of the donor(s) failing which the National assembly shall decide on how to use it.
+         </li>
+        </ul>
+        <h2>ARTICLE 13: SAFEGUARD OF FUNDS </h2>
+        <ul>
+         <li>
+         13.1 All dues and revenues due to the association shall be paid by the various collectors to the national
+         treasurer through the national financial secretary who shall
+         be responsible for safeguarding and accounting for them.
+         </li>
+         <li>
+         13.2	All money collected for and on behalf of the association belongs to it. The treasurer shall within
+          24 hours pay in the same amount into the association’s account
+          to be opened with any reputable financial institution in the country.
+         </li>
+         <li>
+         13.3	Property received on behalf of the association shall likewise belong to it and shall be accountable
+         for by the National president.
+         </li>
+         <li>
+         13.4	There shall be three authorized signatories to the association’s bank account. Two of these signatories
+          must be the National president and the National treasurer. Any two of the signatories one of whom must
+           be the treasure can withdraw money from the account. Provided that no money can be withdrawn without the
+            express authorization of the general assembly or the National Executive council.
+         </li>
+        </ul>
+        <h2>ARTICLE 14: ORGANISING  OF MEETINGS</h2>
+        <ul>
+         <li>
+         14.1	Notice for an ordinary general assembly meeting of the association (otherwise known as the national
+          convention) which holds once a year shall be given two months earlier (that is before the scheduled date)
+           by the National president.
+         </li>
+         <li>
+           14.2	The convening notice shall carry  the agenda, venue, date and time of the meeting
+         </li>
+         <li>
+         14.3.	An extraordinary general meeting may be summoned on a specific date, place and time by the national
+          president who shall state clearly the business to be transacted at the said meeting.
+         </li>
+         <li>
+         14.4.	The quorum of the general assembly meeting  shall be atleast 1/2 of its registered members while 
+         that of the National Executive council shall be 2/3of its members.
+         </li>
+         <li>
+         14.5.	Deliberations in the general assembly meetings as well as the National Executive council could
+          start provided the quorum is reached. If this quorum is not reached, a second general meeting or
+          Executive shall be convened at the same place or other place to deliberate on the same agenda.
+          Its decisions shall be valid no matter the number of members present or represented.
+         </li>
+         <li>
+         14.6.	Decisions shall be taken on a simple majority of the members present and voting. Voting shall
+          be show of hands.
+         </li>
+         <li>
+         14.7.	The decisions taken by the above cited meetings shall be binding on all members whether they
+          were present or not.
+         </li>
+         <li>
+         14.8.	Any member who shall be on record for persistently absenting himself or herself from any of
+          the association’s meeting at national level without ant tangible reason shall pay a fine of 500frs.
+         </li>
+         <li>
+         14.9.	Heavy penalties shall equally be levied on those who default payment of dues and those guilty
+          of misconduct capable of tarnishing the image of the village.
+         </li>
+         <li>
+         14.10. Any member of the National Executive Council who is absent for three consecutive meetings
+          of the said council  without a reasonable excuse shall be deemed to have resigned from the council.
+         </li>
+         <li>
+         14.11. The National Secretary General shall in each meeting open an attendance register for
+          members to sign on their arrival
+         </li>
+         <li>
+         14.12. The National secretary General shall record the minutes in the minute’s book and
+         such minutes shall be signed by the National president and Secretary General when approved.
+         </li>
+         <li>
+         14.13. The agenda for each meeting shall be closely followed to avoid waste of time and
+          unnecessary repetitions. Once a decision has been taken on a given issue, no further debates
+           shall be permitted on that same topic. Any controversial issue shall be put to vote.
+         </li>
+        </ul>
+        <h2>ARTICLE 15: ENABLING CLAUSE </h2>
+        <ul>
+          <li>
+          15.1. A branch of the association may be set up at any town or village situated in any
+           region wherein are resident a reasonable number of Befang Youths.
+          </li>
+          <li>
+          15.2. Each branch of the association shall be responsible to the regional body which
+           itself shall be directly responsible to the national 
+          </li>
+          <li>
+          15.3. The functional organs at both branch and regional level shall be those
+           stipulated in article 7.2 of this constitution 
+          </li>
+          <li>
+          15.4. Each branch and region shall make its own by-laws and draw up and carryout its own
+           program of activities according to the local prevailing situation. Provided that the said
+            bylaws and the program of activities shall not conflict with or be contrary to the
+             provisions of the present constitution.
+          </li>
+          <li>
+          15.5. At the end of each year and during the National convention, each regional president
+           shall be expected to summit an annual activities report including a financial statement. 
+          </li>
+        </ul>
+        <h2>ARTICLE 16: AUDIT </h2>
+        <ul>
+         <li>
+         16.1. At least once a year, the accounts of the association shall be examined by the elected
+          auditor and their report submitted to the National Executive Council for further examination
+           and subsequent submission to the Annual General Assembly  (the convention) for scrutiny and decisions. 
+         </li>
+         <li>
+         16.2. In case the audit report reveals some irregularities and/or variations with the annual
+          report of the National Financial Secretary, the General Assembly may appoint an external
+           auditor to examine the Association’s financial statements and related accounts and documents
+            for the purpose of expressing an opinion. The external auditor shall express his or her
+             conclusions as to the fairness of the statement according to the general principles of accounting.
+         </li>
+         <li>
+         16.3. The external auditor to be appointed by the General Assembly shall be any competent member of
+          the association or a neutral personality who must have a recognized qualification to that effect.
+         </li>
+        </ul>
     </main>
   )
 }
