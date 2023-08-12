@@ -204,6 +204,9 @@ class App extends Component {
   <Link to="#" style={{zIndex:"-1"}}>culture</Link>
   <div className="dropdown-content">
          <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
+            About Befang
+          </Link>
+         <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
             marriage
           </Link>
           <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
