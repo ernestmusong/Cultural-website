@@ -114,7 +114,10 @@ class App extends Component {
       </Link>
   </div>
 {/*Location*/}
-<a href="/" style={{color: "var(--mainOrange)"}}><FaMapMarkerAlt style={{marginRight: "1rem"}} /><span>Cameroon, North West Region, Menchum Division.</span></a>
+<a href="/" style={{color: "var(--mainOrange)"}}>
+  <FaMapMarkerAlt style={{marginRight: "1rem"}} />
+  <span>Cameroon, North West Region, Menchum Valley Sub Division.</span>
+</a>
 </div>
 {/*end top nav*/}
 {/*Navigation*/}

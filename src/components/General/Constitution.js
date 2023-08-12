@@ -501,7 +501,7 @@ function Constitution() {
            subject to the payment of all liabilities due at the date of dissolution, be donated to the Befang
             Traditional council who shall hold same in trust for the entire Befang Village 
          </li>
-         <li>
+         <li><br/>
             This constitution has been adopted today the 22<sup>nd</sup> day of December, 2001 by the
             General Assembly holding at Befang.
          </li>
