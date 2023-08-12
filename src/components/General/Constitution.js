@@ -460,6 +460,52 @@ function Constitution() {
           the association or a neutral personality who must have a recognized qualification to that effect.
          </li>
         </ul>
+        <h2>ARTICLE 17: IMPEACHMENT </h2>
+        <ul>
+         <li>
+         17.1. The National president and all the members of the National Executive Council excluding the coopted
+          members thereof shall be subject to impeachment for acts accomplished by them in the exercise of their
+           duties and which acts are contrary to the welfare of the association.
+         </li>
+         <li>
+         17.2. The conference of delegates excluding the accused member(s) shall have jurisdiction to try the above-mentioned acts
+         </li>
+         <li>
+         17.3. The decision to classify acts of the above-mentioned members as impeachment shall be taken by a secret
+          ballot of a 2/3 majority of the members of the conference of delegates meeting in a special meeting convened
+           for that purpose by the Legal Adviser of the association. Where the Legal Adviser himself is involved, the
+            meeting shall be convened by the most senior member of the National Executive council who is not involved.
+         </li>
+         <li>
+         17.4. The conference of delegates shall have wide powers to replace any member who is found guilty of the
+          above act
+          notwithstanding any other punishment and/or legal proceedings that may be taken against him.
+         </li>
+        </ul>
+        <h2>ARTICLE 18: INTERPRETATION</h2>
+        <ul>
+         <li>
+            In the present constitution wherever the masculine gender has been used this shall include the feminine
+            gender also.
+         </li>
+        </ul>
+        <h2>ARTICLE 19: AMENDMENT AND DISSOLUTION </h2>
+        <ul>
+         <li>
+         19.1. Any provision(s) of this constitution may be amended upon the reasoned motion of at least 1/4 of the
+          active members of the association receiving the favourable votes of at least 2/3 of the total active
+           members after debate at the General Assembly.
+         </li>
+         <li>
+         19.2. On dissolution of the association, all funds and property belonging to the association shall,
+           subject to the payment of all liabilities due at the date of dissolution, be donated to the Befang
+            Traditional council who shall hold same in trust for the entire Befang Village 
+         </li>
+         <li>
+            This constitution has been adopted today the 22<sup>nd</sup> day of December, 2001 by the
+            General Assembly holding at Befang.
+         </li>
+        </ul>
     </main>
   )
 }

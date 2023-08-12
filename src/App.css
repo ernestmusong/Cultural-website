@@ -136,6 +136,12 @@ justify-content: space-around;
   color: var(--mainOrange);
 }
 
+.call-link:visited,
+.whatsapp-link:visited {
+  color: var(--mainOrange);
+  text-decoration: underline;
+}
+
 .text2 {
   font-size: 1.5rem;
   font-weight: bold;
