@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 
 const LatestNews =()=>{
     let latestEvents = events.slice(events.length-3, events.length)
-    console.log(latestEvents)
   return(
     <>
      <section className='latest-news mb-4'>

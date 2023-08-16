@@ -5,6 +5,7 @@ import Chief from "./ChiefProfile";
 import BecudaExe from "./becudaExe";
 import Title from "../Headings/Title";
 import GreatIcons from "./GreatIcons";
+import CurrentProjects from "./CurrentProjects";
 import Counter from "./CountUpComponent";
 import LatestNews from "./LatestNews";
 export default class Home extends Component {
@@ -52,6 +53,8 @@ export default class Home extends Component {
       <GreatIcons />
       <Title title="Latest News" />
       <LatestNews />
+      <Title title="Ongoing projects" />
+      <CurrentProjects />
       </>
     );
   }

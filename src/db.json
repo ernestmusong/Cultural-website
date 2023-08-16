@@ -15,6 +15,7 @@
           "amount": 670000,
           "realised":0,
           "status":"closed",
+          "current": true,
           "body":"This project is aimed at ensuring the availability of pipe-borne water throughout the Befang territory.",
           "desc": "Distribution of pipe-borne water to all quarters in the Befang Village."
       }, 
@@ -26,6 +27,7 @@
         "amount": 85000,
         "realised":0,
         "status":"open",
+        "current": true,
         "body":"This website is a personal initiative by the developer. It is currently hosted under a subdomain on heroku which is a free cloud platform. However we need to purchase and secure a dedicated domain extension like becuda.com and use a shared hosting plan. Domains, SSL and hosting are billed annually. We also need to upgrade the database which currently has a capacity of just 512MB. This capacity will not be enough to save the data as the user base grows with time. ",
         "desc": "Website domain and hosting, database upgrade"
     },
@@ -37,6 +39,7 @@
       "amount": 70000,
       "realised":0,
       "status":"open",
+      "current": true,
       "body":"All members of the Befang Youths Initiative (BEYOIN) have decided to make a small contribution to buy exercise books to all Befang-born pupils of G.S Befang before the start of this accademic year 2022. We welcome all those who bind this idea to channel their support through their branch treasurers. For more info, click on the whatsApp icon on the website or leave your comments below ",
       "desc": "The Purchase of exercise books for all befang-born pupils of G.S befang"
   }
