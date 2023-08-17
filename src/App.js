@@ -1,5 +1,6 @@
-import React, { Component } from "react";
-import { Switch, Route, Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Route, Routes } from 'react-router-dom';
+import Layout from 'Components/Layout';
 import logo from "./becuda-logo.png";
 import {FaAlignJustify, FaMapMarkerAlt, FaTimes } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -8,17 +9,17 @@ import AllProjects from "./components/Projects/AllProjects";
 import Events from "./components/News/Events";
 import SingleEvent from "./components/News/SingleEvent";
 import AuthService from "./services/auth.service";
-import Login from "./components/General/login.component";
-import Register from "./components/General/register.component";
+import Login from "./components/sessions/login.component";
+import Register from "./components/sessions/register.component";
 import Home from "./components/Home/home.component";
 import Profile from "./components/Dashboard/profile.component";
 import BoardUser from "./components/Dashboard/board-user.component";
 import BoardModerator from "./components/Dashboard/board-moderator.component";
 import BoardAdmin from "./components/Dashboard/board-admin.component";
-import Footer from "./components/General/footer";
+import Footer from "./components/footer";
 import SingleProject from "./components/Projects/SingleProject";
 import Icon from "./components/Home/Icon";
-import  PopupModal from "./components/General/PopupModal";
+import  PopupModal from "./components/PopupModal";
 import EventBus from "./common/EventBus";
 import BefangYouthsInitiative from "./components/Branches/BEYOIN/BefangYouthsInitiative";
 import CommingSoon from "./components/General/CommingSoon";
@@ -30,10 +31,13 @@ import ListOfContributors from "./components/Contributions/ListOfContributors";
 import WebCreator from "./components/Web-creator/WebCreator";
 import BefangDiaspora from "./components/Branches/Diaspora/BefangDiaspora";
 import DiasporaMember from "./components/Branches/Diaspora/DiasporaMember";
-import Constitution from "./components/General/Constitution";
+import Constitution from "./components/Constitution";
  
 
-class App extends Component {
+const App = () => {
+  const [showAdminBoard, setShowAdminBoard] = useState(false)
+  const [showModeratorBoard, setShowModeratorBoard] = useState(false)
+  const [currentUser, setCurrentUser] = useState(undefined)
   
   constructor(props) {
     super(props);

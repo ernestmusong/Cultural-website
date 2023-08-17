@@ -1,16 +1,18 @@
-import React from "react";
-import ReactDOM from "react-dom";
-// import { BrowserRouter } from "react-router-dom";
-import { HashRouter } from "react-router-dom";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import App from './App';
+import store from './redux/store';
 
-import App from "./App";
-import * as serviceWorker from "./serviceWorker";
-
-ReactDOM.render(
-  <HashRouter>
-    <App />
-  </HashRouter>,
-  document.getElementById("root")
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <Provider store={store}>
+        <App />
+      </Provider>
+      ,
+    </BrowserRouter>
+  </React.StrictMode>,
 );
-
-serviceWorker.unregister();
