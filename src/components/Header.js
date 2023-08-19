@@ -13,25 +13,26 @@ const links = [
   { path: '/delete-car', text: 'Delete car' },
 ];
 const branches = [
-  { path: '/home', text: 'bamenda', className:"clear dropdown-link" },
-  { path: '/make-reservations', text: 'buea', className:"clear dropdown-link", id: 'border' },
-  { path: '/my-reservations', text: 'muea, className:"clear dropdown-link"' },
-  { path: '/add-car', text: 'mutengene', className:"clear dropdown-link" },
-  { path: '/delete-car', text: 'limbe', className:"clear dropdown-link" },
-  { path: '/delete-car', text: 'douala', className:"clear dropdown-link" },
-  { path: '/delete-car', text: 'yaounde', className:"clear dropdown-link" },
-  { path: '/delete-car', text: 'diaspora', className:"clear dropdown-link" },
+  { path: '/home', text: 'home', className:"clear dropdown-link" },
+  { path: '/comming-soon', text: 'bamenda', className:"clear dropdown-link" },
+  { path: '/comming-soon', text: 'buea', className:"clear dropdown-link", id: 'border' },
+  { path: '/comming-soon', text: 'muea, className:"clear dropdown-link"' },
+  { path: '/comming-soon', text: 'mutengene', className:"clear dropdown-link" },
+  { path: '/comming-soon', text: 'limbe', className:"clear dropdown-link" },
+  { path: '/comming-soon', text: 'douala', className:"clear dropdown-link" },
+  { path: '/comming-soon', text: 'yaounde', className:"clear dropdown-link" },
+  { path: '/comming-soon', text: 'diaspora', className:"clear dropdown-link" },
 ];
 const associations = [
-  { path: '/home', text: 'befang youths initiative' },
-  { path: '/make-reservations', text: 'befang youths association'},
+  { path: '/comming-soon', text: 'befang youths initiative' },
+  { path: '/comming-soon', text: 'befang youths association'},
 ];
 const culture = [
-  {id:1, path: '/home', text: 'about befang' },
-  {id:2, path: '/make-reservations', text: 'marriage'},
-  {id:3, path: '/make-reservations', text: 'cultural dance'},
-  {id:4, path: '/make-reservations', text: 'funeral'},
-  {id:5, path: '/make-reservations', text: 'The dialect'},
+  {id:1, path: '/comming-soon', text: 'about befang' },
+  {id:2, path: '/comming-soon', text: 'marriage'},
+  {id:3, path: '/comming-soon', text: 'cultural dance'},
+  {id:4, path: '/comming-soon', text: 'funeral'},
+  {id:5, path: '/comming-soon', text: 'The dialect'},
 ];
 const Header = () => {
   const navigate = useNavigate();
@@ -202,6 +203,11 @@ const Header = () => {
   </div>
 </div>
 </nav>
+<div className='info-wrapper'>
+  <p className='info text-uppercase'>
+ Welcome to the befang cultural and development association...<span className="text-uppercase">becuda</span>
+  </p>
+</div>
     </>
   );
 };
