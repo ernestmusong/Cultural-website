@@ -120,6 +120,7 @@ justify-content: space-around;
   font-family: "Clip"; 
    color: var(--softWhite); 
    text-transform: capitalize;
+   text-decoration: underline;
  
 }
 

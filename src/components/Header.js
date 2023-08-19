@@ -2,18 +2,11 @@ import React from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import '../styles/Home.css';
 import {FaAlignJustify, FaMapMarkerAlt, FaTimes } from "react-icons/fa";
-import logo from '../assets/Frame.png';
+import logo from '../images/becuda-logo.png';
 import { Button } from 'react-bootstrap/lib/InputGroup';
 
-const links = [
-  { path: '/home', text: 'Cars' },
-  { path: '/make-reservations', text: 'Reserve a car', id: 'border' },
-  { path: '/my-reservations', text: 'My reservations' },
-  { path: '/add-car', text: 'Add car' },
-  { path: '/delete-car', text: 'Delete car' },
-];
+ 
 const branches = [
-  { path: '/home', text: 'home', className:"clear dropdown-link" },
   { path: '/comming-soon', text: 'bamenda', className:"clear dropdown-link" },
   { path: '/comming-soon', text: 'buea', className:"clear dropdown-link", id: 'border' },
   { path: '/comming-soon', text: 'muea, className:"clear dropdown-link"' },
