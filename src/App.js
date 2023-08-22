@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { Route, Routes } from 'react-router-dom';
 import Layout from 'Components/Layout';
-import logo from "./becuda-logo.png";
-import {FaAlignJustify, FaMapMarkerAlt, FaTimes } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import AllProjects from "./components/Projects/AllProjects";
@@ -20,7 +18,6 @@ import Footer from "./components/footer";
 import SingleProject from "./components/Projects/SingleProject";
 import Icon from "./components/Home/Icon";
 import  PopupModal from "./components/PopupModal";
-import EventBus from "./common/EventBus";
 import BefangYouthsInitiative from "./components/Branches/BEYOIN/BefangYouthsInitiative";
 import CommingSoon from "./components/General/CommingSoon";
 import ContributePage from "./components/Contributions/ContributePage";
@@ -38,102 +35,40 @@ const App = () => {
   const [showAdminBoard, setShowAdminBoard] = useState(false)
   const [showModeratorBoard, setShowModeratorBoard] = useState(false)
   const [currentUser, setCurrentUser] = useState(undefined)
-  
-  constructor(props) {
-    super(props);
-    this.logOut = this.logOut.bind(this);
-    this.clearHeight = this.clearHeight.bind(this);
-    this.handleClickMenu = this.handleClickMenu.bind(this);
-    this.state = {
-      showModeratorBoard: false,
-      showAdminBoard: false,
-      currentUser: undefined,
-      height: 0,
-      linksHeight: 0,
-      overFlow: "hidden",
-       
-    };
-  }
-  
-  componentDidMount() {
-    const user = AuthService.getCurrentUser();
-    if (user) {
-      this.setState({
-        currentUser: user,
-        showModeratorBoard: user.roles.includes("ROLE_MODERATOR"),
-        showAdminBoard: user.roles.includes("ROLE_ADMIN"),
-      });
-    }
-    
-    EventBus.on("logout", () => {
-      this.logOut();
-    });
-  }
-
-  componentWillUnmount() {
-    EventBus.remove("logout");
-  }
-  
-
-  logOut() {
-    AuthService.logout();
-    this.setState({
-      showModeratorBoard: false,
-      showAdminBoard: false,
-      currentUser: undefined,
-    });
-  }
-   
-   clearHeight (){
-    const height = this.state.height;
-    if(height !== 0){
-      this.setState({height:0, overFlow: "hidden"})
-    }
-  }
-    
-   handleClickMenu() {
-    const height = this.state.height;
-    if(height === 0){this.setState({height:"auto", overFlow: ""}) }
-    
-  }
-  render() {
-    const { currentUser, showModeratorBoard, showAdminBoard, height, overFlow } = this.state;
     return (
       <>
  
  
           <PopupModal />
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/login" component={Login} />
-            <Route exact path="/register" component={Register} />
-            <Route exact path="/profile" component={Profile} />
-            <Route path="/user" component={BoardUser} />
-            <Route path="/mod" component={BoardModerator} />
-            <Route path="/admin" component={BoardAdmin} />
-            <Route path="/all-projects" component={AllProjects} />
-            <Route path="/projects/:projectId" component={SingleProject} />
-            <Route path="/events" component={Events} />
-            <Route path="/event/:eventId" component={SingleEvent} />
-            <Route path="/icons/:iconId" component={Icon} />
-            <Route path="/befang-youths-initiative" component={BefangYouthsInitiative} />
-            <Route path="/contribute-page" component={ContributePage} />
-            <Route path="/contributors" component={ListOfContributors} />
-            <Route path="/branches/:branchId" component={ContributeDetails} />
-            <Route path="/diaspora" component={BefangDiaspora} />
-            <Route path="/diaspora-member/:diasporaId" component={DiasporaMember} />
-            <Route path="/beyoin/:memberId" component={BeyoinMember} />
-            <Route path="/web-supporters" component={ListOfSupporters} />
-            <Route path="/web-creator" component={WebCreator} />
-            <Route path="/constitution" component={Constitution} />
-            <Route path="/comming-soon" component={CommingSoon} />
-             
-          </Switch>
+          <Routes path="/" element={<Layout />}>
+            <Route index element={<Home />} />  
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/user" element={<BoardUser />} />
+            <Route path="/mod" element={<BoardModerator />} />
+            <Route path="/admin" element={<BoardAdmin />} />
+            <Route path="/all-projects" element={<AllProjects />} />
+            <Route path="/projects/:projectId" element={<SingleProject />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/event/:eventId" element={<SingleEvent />} />
+            <Route path="/icons/:iconId" element={<Icon />} />
+            <Route path="/befang-youths-initiative" element={<BefangYouthsInitiative />} />
+            <Route path="/contribute-page" element={<ContributePage />} />
+            <Route path="/contributors" element={<ListOfContributors />} />
+            <Route path="/branches/:branchId" element={<ContributeDetails />} />
+            <Route path="/diaspora" element={<BefangDiaspora />} />
+            <Route path="/diaspora-member/:diasporaId" element={<DiasporaMember />} />
+            <Route path="/beyoin/:memberId" element={<BeyoinMember />} />
+            <Route path="/web-supporters" element={<ListOfSupporters />} />
+            <Route path="/web-creator" element={<WebCreator />} />
+            <Route path="/constitution" element={<Constitution />} />
+            <Route path="/comming-soon" element={<CommingSoon />} />
+          </Routes>
           <Footer />
 
         </>
     );
-  }
 }
 
 export default App;

@@ -3,8 +3,6 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import '../styles/Home.css';
 import {FaAlignJustify, FaMapMarkerAlt, FaTimes } from "react-icons/fa";
 import logo from '../images/becuda-logo.png';
-import { Button } from 'react-bootstrap/lib/InputGroup';
-
  
 const branches = [
   { path: '/comming-soon', text: 'bamenda', className:"clear dropdown-link" },
@@ -27,6 +25,22 @@ const culture = [
   {id:4, path: '/comming-soon', text: 'funeral'},
   {id:5, path: '/comming-soon', text: 'The dialect'},
 ];
+
+const [height, setHeight] = useState(0);
+const [overFlow, setOverFlow] = useState('hidden');
+
+const clearHeight = () => {
+  if (height !== 0) {
+    setHeight(0);
+    setOverFlow('hidden');
+  }
+};
+const handleClickMenu = () => {
+  if (height === 0) {
+    setHeight('auto');
+    setOverFlow('visible');
+  }
+};
 const Header = () => {
   const navigate = useNavigate();
   const logout = () => {
@@ -65,7 +79,7 @@ const Header = () => {
 <div className="nav-header">
   {/*Mobile logo*/}
   <div className='mobile-logo-container'>
-  <NavLink to='/' onClick={() => {this.clearHeight()}}>
+  <NavLink to='/' onClick={() =>clearHeight()}>
      <div style={{width: "100px", height: "100%"}} className="logo-div">
       <img src={logo} alt="logo" className="logo" style={{maxWidth: "100%"}}/>
     </div> 
@@ -73,60 +87,60 @@ const Header = () => {
   </div>
   {/*Mobile support menu*/}
   <div className="moble-support">
-      <NavLink to="/web-creator" className="support"  onClick={() => {this.clearHeight()}}>
+      <NavLink to="/web-creator" className="support"  onClick={() =>clearHeight()}>
          Click to support the website
       </NavLink>
-      <NavLink to="/web-supporters" className="support" onClick={() => {this.clearHeight()}}>
+      <NavLink to="/web-supporters" className="support" onClick={() =>clearHeight()}>
            See List Of Supporters
       </NavLink>
   </div>
   {/*Mobile menu open and close*/}
-  {this.state.height === 0 ? (
-      <div className="nav-toggle target" onClick={() => {this.handleClickMenu()}}>
+  {height === 0 ? (
+      <div className="nav-toggle target" onClick={() => handleClickMenu()}>
       <FaAlignJustify className="target" style={{color:"var(--mainOrange)"}} />
     </div>
-  ) : ( <div className=" nav-toggle"onClick={() => {this.clearHeight()}}>
+  ) : ( <div className=" nav-toggle" onClick={() => clearHeight()}>
          <FaTimes style={{color:"var(--mainOrange)"}}/>
      </div>)}
 </div>
 {/*Menu*/}
 <div id='links-container' className="links-container target" style={{ height: height, overflow: overFlow}}>
   <div className="links target"  >
-  <NavLink to="/" className='clear'  onClick={() => {this.clearHeight()}}>
+  <NavLink to="/" className='clear'  onClick={() => clearHeight()}>
    Home
   </NavLink>
   <div className="dropdown">
   <NavLink to="#">branches</NavLink>
   <div className="dropdown-content">
-    {branches.map((b) => <NavLink to={b.path} className={b.className} onClick={() => {this.clearHeight()}}>{b.text}</NavLink>)}
+    {branches.map((b) => <NavLink to={b.path} className={b.className} onClick={() => clearHeight()}>{b.text}</NavLink>)}
       </div>
       
   </div>
-  <NavLink to="/all-projects" className='clear' onClick={() => {this.clearHeight()}}>
+  <NavLink to="/all-projects" className='clear' onClick={() => clearHeight()}>
   Projects
   </NavLink>
   <div className="dropdown">
   <NavLink to="#" style={{zIndex:"-1"}}>associations</NavLink>
   <div className="dropdown-content">
-          {associations.map((a) => <NavLink to={a.path} className={a.className} onClick={() => {this.clearHeight()}}>{a.text}</NavLink>)}
+          {associations.map((a) => <NavLink to={a.path} className={a.className} onClick={() => clearHeight()}>{a.text}</NavLink>)}
       </div>
   </div>
   <div className="dropdown">
   <NavLink to="#" style={{zIndex:"-1"}}>culture</NavLink>
   <div className="dropdown-content">
-          {culture.map((b) => <NavLink to={c.path} className={c.className} onClick={() => {this.clearHeight()}}>{c.text}</NavLink>)}
+          {culture.map((b) => <NavLink to={c.path} className={c.className} onClick={() => clearHeight()}>{c.text}</NavLink>)}
       </div>
   </div>
-  <NavLink to="/constitution" className='clear'  onClick={() => {this.clearHeight()}}>
+  <NavLink to="/constitution" className='clear'  onClick={() => clearHeight()}>
    Constitution
   </NavLink>
-  <NavLink to="/events" className='clear' onClick={() => {this.clearHeight()}}>
+  <NavLink to="/events" className='clear' onClick={() => clearHeight()}>
    News
   </NavLink>
   <div className="dropdown">
   <NavLink to="#" style={{zIndex:"-1"}}>contributions</NavLink>
   <div className="dropdown-content">
-         <NavLink to="/contributors" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
+         <NavLink to="/contributors" className="clear dropdown-link" onClick={() => clearHeight()}>
             Water Project
           </NavLink>
       </div>
@@ -179,13 +193,13 @@ const Header = () => {
 ) : (
 <div className="register-link">
   
-    <button className="clear nav-link" onClick={() => {this.clearHeight()}} >
+    <button className="clear nav-link" onClick={() => clearHeight()} >
       Login
     </button>
    
 
    
-    <button to={"/register"} className="clear nav-link" onClick={() => {this.clearHeight()}}>
+    <button to={"/register"} className="clear nav-link" onClick={() => clearHeight()}>
       Register
     </button>
    

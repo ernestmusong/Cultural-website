@@ -20,7 +20,6 @@
     "react-router-dom": "^6.9.0",
     "react-scripts": "5.0.1",
     "react-countup": "^6.3.0",
-    "react-floating-whatsapp-button": "^1.1.0",
     "react-validation": "^3.0.7",
     "react-visibility-sensor": "^5.1.1",
     "styled-components": "^5.3.5",
