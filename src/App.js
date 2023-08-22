@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { Route, Routes } from 'react-router-dom';
-import Layout from 'Components/Layout';
+import Layout from "components/Layout";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import AllProjects from "./components/Projects/AllProjects";
 import Events from "./components/News/Events";
 import SingleEvent from "./components/News/SingleEvent";
-import AuthService from "./services/auth.service";
 import Login from "./components/sessions/login.component";
 import Register from "./components/sessions/register.component";
 import Home from "./components/Home/home.component";
@@ -32,9 +31,6 @@ import Constitution from "./components/Constitution";
  
 
 const App = () => {
-  const [showAdminBoard, setShowAdminBoard] = useState(false)
-  const [showModeratorBoard, setShowModeratorBoard] = useState(false)
-  const [currentUser, setCurrentUser] = useState(undefined)
     return (
       <>
  
