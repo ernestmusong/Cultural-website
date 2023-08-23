@@ -1,39 +1,15 @@
 import React, { useState, useEffect } from 'react'
-import GreatIcons from '../../db.json'
  import { Link } from 'react-router-dom';
+ import PropTypes from 'prop-types';
  
- /**
-  *@function IconDetails
-  **/
-const IconDetails = (props) => {
-     const[icon, setIcon] = useState({
-      id: 1,
-        img: "",
-        profession: "",
-        name:"",
-        work:"",
-         
-     });
-      
-    
-     const iconId =  props.match.params.iconId;
-    
-      useEffect(() =>{
-        
-        let icon =GreatIcons.greatIcons.find(icon => icon.id == iconId)
-          setIcon(icon)
-         }
-        
-         , [ iconId])
-         if(icon.img == "") return null;
-
+const IconDetails = ({icon}) => {
     return ( 
       <div className="container  icon-details">
        
       {/*info*/}
       <div className="row">
         <div className="col-10 my-3 col-md-6 mx-auto">
-          <img src={require('../../Images/iconsImages/'+ icon.img)} alt="project" className="img-fluid" />
+          <img src={icon.img} alt="project" className="img-fluid" />
         </div>
          
         <div className="col-10 my-3   col-md-6 mx-auto  text-capitalize">
@@ -56,7 +32,9 @@ const IconDetails = (props) => {
   );
 }
  
-
+IconDetails.propTypes = {
+  icon: PropTypes.oneOfType([PropTypes.object]).isRequired,
+};
 
 
  export default IconDetails

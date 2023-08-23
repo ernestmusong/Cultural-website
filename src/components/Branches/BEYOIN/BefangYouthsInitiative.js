@@ -1,15 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import {beyoin} from '../../../db.json'
 import Title from '../../Headings/Title';
 import Title2 from '../../Headings/Title2';
 import CountUp from 'react-countup';
 
 const BefangYouthsInitiative=()=>{
-  let members = beyoin;
-     
-  let executiveMembers = members.filter(member => member.executive === true)
+  const { users } = useSelector((store) => store.users);
+  let executiveMembers = users.filter(member => member.executive === true)
   return (
     <>
        <div class="page-hero" id="hero-img">

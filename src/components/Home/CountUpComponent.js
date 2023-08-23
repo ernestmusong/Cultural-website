@@ -2,12 +2,13 @@ import React from 'react'
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 import { Link } from "react-router-dom";
-import {Branches} from '../../db.json';
+import { useSelector } from 'react-redux';
 
 function Counter() {
+  const { branches } = useSelector((store) => store.branches);
   return (
     <div className="container-in-banner">
-        {Branches.map(branch => (
+        {branches.map(branch => (
         <Link to={branch.link} style={{ textDecoration: "none" }} key={branch.id}>
                <div className="text-center count-up-wrapper" >
                 <div className="counter-wrapper">

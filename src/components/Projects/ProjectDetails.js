@@ -1,42 +1,17 @@
-import React, {useState, useEffect } from 'react'
-import {projects} from '../../db.json'
+import React from 'react'
+import PropTypes from 'prop-types';
  import { Link } from 'react-router-dom'
  import Comments from '../General/facebookComments';
  import Title4 from '../Headings/Title4';
   
 
-export default function ProjectDetails(props) {
-    
-     const[project, setProject] = useState({
-      id: 1,
-      url:"",
-        img: "",
-        title: "",
-        amount:"",
-        realised:"",
-        status:"",
-        body: "",
-        desc: " "
-     });
-      
-    
-     const projectId =  props.match.params.projectId;
-    
-      useEffect(() =>{
-        
-        let project = projects.find(project => project.id == projectId)
-          setProject(project)
-         }
-        
-         , [ projectId])
-         if(project.img == "") return null;
-
+const ProjectDetails = ({project}) => {
     return ( 
       <>
       <div className="container project-details">
       <div className="row">
         <div className="col-10 my-3 col-md-6 mx-auto">
-          <img src={require('../../Images/projectImages/'+ project.img)} alt="project" className="img-fluid" />
+          <img src={project.img} alt="project" className="img-fluid" />
         </div>
         {/*project text*/}
         <div className="col-10 my-3 mx-auto  col-md-6  text-capitalize">
@@ -83,3 +58,9 @@ export default function ProjectDetails(props) {
     </>
   );
 }
+
+ProjectDetails.propTypes = {
+  project: PropTypes.oneOfType([PropTypes.object]).isRequired,
+  };
+
+  export default ProjectDetails

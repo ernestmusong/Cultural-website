@@ -36,7 +36,7 @@ const BefangDiaspora=()=>{
        
             <div className='row becuda-executive'>
             {executiveMembers.map(member => (
-                <ExMember key={member.id} {...member}/>
+                <ExMember key={member.id} member={member}/>
             ))}
             </div>
        
@@ -51,7 +51,7 @@ const BefangDiaspora=()=>{
                   </tr>
               </thead>
               <tbody>
-                 {befangDiaspora.map(member => (<Member key={member.id} {...member}/>))}
+                 {befangDiaspora.map(member => (<Member key={member.id} member={member}/>))}
               </tbody>
           </table>
       </div>
@@ -59,26 +59,26 @@ const BefangDiaspora=()=>{
   )
 }
 
-const Member=({id, name, country}) => {
+const Member=({member}) => {
     return (
            
-        <tr className="bg-light" key={id}>
-            <td className='text-capitalize'>{name}<br/> <Link to={`/diaspora-member/${id}`} style={{color:"Var(--mainOrange)"}}>See Profile</Link></td>
-            <td className='text-uppercase'>{country}</td> 
+        <tr className="bg-light" key={member.id}>
+            <td className='text-capitalize'>{member.name}<br/> <Link to={`/diaspora-member/${member.id}`} style={{color:"Var(--mainOrange)"}}>See Profile</Link></td>
+            <td className='text-uppercase'>{member.country}</td> 
         </tr>
     )
 }
 
-const ExMember=({ title, name, img}) => {
+const ExMember=({member}) => {
     return (
       <div className='becuda-member'>
       <div className='becuda-image-wrapper'>
-       <img src={require('../../../Images/diasporaImages/'+img)} alt="project" />
+       <img src={member.img} alt="project" />
       </div> 
      
       <div className='py-2 ml-2'>
-      <h4 className="text-uppercase" style={{ color:"Var(--mainOrange)"}}>{name}</h4>      
-      <p className='text-capitalize' style={{ color:"Var(--heroWhite)"}}>{title}</p>
+      <h4 className="text-uppercase" style={{ color:"Var(--mainOrange)"}}>{member.name}</h4>      
+      <p className='text-capitalize' style={{ color:"Var(--heroWhite)"}}>{member.title}</p>
       </div>
    </div>
     )
@@ -123,5 +123,13 @@ const WhoWeAre=() => {
            
   )
 }
+
+Member.propTypes = {
+  member: PropTypes.oneOfType([PropTypes.object]).isRequired,
+};
+ExMember.propTypes = {
+  member: PropTypes.oneOfType([PropTypes.object]).isRequired,
+};
+
 
 export default BefangDiaspora

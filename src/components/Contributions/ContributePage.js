@@ -1,8 +1,9 @@
 import React from 'react'
 import {Link } from "react-router-dom";
 import Title3 from '../Headings/Title3';
-import { Branches } from '../../Data';
+import { useSelector } from 'react-redux';
 function ContributePage() {
+  const { branches } = useSelector((store) => store.branches);
   return (
     <>
          <div className='title3-wrapper'>
@@ -10,7 +11,7 @@ function ContributePage() {
          </div>
         
          <div className='contribute-page'>
-             {Branches.map(branch => (
+             {branches.map(branch => (
                 <Link to={`/branches/${branch.id}`} key={branch.id}  className='contribute-page-child bg-light'>
                          {branch.name}
                 </Link>

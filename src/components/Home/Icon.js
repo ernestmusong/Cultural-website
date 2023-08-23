@@ -1,12 +1,16 @@
 import React from 'react'
 import IconDetails from './IconDetails';
+import { useParams } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
-  const Icon = (props) => {
-     
+  const Icon = () => {
+    const { id } = useParams();
+  const { greateIcons } = useSelector((store) => store.greateIcons);
+  const icon = greateIcons.find((item) => item.id.toString() === id.toString());
     return ( 
         
           <>
-          <IconDetails {...props} />
+          <IconDetails icon={icon} />
           </>
         
      );

@@ -1,9 +1,10 @@
 import React from 'react'
-import { projects} from '../../db.json'
 import Project from '../Projects/Project';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const CurrentProjects =()=>{
+  const { projects } = useSelector((store) => store.projects);
     let current = projects.filter(project => project.current === true)
   return(
     <>

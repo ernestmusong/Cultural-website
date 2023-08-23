@@ -1,19 +1,18 @@
 import React from 'react'
-import DiasporaMemberProfile from './DiasporaMemberProfile';
+import TreasurerDetails from './TreasurerDetails';
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
-
-const DiasporaMember = () => {
+  const TreasurerPage = () => {
     const { id } = useParams();
     const { users } = useSelector((store) => store.users);
     const member = users.find(member => member.id === id);
     return ( 
         
           <>
-          <DiasporaMemberProfile member={member} />
+          <TreasurerDetails member={member} />
           </>
         
      );
 }
- export default DiasporaMember;
+ export default TreasurerPage;
