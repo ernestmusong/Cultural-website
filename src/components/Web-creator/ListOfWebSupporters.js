@@ -8,7 +8,7 @@ const ListOfSupporters=() => {
 
          let supporters = webSupporters;
            
-      if(supporters.length == 2) return <CommingSoon title="there are no supporters at the moment."/>;
+      if(supporters.length === 0) return <CommingSoon title="there are no supporters at the moment!"/>;
   return (
     <div>
          <Title3 title="thank you all for supporting the website" />

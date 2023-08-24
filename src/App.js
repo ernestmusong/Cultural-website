@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { Route, Routes } from 'react-router-dom';
 import Layout from "components/Layout";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import AllProjects from "./components/Projects/AllProjects";
 import Events from "./components/News/Events";
-import SingleEvent from "./components/News/EventDetailsPage";
+import EventDetailsPage from "./components/News/EventDetailsPage";
 import Login from "./components/sessions/login.component";
 import Register from "./components/sessions/register.component";
 import Home from "./components/Home/Home";
@@ -14,7 +14,7 @@ import BoardUser from "./components/Dashboard/board-user.component";
 import BoardModerator from "./components/Dashboard/board-moderator.component";
 import BoardAdmin from "./components/Dashboard/board-admin.component";
 import Footer from "./components/footer";
-import SingleProject from "./components/Projects/SingleProject";
+import ProjectDetailsPage from "./components/Projects/ProjectDetailsPage";
 import Icon from "./components/Home/Icon";
 import  PopupModal from "./components/PopupModal";
 import BefangYouthsInitiative from "./components/Branches/BEYOIN/BefangYouthsInitiative";
@@ -45,9 +45,9 @@ const App = () => {
             <Route path="/mod" element={<BoardModerator />} />
             <Route path="/admin" element={<BoardAdmin />} />
             <Route path="/all-projects" element={<AllProjects />} />
-            <Route path="/projects/:projectId" element={<SingleProject />} />
+            <Route path="/projects/:projectId" element={<ProjectDetailsPage />} />
             <Route path="/events" element={<Events />} />
-            <Route path="/event/:eventId" element={<SingleEvent />} />
+            <Route path="/event/:eventId" element={<EventDetailsPage />} />
             <Route path="/icons/:iconId" element={<Icon />} />
             <Route path="/befang-youths-initiative" element={<BefangYouthsInitiative />} />
             <Route path="/contribute-page" element={<ContributePage />} />
