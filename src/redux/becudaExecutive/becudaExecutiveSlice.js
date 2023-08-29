@@ -18,3 +18,4 @@ const becudaExecutiveSlice = createSlice({
 })
 
 export const { setBecudaExecutive } = becudaExecutiveSlice.actions
+export default becudaExecutiveSlice.reducer

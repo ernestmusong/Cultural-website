@@ -17,3 +17,4 @@ const webSupportersSlice = createSlice({
 })
 
 export const { setWebSupporters } = webSupportersSlice.actions
+export default webSupportersSlice.reducer

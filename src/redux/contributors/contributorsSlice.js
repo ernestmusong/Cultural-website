@@ -17,3 +17,4 @@ const contributorsSlice = createSlice({
 })
 
 export const { setContributors } = contributorsSlice.actions
+export default contributorsSlice.reducer

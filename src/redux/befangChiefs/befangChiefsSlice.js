@@ -17,3 +17,4 @@ const befangChiefsSlice = createSlice({
 })
 
 export const { setChiefs } = befangChiefsSlice.actions
+export default befangChiefsSlice.reducer

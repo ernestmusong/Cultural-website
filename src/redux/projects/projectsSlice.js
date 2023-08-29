@@ -3,13 +3,6 @@ import {projects} from '../db.json'
 
 const initialState = {
     projects: [],
-    branches: [],
-    contributors: [],
-    events: [],
-    befangChiefs: [],
-    becudaExecutive: [],
-    greatIcons: [],
-    webSupporters: [],
 }
 
 const projectsSlice = createSlice({
@@ -24,3 +17,4 @@ const projectsSlice = createSlice({
 })
 
 export const { setProjects } = projectsSlice.actions
+export default projectsSlice.reducer

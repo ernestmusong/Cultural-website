@@ -17,3 +17,4 @@ const greatIconsSlice = createSlice({
 })
 
 export const { setGreatIcons } = greatIconsSlice.actions
+export default greatIconsSlice.reducer
