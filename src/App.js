@@ -1,5 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Route, Routes } from 'react-router-dom';
+import { useDispatch} from "react-redux";
+import { setBecudaExecutive } from "./redux/becudaExecutive/becudaExecutiveSlice";
+import { setChiefs } from "./redux/befangChiefs/befangChiefsSlice";
+import { setEvents } from "./redux/events/eventsSlice";
+import { setProjects } from "./redux/projects/projectsSlice";
+import { setContributors } from "./redux/contributors/contributorsSlice";
+import { setGreatIcons } from "./redux/greatIcons/greatIconsSlice";
+import { setWebSupporters } from "./redux/webSupporters/webSupportersSlice";
+import { setBranches } from "./redux/branches/branchesSlice";
+import { setUsers } from "./redux/users/usersSlice";
 import Layout from "components/Layout";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -31,6 +41,18 @@ import Constitution from "./components/Constitution";
  
 
 const App = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(setUsers());
+    dispatch(setProjects());
+    dispatch(setEvents());
+    dispatch(setBranches());
+    dispatch(setBecudaExecutive());
+    dispatch(setChiefs());
+    dispatch(setGreatIcons());
+    dispatch(setContributors());
+    dispatch(setWebSupporters());
+  }, [dispatch]);
     return (
       <>
  

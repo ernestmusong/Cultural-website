@@ -197,68 +197,123 @@
         
     ],
 
-    "beyoin": [
+    "users": [
 
         {
     
-    "id": 1,
+     
      "name": "Esoh Derick",
     "img":"eleven.jpeg",
     "title":"president",
     "profession":"",
      "info":"",
+     "branch":"beyoin",
      "executive":true
         },
         {
     
          
-    "id": 2,
+     
     "name": "Esoh jimuel",
    "img":"jimwel.jpeg",
    "title":"DM",
    "executive":true,
    "profession":"",
-          "info":""
+          "info":"",
+          "branch":"beyoin"
               },
 {
 
 
-    "id": 3,
+     
     "name": "Ichu Kalvin",
     "img":"kalv.jpeg",
     "title":"Secretary General",
     "executive":true,
     "profession":"",
-    "info":""
+    "info":"",
+    "branch":"beyoin"
                 },
     {
-    "id": 4,
+     
     "name": "Ngeh Radivin",
     "img":"radivin.jpeg",
     "title":"advicer",
     "profession":"",
     "info":"",
+    "branch":"beyoin",
     "executive":true
         },
     {
-    "id": 5,
+     
     "name": "Dang Brita",
     "img":"Dang-Brita.jpeg",
     "title":"Financial secretary",
     "profession":"",
     "info":"",
+    "branch":"beyoin",
     "executive":true
         },
      
   {
-    "id": 6,
+     
     "name": "Mendi Georgette Endem",
     "img":"mendi-georgette.jpeg",
     "title":"treasurer",
     "profession":"",
     "info":"",
+    "branch":"beyoin",
     "executive":true
-        }
+        },
+        {
+            
+           
+           "name": "Mrs Florence Chewachong",
+          "img":"becuda-logo.png",
+          "title":"president",
+          "profession":"",
+          "country":"uk",
+           "info":"",
+           "branch":"diaspora",
+           "executive":true
+              },
+              {
+          
+               
+           
+          "name": "Dr Bezeng Simon Bezeng",
+         "img":"becuda-logo.png",
+         "title":"treasurer",
+         "country":"south africa",
+         "executive":true,
+         "profession":"",
+                "info":"",
+                "branch":"diaspora"
+                    },
+      {
+      
+      
+           
+          "name": "Mr mendi Bertrand",
+          "img":"becuda-logo.png",
+          "title":"SG",
+          "country":"south africa",
+          "executive":true,
+          "branch":"diaspora",
+          "profession":"",
+          "info":""
+          },
+        {
+           
+          "name": "Mr Bonglibi Amah",
+          "img":"becuda-logo.png",
+          "title":"public relations officer",
+          "executive":false,
+          "country":"uae",
+          "profession":"",
+          "info":"",
+          "branch":"diaspora"
+              }
       ],
 
     "greatIcons": [
@@ -513,56 +568,9 @@
               ],
 
 
-              "befangDiaspora": [
-    
-                {
-            
-            "id": 1,
-             "name": "Mrs Florence Chewachong",
-            "img":"becuda-logo.png",
-            "title":"president",
-            "profession":"",
-            "country":"uk",
-             "info":"",
-             "executive":true
-                },
-                {
-            
-                 
-            "id": 2,
-            "name": "Dr Bezeng Simon Bezeng",
-           "img":"becuda-logo.png",
-           "title":"treasurer",
-           "country":"south africa",
-           "executive":true,
-           "profession":"",
-                  "info":""
-                      },
-        {
-        
-        
-            "id": 3,
-            "name": "Mr mendi Bertrand",
-            "img":"becuda-logo.png",
-            "title":"SG",
-            "country":"south africa",
-            "executive":true,
-            "profession":"",
-            "info":""
-            },
-          {
-            "id": 4,
-            "name": "Mr Bonglibi Amah",
-            "img":"becuda-logo.png",
-            "title":"public relations officer",
-            "executive":false,
-            "country":"uae",
-            "profession":"",
-            "info":""
-                }
-              ],
+               
 
-              "Branches": [
+              "branches": [
                 {
                   "id": 1,
                   "name": "Bamenda",
