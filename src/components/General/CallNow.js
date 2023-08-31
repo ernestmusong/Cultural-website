@@ -1,11 +1,16 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-function CallNow({number}) {
+function CallNow({ number }) {
   return (
     <>
-     <a className='call-link' href={number}>call now</a>
+      <a className="call-link" href={number}>call now</a>
     </>
-  )
+  );
 }
 
-export default CallNow
+CallNow.propTypes = {
+  number: PropTypes.string.isRequired,
+};
+
+export default CallNow;

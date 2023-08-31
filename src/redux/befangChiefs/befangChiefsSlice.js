@@ -1,20 +1,20 @@
 import { createSlice } from '@reduxjs/toolkit';
-import {befangChiefs} from '../db.json'
+import { befangChiefs } from '../db.json';
 
 const initialState = {
-    befangChiefs: [],
-}
+  befangChiefs: [],
+};
 
 const befangChiefsSlice = createSlice({
-    name: 'chiefs',
-    initialState,
-    reducers: {
-        setChiefs: (state) => ({
-            ...state,
-            befangChiefs: befangChiefs
-        }), 
-},
-})
+  name: 'chiefs',
+  initialState,
+  reducers: {
+    setChiefs: (state) => ({
+      ...state,
+      befangChiefs,
+    }),
+  },
+});
 
-export const { setChiefs } = befangChiefsSlice.actions
-export default befangChiefsSlice.reducer
+export const { setChiefs } = befangChiefsSlice.actions;
+export default befangChiefsSlice.reducer;

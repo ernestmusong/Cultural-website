@@ -1,20 +1,20 @@
 import { createSlice } from '@reduxjs/toolkit';
-import {projects} from '../db.json'
+import { projects } from '../db.json';
 
 const initialState = {
-    projects: [],
-}
+  projects: [],
+};
 
 const projectsSlice = createSlice({
-    name: 'projects',
-    initialState,
-    reducers: {
-        setProjects: (state) => ({
-            ...state,
-            projects: projects,
-        }), 
-},
-})
+  name: 'projects',
+  initialState,
+  reducers: {
+    setProjects: (state) => ({
+      ...state,
+      projects,
+    }),
+  },
+});
 
-export const { setProjects } = projectsSlice.actions
-export default projectsSlice.reducer
+export const { setProjects } = projectsSlice.actions;
+export default projectsSlice.reducer;

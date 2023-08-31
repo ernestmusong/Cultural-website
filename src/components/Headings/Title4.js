@@ -1,11 +1,14 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-function Title4({title}) {
-  return (
-    <div className='title4'>
-    <h1 className="text2" >{title}</h1>
-</div>
-  )
-}
+const Title4 = ({ title }) => (
+  <div className="title4">
+    <h1 className="text2">{title}</h1>
+  </div>
+);
 
-export default Title4
+Title4.propTypes = {
+  title: PropTypes.string.isRequired,
+};
+
+export default Title4;

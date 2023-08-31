@@ -9,7 +9,6 @@ import webSupportersReducer from './webSupporters/webSupportersSlice';
 import branchesReducer from './branches/branchesSlice';
 import usersReducer from './users/usersSlice';
 
-
 const store = configureStore({
   reducer: {
     users: usersReducer,
@@ -20,7 +19,7 @@ const store = configureStore({
     greatIcons: greatIconsReducer,
     projects: projectsReducer,
     webSupporters: webSupportersReducer,
-    brances: branchesReducer
+    brances: branchesReducer,
   },
 });
 

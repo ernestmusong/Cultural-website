@@ -1,20 +1,20 @@
 import { createSlice } from '@reduxjs/toolkit';
-import {contributors} from '../db.json'
+import { contributors } from '../db.json';
 
 const initialState = {
-    contributors: [],
-}
+  contributors: [],
+};
 
 const contributorsSlice = createSlice({
-    name: 'contributors',
-    initialState,
-    reducers: {
-        setContributors: (state) => ({
-            ...state,
-            contributors: contributors,
-        }), 
-},
-})
+  name: 'contributors',
+  initialState,
+  reducers: {
+    setContributors: (state) => ({
+      ...state,
+      contributors,
+    }),
+  },
+});
 
-export const { setContributors } = contributorsSlice.actions
-export default contributorsSlice.reducer
+export const { setContributors } = contributorsSlice.actions;
+export default contributorsSlice.reducer;

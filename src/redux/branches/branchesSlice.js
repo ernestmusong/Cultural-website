@@ -1,20 +1,20 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { branches } from '../db.json'
+import { branches } from '../db.json';
 
 const initialState = {
-    branches: [],
-}
+  branches: [],
+};
 
 const branchesSlice = createSlice({
-    name: 'branches',
-    initialState,
-    reducers: {
-        setBranches: (state) => ({
-            ...state,
-            branches: branches
-        }), 
-},
-})
+  name: 'branches',
+  initialState,
+  reducers: {
+    setBranches: (state) => ({
+      ...state,
+      branches,
+    }),
+  },
+});
 
-export const { setBranches } = branchesSlice.actions
-export default branchesSlice.reducer
+export const { setBranches } = branchesSlice.actions;
+export default branchesSlice.reducer;

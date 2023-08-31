@@ -1,20 +1,20 @@
-import { createSlice } from "@reduxjs/toolkit";
-import {greatIcons} from "../db.json";
+import { createSlice } from '@reduxjs/toolkit';
+import { greatIcons } from '../db.json';
 
 const initialState = {
-    greatIcons: [],
-}
+  greatIcons: [],
+};
 
 const greatIconsSlice = createSlice({
-    name: "greatIcons",
-    initialState,
-    reducers: {
-        setGreatIcons: (state) => ({
-            ...state,
-            greatIcons: greatIcons
-        })
-    }
-})
+  name: 'greatIcons',
+  initialState,
+  reducers: {
+    setGreatIcons: (state) => ({
+      ...state,
+      greatIcons,
+    }),
+  },
+});
 
-export const { setGreatIcons } = greatIconsSlice.actions
-export default greatIconsSlice.reducer
+export const { setGreatIcons } = greatIconsSlice.actions;
+export default greatIconsSlice.reducer;
