@@ -18,7 +18,7 @@ const CommingSoon = ({ title }) => (
 );
 
 CommingSoon.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
 };
 
 export default CommingSoon;

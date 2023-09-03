@@ -100,13 +100,13 @@ const Header = () => {
             </div>
             {/* Mobile menu open and close */}
             {height === 0 ? (
-              <div className="nav-toggle target" onClick={() => handleClickMenu()}>
+              <button type="button" className="nav-toggle target" onClick={() => handleClickMenu()}>
                 <FaAlignJustify className="target" style={{ color: 'var(--mainOrange)' }} />
-              </div>
+              </button>
             ) : (
-              <div className=" nav-toggle" onClick={() => clearHeight()}>
+              <button type="button" className=" nav-toggle" onClick={() => clearHeight()}>
                 <FaTimes style={{ color: 'var(--mainOrange)' }} />
-              </div>
+              </button>
             )}
           </div>
           {/* Menu */}

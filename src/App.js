@@ -27,11 +27,9 @@ import Footer from './components/footer';
 import ProjectDetailsPage from './components/Projects/ProjectDetailsPage';
 import Icon from './components/Home/Icon';
 import PopupModal from './components/PopupModal';
-import BefangYouthsInitiative from './components/Branches/BEYOIN/BefangYouthsInitiative';
 import CommingSoon from './components/General/CommingSoon';
 import ContributePage from './components/Contributions/ContributePage';
 import ContributeDetails from './components/Contributions/TreasurerPage';
-import BeyoinMember from './components/Branches/BEYOIN/BeyoinMember';
 import ListOfSupporters from './components/Web-creator/ListOfWebSupporters';
 import ListOfContributors from './components/Contributions/ListOfContributors';
 import WebCreator from './components/Web-creator/WebCreator';
@@ -69,13 +67,11 @@ const App = () => {
         <Route path="/events" element={<Events />} />
         <Route path="/event/:eventId" element={<EventDetailsPage />} />
         <Route path="/icons/:iconId" element={<Icon />} />
-        <Route path="/befang-youths-initiative" element={<BefangYouthsInitiative />} />
         <Route path="/contribute-page" element={<ContributePage />} />
         <Route path="/contributors" element={<ListOfContributors />} />
         <Route path="/branches/:branchId" element={<ContributeDetails />} />
         <Route path="/diaspora" element={<BefangDiaspora />} />
         <Route path="/diaspora-member/:diasporaId" element={<DiasporaMember />} />
-        <Route path="/beyoin/:memberId" element={<BeyoinMember />} />
         <Route path="/web-supporters" element={<ListOfSupporters />} />
         <Route path="/web-creator" element={<WebCreator />} />
         <Route path="/constitution" element={<Constitution />} />
