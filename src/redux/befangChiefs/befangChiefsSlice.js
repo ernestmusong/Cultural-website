@@ -1,6 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { befangChiefs } from '../db.json';
+import data from '../../data';
 
+const { befangChiefs } = data;
 const initialState = {
   befangChiefs: [],
 };

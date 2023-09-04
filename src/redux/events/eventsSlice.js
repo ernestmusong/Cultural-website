@@ -1,6 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { events } from '../db.json';
+import data from '../../data';
 
+const { events } = data;
 const initialState = {
   events: [],
 };

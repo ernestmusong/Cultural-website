@@ -1,7 +1,8 @@
 import React from 'react';
-import { befangChiefs } from '../../db.json';
+import data from '../../data';
 
 const Chief = () => {
+  const { befangChiefs } = data;
   if (befangChiefs.chiefImg === '') return null;
   return (
     <div className="container">

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import '../styles/Home.css';
 import { FaAlignJustify, FaMapMarkerAlt, FaTimes } from 'react-icons/fa';
 import logo from '../images/becuda-logo.png';
 

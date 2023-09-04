@@ -1,6 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { greatIcons } from '../db.json';
+import data from '../../data';
 
+const { greatIcons } = data;
 const initialState = {
   greatIcons: [],
 };

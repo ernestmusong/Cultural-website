@@ -1,6 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { webSupporters } from '../db.json';
+import data from '../../data';
 
+const { webSupporters } = data;
 const initialState = {
   webSupporters: [],
 };

@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { branches } from '../db.json';
+import data from '../../data';
 
 const initialState = {
   branches: [],
@@ -11,7 +11,7 @@ const branchesSlice = createSlice({
   reducers: {
     setBranches: (state) => ({
       ...state,
-      branches,
+      branches: data.branches,
     }),
   },
 });

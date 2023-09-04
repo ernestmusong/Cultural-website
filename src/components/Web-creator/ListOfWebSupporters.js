@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Title3 from '../Headings/Title3';
-import { webSupporters } from '../../db.json';
+import data from '../../data';
 import CommingSoon from '../General/CommingSoon';
 
 const ListOfSupporters = () => {
+  const { webSupporters } = data;
   const supporters = webSupporters;
 
   if (supporters.length === 0) return <CommingSoon title="there are no supporters at the moment!" />;

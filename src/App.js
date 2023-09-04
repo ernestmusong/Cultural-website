@@ -1,28 +1,22 @@
 import React, { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import Layout from 'components/Layout';
-import { setBecudaExecutive } from './redux/becudaExecutive/becudaExecutiveSlice';
-import { setChiefs } from './redux/befangChiefs/befangChiefsSlice';
-import { setEvents } from './redux/events/eventsSlice';
-import { setProjects } from './redux/projects/projectsSlice';
-import { setContributors } from './redux/contributors/contributorsSlice';
-import { setGreatIcons } from './redux/greatIcons/greatIconsSlice';
-import { setWebSupporters } from './redux/webSupporters/webSupportersSlice';
-import { setBranches } from './redux/branches/branchesSlice';
-import { setUsers } from './redux/users/usersSlice';
+import { exMembers } from 'redux/becudaExecutive/becudaExecutiveSlice';
+// import { setChiefs } from './redux/befangChiefs/befangChiefsSlice';
+// import { setEvents } from './redux/events/eventsSlice';
+// import { setProjects } from './redux/projects/projectsSlice';
+// import { setContributors } from './redux/contributors/contributorsSlice';
+// import { setGreatIcons } from './redux/greatIcons/greatIconsSlice';
+// import { setWebSupporters } from './redux/webSupporters/webSupportersSlice';
+// import { setBranches } from './redux/branches/branchesSlice';
+// import { setUsers } from './redux/users/usersSlice';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import AllProjects from './components/Projects/AllProjects';
 import Events from './components/News/Events';
 import EventDetailsPage from './components/News/EventDetailsPage';
-import Login from './components/sessions/login.component';
-import Register from './components/sessions/register.component';
 import Home from './components/Home/Home';
-import Profile from './components/Dashboard/profile.component';
-import BoardUser from './components/Dashboard/board-user.component';
-import BoardModerator from './components/Dashboard/board-moderator.component';
-import BoardAdmin from './components/Dashboard/board-admin.component';
 import Footer from './components/footer';
 import ProjectDetailsPage from './components/Projects/ProjectDetailsPage';
 import Icon from './components/Home/Icon';
@@ -40,28 +34,27 @@ import Constitution from './components/Constitution';
 const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(setUsers());
-    dispatch(setProjects());
-    dispatch(setEvents());
-    dispatch(setBranches());
-    dispatch(setBecudaExecutive());
-    dispatch(setChiefs());
-    dispatch(setGreatIcons());
-    dispatch(setContributors());
-    dispatch(setWebSupporters());
+    dispatch(exMembers());
+    // dispatch(exMembers());
+    // dispatch(setUsers());
+    // dispatch(setProjects());
+    // dispatch(setEvents());
+    // dispatch(setBranches());
+    // dispatch(setChiefs());
+    // dispatch(setGreatIcons());
+    // dispatch(setContributors());
+    // dispatch(setWebSupporters());
   }, [dispatch]);
+
+  const { executives } = useSelector((state) => state.executives);
+  console.log(executives);
+  console.log(exMembers());
   return (
     <>
 
       <PopupModal />
       <Routes path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/user" element={<BoardUser />} />
-        <Route path="/mod" element={<BoardModerator />} />
-        <Route path="/admin" element={<BoardAdmin />} />
         <Route path="/all-projects" element={<AllProjects />} />
         <Route path="/projects/:projectId" element={<ProjectDetailsPage />} />
         <Route path="/events" element={<Events />} />

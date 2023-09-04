@@ -1,21 +1,20 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { becudaExecutive } from '../db.json';
+import data from '../../data';
 
 const initialState = {
-  becudaExecutive: [],
+  executives: [],
 };
 
 const becudaExecutiveSlice = createSlice({
-  name: 'becudaExecutive',
+  name: 'executives',
   initialState,
   reducers: {
-    setBecudaExecutive: (state) => ({
+    exMembers: (state) => ({
       ...state,
-      becudaExecutive,
+      executives: data.becudaExecutive,
     }),
   },
-
 });
 
-export const { setBecudaExecutive } = becudaExecutiveSlice.actions;
+export const { exMembers } = becudaExecutiveSlice.actions;
 export default becudaExecutiveSlice.reducer;

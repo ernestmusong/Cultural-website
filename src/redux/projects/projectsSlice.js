@@ -1,6 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { projects } from '../db.json';
+import data from '../../data';
 
+const { projects } = data;
 const initialState = {
   projects: [],
 };

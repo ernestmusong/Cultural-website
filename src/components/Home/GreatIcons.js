@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { UseSelector } from 'react-redux/es/hooks/useSelector';
+import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 
 const GreatIcons = () => {
-  const { greatIcons } = UseSelector((store) => store.greatIcons);
+  const { greatIcons } = useSelector((store) => store.greatIcons);
   return (
     <div className="container mb-4">
       <div className=" great-icons">

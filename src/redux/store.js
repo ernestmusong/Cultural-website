@@ -12,14 +12,14 @@ import usersReducer from './users/usersSlice';
 const store = configureStore({
   reducer: {
     users: usersReducer,
-    becudaExecutive: becudaExecutiveReducer,
+    executives: becudaExecutiveReducer,
     chiefs: befangChiefsReducer,
     contributors: contributorsReducer,
     events: eventsReducer,
     greatIcons: greatIconsReducer,
     projects: projectsReducer,
     webSupporters: webSupportersReducer,
-    brances: branchesReducer,
+    branches: branchesReducer,
   },
 });
 

@@ -1,6 +1,4 @@
 import React from 'react';
-import { FloatingWhatsApp } from 'react-floating-whatsapp-button';
-import 'react-floating-whatsapp-button/dist/index.css';
 
 const Footer = () => {
   const date = new Date().getFullYear();
@@ -28,7 +26,6 @@ const Footer = () => {
             <p className="footer-p text-center text-b text-muted">Powered By React + Node + mongoDB </p>
           </div>
         </div>
-        <FloatingWhatsApp phone="237676308067" size="45px" zIndex="1000" showOnIE="false" autoOpenTimeout="1000000" headerTitle="We value your opinion" popupMessage="Type your message below !" />
       </div>
     </div>
   );
