@@ -1,13 +1,12 @@
 import React from 'react';
-import data from '../../data';
+import { useSelector } from 'react-redux';
 
 const Chief = () => {
-  const { befangChiefs } = data;
-  if (befangChiefs.chiefImg === '') return null;
+  const { chiefs } = useSelector((store) => store.chiefs);
   return (
     <div className="container">
       <div className="row">
-        {befangChiefs.map((chief) => (
+        {chiefs.map((chief) => (
           <div className="col-md-6 chief-container mx-auto my-2" key={chief.id}>
             <h5 className="text-uppercase text-center my-2" style={{ color: 'Var(--heroWhite)' }}>{chief.position}</h5>
             <div className="chief-wrapper">

@@ -1,7 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import data from '../../data';
 
-const { events } = data;
 const initialState = {
   events: [],
 };
@@ -12,7 +11,7 @@ const eventsSlice = createSlice({
   reducers: {
     setEvents: (state) => ({
       ...state,
-      events,
+      events: data.events,
     }),
   },
 });

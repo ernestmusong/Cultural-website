@@ -9,8 +9,8 @@ const data = {
 
     {
       id: 1,
-      url: '/contribute-page',
-      img: 'water.jpg',
+      url: './contribute-page',
+      img: 'images/projectImages/water.jpg',
       title: 'Water Distribution',
       amount: 670000,
       realised: 0,
@@ -22,7 +22,7 @@ const data = {
     {
       id: 2,
       url: '/web-creator',
-      img: 'web-project.jpeg',
+      img: '../../images/projectImages/web-project.jpeg',
       title: 'Web Hosting and database upgrade',
       amount: 85000,
       realised: 0,
@@ -34,7 +34,7 @@ const data = {
     {
       id: 3,
       url: '/contribute-page',
-      img: 'back-to-school.jpeg',
+      img: '../../images/projectImages/back-to-school.jpeg',
       title: 'back to school support sept 2022',
       amount: 70000,
       realised: 0,
@@ -92,7 +92,7 @@ const data = {
       id: 1,
       chiefName: 'chief Edon michel',
       chiefTitle: 'Chief of befang',
-      chiefImg: 'chief-img.jpeg',
+      chiefImg: '../../images/chiefs/chief-img.jpeg',
       position: 'our supreme ruler',
     },
     {
@@ -100,7 +100,7 @@ const data = {
       id: 2,
       chiefName: 'Chief Kum Godlove Bezeng',
       chiefTitle: 'Chief Of Ukuo-owong',
-      chiefImg: 'kum-godlove.jpg',
+      chiefImg: '../../images/chiefs/kum-godlove.jpg',
       position: 'Native Chief of Ukuo-owong',
     },
   ],

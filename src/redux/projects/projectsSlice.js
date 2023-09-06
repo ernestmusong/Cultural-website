@@ -1,7 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import data from '../../data';
 
-const { projects } = data;
 const initialState = {
   projects: [],
 };
@@ -12,7 +11,7 @@ const projectsSlice = createSlice({
   reducers: {
     setProjects: (state) => ({
       ...state,
-      projects,
+      projects: data.projects,
     }),
   },
 });

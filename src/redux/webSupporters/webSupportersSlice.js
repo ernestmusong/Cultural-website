@@ -1,7 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import data from '../../data';
 
-const { webSupporters } = data;
 const initialState = {
   webSupporters: [],
 };
@@ -12,7 +11,7 @@ const webSupportersSlice = createSlice({
   reducers: {
     setWebSupporters: (state) => ({
       ...state,
-      webSupporters,
+      webSupporters: data.webSupporters,
     }),
   },
 });

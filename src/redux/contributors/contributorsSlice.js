@@ -1,7 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import data from '../../data';
 
-const { contributors } = data;
 const initialState = {
   contributors: [],
 };
@@ -12,7 +11,7 @@ const contributorsSlice = createSlice({
   reducers: {
     setContributors: (state) => ({
       ...state,
-      contributors,
+      contributors: data.contributors,
     }),
   },
 });

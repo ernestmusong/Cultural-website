@@ -1,7 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import data from '../../data';
 
-const { greatIcons } = data;
 const initialState = {
   greatIcons: [],
 };
@@ -12,7 +11,7 @@ const greatIconsSlice = createSlice({
   reducers: {
     setGreatIcons: (state) => ({
       ...state,
-      greatIcons,
+      greatIcons: data.greatIcons,
     }),
   },
 });

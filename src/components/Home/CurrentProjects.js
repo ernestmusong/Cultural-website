@@ -10,7 +10,7 @@ const CurrentProjects = () => {
     <>
       <section className="latest-news mb-4">
         {current.map((project) => (
-          <Project key={project.id} item={project} />
+          <Project key={project.id} project={project} />
         ))}
       </section>
 

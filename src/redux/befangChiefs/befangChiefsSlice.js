@@ -1,9 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 import data from '../../data';
 
-const { befangChiefs } = data;
 const initialState = {
-  befangChiefs: [],
+  chiefs: [],
 };
 
 const befangChiefsSlice = createSlice({
@@ -12,7 +11,7 @@ const befangChiefsSlice = createSlice({
   reducers: {
     setChiefs: (state) => ({
       ...state,
-      befangChiefs,
+      chiefs: data.befangChiefs,
     }),
   },
 });

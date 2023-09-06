@@ -1,7 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import data from '../../data';
 
-const { users } = data;
 const initialState = {
   users: [],
 };
@@ -11,9 +10,10 @@ const usersSlice = createSlice({
   initialState,
   reducers: {
     setUsers: (state) => {
-      const allUsers = users.map((user) => {
+      const allUsers = data.users;
+      allUsers.map((user) => {
         const copy = { ...user };
-        const index = users.indexOf(copy);
+        const index = allUsers.indexOf(copy);
         copy.id = index + 1;
         return copy;
       });
