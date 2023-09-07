@@ -22,7 +22,7 @@ const data = {
     {
       id: 2,
       url: '/web-creator',
-      img: '../../images/projectImages/web-project.jpeg',
+      img: 'images/projectImages/web-project.jpeg',
       title: 'Web Hosting and database upgrade',
       amount: 85000,
       realised: 0,
@@ -34,7 +34,7 @@ const data = {
     {
       id: 3,
       url: '/contribute-page',
-      img: '../../images/projectImages/back-to-school.jpeg',
+      img: 'images/projectImages/back-to-school.jpeg',
       title: 'back to school support sept 2022',
       amount: 70000,
       realised: 0,
@@ -50,7 +50,7 @@ const data = {
     {
       id: 1,
       url: '/contribute-page',
-      img: 'water.jpg',
+      img: 'images/events/water.jpg',
       title: 'All befang convention (ABC)',
       date: '8 july, 2022',
       body: 'This project is aimed at ensuring the availability of pipe-borne water throughout the Befang territory.',
@@ -59,7 +59,7 @@ const data = {
     {
       id: 2,
       url: '/web-creator',
-      img: 'web-project.jpeg',
+      img: 'images/events/web-project.jpeg',
       title: 'Web Hosting and database upgrade',
       date: '14 nov, 2022',
       body: 'This website is a personal initiative by the developer. It is currently hosted under a subdomain on heroku which is a free cloud platform. However we need to purchase and secure a dedicated domain extension like becuda.com and use a shared hosting plan. Domains, SSL and hosting are billed annually. We also need to upgrade the database which currently has a capacity of just 512MB. This capacity will not be enough to save the data as the user base grows with time. ',
@@ -68,7 +68,7 @@ const data = {
     {
       id: 3,
       url: '/contribute-page',
-      img: 'back-to-school.jpeg',
+      img: 'images/events/back-to-school.jpeg',
       title: 'back to school support sept 2022',
       date: '18 oct, 2022',
       body: 'All members of the Befang Youths Initiative (BEYOIN) have decided to make a small contribution to buy exercise books to all Befang-born pupils of G.S Befang before the start of this accademic year 2022. We welcome all those who bind this idea to channel their support through their branch treasurers. For more info, click on the whatsApp icon on the website or leave your comments below ',
@@ -77,7 +77,7 @@ const data = {
     {
       id: 4,
       url: '/contribute-page',
-      img: 'back-to-school.jpeg',
+      img: 'images/events/back-to-school.jpeg',
       title: 'back to school support sept 2022',
       date: '11 nov, 2022',
       body: 'All members of the Befang Youths Initiative (BEYOIN) have decided to make a small contribution to buy exercise books to all Befang-born pupils of G.S Befang before the start of this accademic year 2022. We welcome all those who bind this idea to channel their support through their branch treasurers. For more info, click on the whatsApp icon on the website or leave your comments below ',
@@ -92,7 +92,7 @@ const data = {
       id: 1,
       chiefName: 'chief Edon michel',
       chiefTitle: 'Chief of befang',
-      chiefImg: '../../images/chiefs/chief-img.jpeg',
+      img: 'images/chiefs/chief-img.jpeg',
       position: 'our supreme ruler',
     },
     {
@@ -100,7 +100,7 @@ const data = {
       id: 2,
       chiefName: 'Chief Kum Godlove Bezeng',
       chiefTitle: 'Chief Of Ukuo-owong',
-      chiefImg: '../../images/chiefs/kum-godlove.jpg',
+      img: 'images/chiefs/kum-godlove.jpg',
       position: 'Native Chief of Ukuo-owong',
     },
   ],
@@ -199,7 +199,7 @@ const data = {
     {
 
       name: 'Esoh Derick',
-      img: 'eleven.jpeg',
+      img: 'images/users/eleven.jpeg',
       title: 'president',
       profession: '',
       info: '',
@@ -209,7 +209,7 @@ const data = {
     {
 
       name: 'Esoh jimuel',
-      img: 'jimwel.jpeg',
+      img: 'images/users/jimwel.jpeg',
       title: 'DM',
       executive: true,
       profession: '',
@@ -219,7 +219,7 @@ const data = {
     {
 
       name: 'Ichu Kalvin',
-      img: 'kalv.jpeg',
+      img: 'images/users/kalv.jpeg',
       title: 'Secretary General',
       executive: true,
       profession: '',
@@ -229,7 +229,7 @@ const data = {
     {
 
       name: 'Ngeh Radivin',
-      img: 'radivin.jpeg',
+      img: 'images/users/radivin.jpeg',
       title: 'advicer',
       profession: '',
       info: '',
@@ -239,7 +239,7 @@ const data = {
     {
 
       name: 'Dang Brita',
-      img: 'Dang-Brita.jpeg',
+      img: 'images/users/Dang-Brita.jpeg',
       title: 'Financial secretary',
       profession: '',
       info: '',
@@ -250,7 +250,7 @@ const data = {
     {
 
       name: 'Mendi Georgette Endem',
-      img: 'mendi-georgette.jpeg',
+      img: 'images/users/mendi-georgette.jpeg',
       title: 'treasurer',
       profession: '',
       info: '',
@@ -260,7 +260,7 @@ const data = {
     {
 
       name: 'Mrs Florence Chewachong',
-      img: 'becuda-logo.png',
+      img: 'images/users/becuda-logo.png',
       title: 'president',
       profession: '',
       country: 'uk',
@@ -271,7 +271,7 @@ const data = {
     {
 
       name: 'Dr Bezeng Simon Bezeng',
-      img: 'becuda-logo.png',
+      img: 'images/users/becuda-logo.png',
       title: 'treasurer',
       country: 'south africa',
       executive: true,
@@ -282,7 +282,7 @@ const data = {
     {
 
       name: 'Mr mendi Bertrand',
-      img: 'becuda-logo.png',
+      img: 'images/users/becuda-logo.png',
       title: 'SG',
       country: 'south africa',
       executive: true,
@@ -293,7 +293,7 @@ const data = {
     {
 
       name: 'Mr Bonglibi Amah',
-      img: 'becuda-logo.png',
+      img: 'images/users/becuda-logo.png',
       title: 'public relations officer',
       executive: false,
       country: 'uae',
@@ -308,7 +308,7 @@ const data = {
     {
       id: 1,
       name: 'Mr Dang Akuh Dominic',
-      img: 'dominic-gce.jpg',
+      img: 'images/iconsImages/dominic-gce.jpg',
       profession: 'Cameroon GCE Board Registrar',
       work: 'His works will be put here soon',
 
@@ -317,7 +317,7 @@ const data = {
 
       id: 2,
       name: 'Mr Kum Henry Ichu',
-      img: 'kum-herny.jpg',
+      img: 'images/iconsImages/kum-herny.jpg',
       profession: 'Head Of The DDRC Bamenda ',
       work: 'His works will be put here soon',
 
