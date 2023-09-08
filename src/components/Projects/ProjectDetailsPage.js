@@ -6,7 +6,8 @@ import ProjectDetails from './ProjectDetails';
 const ProjectDetailsPage = () => {
   const { id } = useParams();
   const { projects } = useSelector((store) => store.projects);
-  const project = projects.find((project) => project.id.toString() === id.toString());
+  const project = projects.find((project) => project.id === Number(id));
+  console.log(project);
 
   return (
 

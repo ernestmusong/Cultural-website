@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { FaAlignJustify, FaMapMarkerAlt, FaTimes } from 'react-icons/fa';
-import logo from '../images/becuda-logo.png';
+import logo from 'becuda-logo.png';
 
 const branches = [
   { path: '/comming-soon', text: 'bamenda', className: 'clear dropdown-link' },
