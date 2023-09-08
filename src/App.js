@@ -53,13 +53,13 @@ const App = () => {
           <Route path="/all-projects" element={<AllProjects />} />
           <Route path="/projects/:id" element={<ProjectDetailsPage />} />
           <Route path="/events" element={<Events />} />
-          <Route path="/event/:eventId" element={<EventDetailsPage />} />
-          <Route path="/icons/:iconId" element={<Icon />} />
+          <Route path="/event/:id" element={<EventDetailsPage />} />
+          <Route path="/icons/:id" element={<Icon />} />
           <Route path="/contribute-page" element={<ContributePage />} />
           <Route path="/contributors" element={<ListOfContributors />} />
-          <Route path="/branches/:branchId" element={<ContributeDetails />} />
+          <Route path="/branches/:id" element={<ContributeDetails />} />
           <Route path="/diaspora" element={<BefangDiaspora />} />
-          <Route path="/diaspora-member/:diasporaId" element={<DiasporaMember />} />
+          <Route path="/diaspora-member/:id" element={<DiasporaMember />} />
           <Route path="/web-supporters" element={<ListOfSupporters />} />
           <Route path="/web-creator" element={<WebCreator />} />
           <Route path="/constitution" element={<Constitution />} />

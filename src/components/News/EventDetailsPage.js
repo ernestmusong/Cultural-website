@@ -6,7 +6,7 @@ import EventDetails from './EventDetails';
 const EventDetailsPage = () => {
   const { id } = useParams();
   const { events } = useSelector((store) => store.events);
-  const event = events.find((event) => event.id === id);
+  const event = events.find((event) => event.id === Number(id));
   return (
 
     <>

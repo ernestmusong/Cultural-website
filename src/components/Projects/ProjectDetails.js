@@ -58,7 +58,7 @@ const ProjectDetails = ({ project }) => (
             )}
           </div>
           <div className="mt-3 text-warning">
-            <Link to={project.id === 2 ? '/web-supporters' : '/contributors'} className="text-white text-capitalize my-4">
+            <Link to={project.id === 2 ? '/web-supporters' : '/contributors'} className="text-white text-capitalize my-4 text-decoration-underline ">
               {project.id === 2 ? 'see supporters' : 'see contributors'}
               {' '}
             </Link>

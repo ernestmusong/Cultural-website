@@ -2,21 +2,21 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-const EventDetails = ({ detail }) => (
+const EventDetails = ({ event }) => (
   <>
     <div className="container project-details">
       <div className="row">
         <div className="col-10 my-3 col-md-6 mx-auto">
-          <img src={detail.img} alt="event" className="img-fluid" />
+          <img src={event.img} alt="event" className="img-fluid" />
         </div>
         {/* project text */}
         <div className="col-10 my-3 mx-auto  col-md-6  text-capitalize">
           <h1 style={{ color: 'Var(--heroWhite)' }}>
-            {detail.title}
+            {event.title}
             {' '}
           </h1>
 
-          <p style={{ color: 'Var(--softWhite)' }}>{detail.body}</p>
+          <p style={{ color: 'Var(--softWhite)' }}>{event.body}</p>
           <div>
             <Link to="/events">
               <button type="button" className="btns">back to events</button>
@@ -29,7 +29,7 @@ const EventDetails = ({ detail }) => (
 );
 
 EventDetails.propTypes = {
-  detail: PropTypes.oneOfType([PropTypes.object]).isRequired,
+  event: PropTypes.oneOfType([PropTypes.object]).isRequired,
 };
 
 export default EventDetails;
