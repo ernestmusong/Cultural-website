@@ -28,7 +28,7 @@ const culture = [
 ];
 
 const Header = () => {
-  const currentUser = JSON.parse(localStorage.getItem('user'));
+  const currentUser = '';
   const [height, setHeight] = useState(0);
   const [overFlow, setOverFlow] = useState('hidden');
   const clearHeight = () => {
@@ -182,15 +182,15 @@ const Header = () => {
                   </NavLink>
                 </div>
               </div>
-              {currentUser && (
-
-              <NavLink to="/user">
-                dashboard
-              </NavLink>
-
+              {currentUser !== '' ? (
+                <NavLink to="/user">
+                  dashboard
+                </NavLink>
+              ) : (
+                ''
               )}
 
-              {currentUser ? (
+              {currentUser !== '' ? (
 
                 <div style={{ display: 'flex', justifyContent: 'spaceBetween', width: '10%' }}>
 
@@ -206,13 +206,13 @@ const Header = () => {
               ) : (
                 <div className="register-link">
 
-                  <button to="/login" type="button" className="clear nav-link" onClick={() => clearHeight()}>
+                  <NavLink to="/login" className="clear nav-link" onClick={() => clearHeight()}>
                     Login
-                  </button>
+                  </NavLink>
 
-                  <button to="/register" type="button" className="clear nav-link" onClick={() => clearHeight()}>
+                  <NavLink to="/register" className="clear nav-link" onClick={() => clearHeight()}>
                     Register
-                  </button>
+                  </NavLink>
 
                 </div>
               )}
