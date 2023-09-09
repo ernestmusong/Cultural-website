@@ -29,7 +29,7 @@ const Member = ({ member }) => (
     >
       <h4 className="text-uppercase" style={{ color: 'Var(--mainOrange)' }}>{member.name}</h4>
       <p className="text-capitalize" style={{ color: 'Var(--mainOrange)' }}>{member.profession}</p>
-      <Link to={`/icons/${member.id}`} style={{ color: 'Var(--heroWhite)' }}>Read More</Link>
+      <Link to={`/icon/${member.id}`} style={{ color: 'Var(--heroWhite)' }}>Read More</Link>
     </div>
   </div>
 );

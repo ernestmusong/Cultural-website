@@ -8,7 +8,7 @@ const branches = [
   {
     path: '/comming-soon', text: 'buea', className: 'clear dropdown-link', id: 'border',
   },
-  { path: '/comming-soon', text: 'muea, className:"clear dropdown-link"' },
+  { path: '/comming-soon', text: 'muea', className: 'clear dropdown-link' },
   { path: '/comming-soon', text: 'mutengene', className: 'clear dropdown-link' },
   { path: '/comming-soon', text: 'limbe', className: 'clear dropdown-link' },
   { path: '/comming-soon', text: 'douala', className: 'clear dropdown-link' },

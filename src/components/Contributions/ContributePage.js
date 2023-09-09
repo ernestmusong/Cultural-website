@@ -13,7 +13,7 @@ function ContributePage() {
 
       <div className="contribute-page">
         {branches.map((branch) => (
-          <Link to={`/branches/${branch.id}`} key={branch.id} className="contribute-page-child bg-light">
+          <Link to={`/treasurer/${branch.id}`} key={branch.id} className="contribute-page-child bg-light">
             {branch.name}
           </Link>
         ))}

@@ -22,13 +22,13 @@ import Icon from './components/Home/Icon';
 import PopupModal from './components/PopupModal';
 import CommingSoon from './components/General/CommingSoon';
 import ContributePage from './components/Contributions/ContributePage';
-import ContributeDetails from './components/Contributions/TreasurerPage';
 import ListOfSupporters from './components/Web-creator/ListOfWebSupporters';
 import ListOfContributors from './components/Contributions/ListOfContributors';
 import WebCreator from './components/Web-creator/WebCreator';
 import BefangDiaspora from './components/Branches/Diaspora/BefangDiaspora';
 import DiasporaMember from './components/Branches/Diaspora/DiasporaMember';
 import Constitution from './components/Constitution';
+import TreasurerPage from './components/Contributions/TreasurerPage';
 
 const App = () => {
   const dispatch = useDispatch();
@@ -54,10 +54,10 @@ const App = () => {
           <Route path="/projects/:id" element={<ProjectDetailsPage />} />
           <Route path="/events" element={<Events />} />
           <Route path="/event/:id" element={<EventDetailsPage />} />
-          <Route path="/icons/:id" element={<Icon />} />
+          <Route path="/icon/:id" element={<Icon />} />
           <Route path="/contribute-page" element={<ContributePage />} />
           <Route path="/contributors" element={<ListOfContributors />} />
-          <Route path="/branches/:id" element={<ContributeDetails />} />
+          <Route path="/treasurer/:id" element={<TreasurerPage />} />
           <Route path="/diaspora" element={<BefangDiaspora />} />
           <Route path="/diaspora-member/:id" element={<DiasporaMember />} />
           <Route path="/web-supporters" element={<ListOfSupporters />} />
