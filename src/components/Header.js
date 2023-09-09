@@ -16,7 +16,6 @@ const branches = [
   { path: '/comming-soon', text: 'diaspora', className: 'clear dropdown-link' },
 ];
 const associations = [
-  { path: '/comming-soon', text: 'befang youths initiative', id: 1 },
   { path: '/comming-soon', text: 'befang youths association', id: 2 },
 ];
 const culture = [

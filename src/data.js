@@ -330,14 +330,6 @@ const data = {
       id: 1,
       name: 'supporter name',
       amount: '100 cfa',
-      branch: 'branch',
-    },
-    {
-      id: 2,
-      name: 'supporter name',
-      amount: '100 cfa',
-      branch: 'branch',
-
     },
   ],
 

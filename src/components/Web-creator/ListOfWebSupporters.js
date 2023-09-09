@@ -5,10 +5,8 @@ import data from '../../data';
 import CommingSoon from '../General/CommingSoon';
 
 const ListOfSupporters = () => {
-  const { webSupporters } = data;
-  const supporters = webSupporters;
-
-  if (supporters.length === 0) return <CommingSoon title="there are no supporters at the moment!" />;
+  const supporters = data.webSupporters;
+  if (supporters.length === 1) return <CommingSoon title="there are no supporters at the moment!" />;
   return (
     <div>
       <Title3 title="thank you all for supporting the website" />
@@ -17,7 +15,6 @@ const ListOfSupporters = () => {
           <tr>
             <th scope="col">Name</th>
             <th scope="col">Amount</th>
-            <th scope="col">Branch</th>
           </tr>
         </thead>
         <tbody>
@@ -25,8 +22,6 @@ const ListOfSupporters = () => {
             <tr className="bg-light" key={supporter.id}>
               <td>{supporter.name}</td>
               <td>{supporter.amount}</td>
-              <td>{supporter.branch}</td>
-
             </tr>
           ))}
 
