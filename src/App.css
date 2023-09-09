@@ -185,6 +185,7 @@ nav {
   background: transparent;
   transition: var(--transition);
   cursor: pointer;
+  border: none;
 }
 
 .nav-toggle:hover {
