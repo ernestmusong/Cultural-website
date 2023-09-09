@@ -53,6 +53,12 @@ body {
 }
 
 /* -------------------------------------------------------------popup modal */
+.close {
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+}
+
 .modal-footer {
   display: flex !important;
   align-items: center !important;
