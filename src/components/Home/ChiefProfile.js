@@ -1,38 +1,28 @@
-import React from 'react'
-import {befangChiefs} from '../../db.json';
+import React from 'react';
+import { useSelector } from 'react-redux';
 
-
- /**
-  *@function Chief
-  **/
-
-const Chief =()=>{
-   
-    
-      
-       
-       
-      if (befangChiefs.chiefImg == "") return null;
-    return(
-      <div className="container"  >
-            <div className='row'>
-                           {befangChiefs.map(chief =>(
-                                  <div className="col-md-6 chief-container mx-auto my-2">
-                                    <h5 className="text-uppercase text-center my-2" style={{ color:"Var(--heroWhite)"}}>{chief.position}</h5> 
-                                      <div className='chief-wrapper'>
-                                       <img src={require('../../Images/chiefs/'+chief.chiefImg)} alt="chief" />
-                                      </div> 
-                                     
-                                      <div className='py-2 ml-2'>
-                                      <h4 className="text-uppercase" style={{ color:"Var(--mainOrange)"}}>{chief.chiefName}</h4>      
-                                      <p className='text-capitalize' style={{ color:"Var(--mainOrange)"}}>{chief.chiefTitle}</p>
-                                      </div>
-                                   </div>
-                                    ))}
+const Chief = () => {
+  const { chiefs } = useSelector((store) => store.chiefs);
+  return (
+    <div className="container">
+      <div className="row">
+        {chiefs.map((chief) => (
+          <div className="col-md-6 chief-container mx-auto my-2" key={chief.id}>
+            <h5 className="text-uppercase text-center my-2" style={{ color: 'Var(--heroWhite)' }}>{chief.position}</h5>
+            <div className="chief-wrapper">
+              <img src={chief.img} alt="chief" />
             </div>
-                                   
+
+            <div className="py-2 ml-2">
+              <h4 className="text-uppercase" style={{ color: 'Var(--mainOrange)' }}>{chief.chiefName}</h4>
+              <p className="text-capitalize" style={{ color: 'Var(--mainOrange)' }}>{chief.chiefTitle}</p>
+            </div>
+          </div>
+        ))}
       </div>
-    )
-  }
- 
-        export default Chief
+
+    </div>
+  );
+};
+
+export default Chief;

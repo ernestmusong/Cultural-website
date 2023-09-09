@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const ButtonContainer = styled.button`
+const ButtonContainer = styled.button`
   text-transform: capitalize;
   font-size: 1.4rem;
-  background: ${(props) => (props.status === "open" ? "var(--mainYellow)" : "transparent")};
+  background: ${(props) => (props.status === 'open' ? 'var(--mainYellow)' : 'transparent')};
   border: 0.05rem solid var(--mainYellow);
   color: var(--mainYellow);
   border-color: var(--mainYellow);
@@ -20,3 +20,5 @@ export const ButtonContainer = styled.button`
     outline: none;
   }
 `;
+
+export default ButtonContainer;
