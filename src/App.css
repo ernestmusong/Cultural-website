@@ -266,6 +266,8 @@ nav {
   align-items: center;
   width: 10%;
   height: 30px;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 
 .register-link button {
@@ -273,7 +275,7 @@ nav {
   padding-left: 1rem;
   padding-right: 1rem;
   border-radius: 4px;
-  height: 30px;
+  height: 28px;
   letter-spacing: 0;
   text-transform: uppercase;
   transition: var(--transition);
@@ -283,7 +285,7 @@ nav {
 
 .register-link button:hover {
   background: transparent;
-  border-color: var(--mainOrange);
+  border: 2px solid var(--mainOrange);
   color: var(--mainOrange);
 }
 
