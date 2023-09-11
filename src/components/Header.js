@@ -4,16 +4,16 @@ import { FaAlignJustify, FaMapMarkerAlt, FaTimes } from 'react-icons/fa';
 import logo from 'becuda-logo.png';
 
 const branches = [
-  { path: '/comming-soon', text: 'bamenda', className: 'clear dropdown-link' },
+  { path: '/comming-soon', text: 'bamenda' },
   {
-    path: '/comming-soon', text: 'buea', className: 'clear dropdown-link', id: 'border',
+    path: '/comming-soon', text: 'buea', id: 'border',
   },
-  { path: '/comming-soon', text: 'muea', className: 'clear dropdown-link' },
-  { path: '/comming-soon', text: 'mutengene', className: 'clear dropdown-link' },
-  { path: '/comming-soon', text: 'limbe', className: 'clear dropdown-link' },
-  { path: '/comming-soon', text: 'douala', className: 'clear dropdown-link' },
-  { path: '/comming-soon', text: 'yaounde', className: 'clear dropdown-link' },
-  { path: '/comming-soon', text: 'diaspora', className: 'clear dropdown-link' },
+  { path: '/comming-soon', text: 'muea' },
+  { path: '/comming-soon', text: 'mutengene' },
+  { path: '/comming-soon', text: 'limbe' },
+  { path: '/comming-soon', text: 'douala' },
+  { path: '/comming-soon', text: 'yaounde' },
+  { path: '/comming-soon', text: 'diaspora' },
 ];
 const associations = [
   { path: '/comming-soon', text: 'befang youths association', id: 2 },
@@ -120,7 +120,7 @@ const Header = () => {
                     <NavLink
                       to={b.path}
                       key={b.text}
-                      className={b.className}
+                      className="clear dropdown-link"
                       onClick={() => clearHeight()}
                     >
 
@@ -144,7 +144,7 @@ const Header = () => {
                     <NavLink
                       to={a.path}
                       key={a.id}
-                      className={a.className}
+                      className="clear dropdown-link"
                       onClick={() => clearHeight()}
                     >
                       {a.text}
@@ -159,7 +159,7 @@ const Header = () => {
                     <NavLink
                       to={c.path}
                       key={c.id}
-                      className={c.className}
+                      className="clear dropdown-link"
                       onClick={() => clearHeight()}
                     >
                       {c.text}
@@ -209,8 +209,8 @@ const Header = () => {
                     Login
                   </NavLink>
 
-                  <NavLink to="/register" className="clear nav-link" onClick={() => clearHeight()}>
-                    Register
+                  <NavLink to="/register" className="clear nav-link reg" onClick={() => clearHeight()}>
+                    <button type="button">Register</button>
                   </NavLink>
 
                 </div>
