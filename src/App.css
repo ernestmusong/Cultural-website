@@ -590,6 +590,23 @@ nav {
   width: 100vw;
 }
 
+/* -------------------------------------------------------------Forms---------------- */
+
+.for-error {
+  width: 100%;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  width: 100%;
+  padding: 0;
+  position: absolute;
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+}
 /* -------------------------------------------------------------Footer */
 
 .footer-bg {
