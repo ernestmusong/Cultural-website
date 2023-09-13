@@ -33,7 +33,7 @@ const Register = () => {
     }),
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
-      JSON.stringify(localStorage.setItem('user', values));
+      localStorage.setItem('user', JSON.stringify(values));
     },
   });
 
