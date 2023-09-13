@@ -1,9 +1,11 @@
 /* eslint react/jsx-props-no-spreading: 0 */
 import React, { useState } from 'react';
 import { useFormik } from 'formik';
+import { useNavigate } from 'react-router-dom';
 import * as Yup from 'yup';
 
 const Register = () => {
+  const navigate = useNavigate();
   const [success, setSuccess] = useState(false);
   const [message, setMessage] = useState('');
   const formik = useFormik({
@@ -36,6 +38,7 @@ const Register = () => {
       localStorage.setItem('user', JSON.stringify(values));
       setSuccess(true);
       setMessage('Registered Successfully!');
+      navigate('/dashboard');
     },
   });
 

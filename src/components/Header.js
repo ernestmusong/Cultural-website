@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { FaAlignJustify, FaMapMarkerAlt, FaTimes } from 'react-icons/fa';
+import {
+  FaAlignJustify, FaMapMarkerAlt, FaTimes, FaUser,
+} from 'react-icons/fa';
 import logo from 'becuda-logo.png';
 
 const branches = [
@@ -27,7 +29,7 @@ const culture = [
 ];
 
 const Header = () => {
-  const currentUser = '';
+  const currentUser = JSON.parse(localStorage.getItem('user'));
   const [height, setHeight] = useState(0);
   const [overFlow, setOverFlow] = useState('hidden');
   const clearHeight = () => {
@@ -47,7 +49,7 @@ const Header = () => {
   const logout = () => {
     localStorage.removeItem('authToken');
     localStorage.removeItem('user');
-    navigate('/login');
+    navigate('/');
   };
 
   return (
@@ -70,10 +72,24 @@ const Header = () => {
           </NavLink>
         </div>
         {/* Location */}
-        <a href="/" style={{ color: 'var(--mainOrange)' }}>
-          <FaMapMarkerAlt style={{ marginRight: '1rem' }} />
-          <span>Cameroon, North West Region, Menchum Valley Sub Division.</span>
-        </a>
+        <div className="d-flex flex-column">
+          <a href="/" style={{ color: 'var(--mainOrange)' }}>
+            <FaMapMarkerAlt style={{ marginRight: '1rem' }} />
+            <span className="text-capitalize">Cameroon, North West Region, Menchum Valley Sub Division.</span>
+          </a>
+          {currentUser && (
+            <a href="/" style={{ color: 'var(--softWhite)' }}>
+              <FaUser style={{ marginRight: '1rem' }} />
+              <span className="text-uppercase text-light">
+                {currentUser.title}
+                {' '}
+                {currentUser.firstName}
+                {' '}
+                {currentUser.lastName}
+              </span>
+            </a>
+          )}
+        </div>
       </div>
       {/* Navigation */}
       <nav id="nav">
@@ -181,25 +197,25 @@ const Header = () => {
                   </NavLink>
                 </div>
               </div>
-              {currentUser !== '' ? (
-                <NavLink to="/user">
-                  dashboard
-                </NavLink>
-              ) : (
-                ''
-              )}
 
-              {currentUser !== '' ? (
+              {currentUser ? (
 
-                <div style={{ display: 'flex', justifyContent: 'spaceBetween', width: '10%' }}>
+                <div className="register-link">
 
-                  <NavLink to="/profile">
-                    {currentUser.username}
+                  <NavLink to="/dashboard">
+                    Dashbord
                   </NavLink>
 
-                  <a href="/" onClick={() => logout()} className="clear ml-2">
-                    Logout
-                  </a>
+                  <NavLink
+                    to="/"
+                    className="clear nav-link reg"
+                    onClick={() => {
+                      clearHeight();
+                      logout();
+                    }}
+                  >
+                    <button type="button">logout</button>
+                  </NavLink>
 
                 </div>
               ) : (
