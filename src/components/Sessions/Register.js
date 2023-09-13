@@ -1,9 +1,11 @@
 /* eslint react/jsx-props-no-spreading: 0 */
-import React from 'react';
+import React, { useState } from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 
 const Register = () => {
+  const [success, setSuccess] = useState(false);
+  const [message, setMessage] = useState('');
   const formik = useFormik({
     initialValues: {
       title: '',
@@ -14,8 +16,6 @@ const Register = () => {
       username: '',
       email: '',
       password: '',
-      successful: false,
-      message: '',
     },
     validationSchema: Yup.object({
       title: Yup.string().required('Title must not be empty'),
@@ -34,6 +34,8 @@ const Register = () => {
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
       localStorage.setItem('user', JSON.stringify(values));
+      setSuccess(true);
+      setMessage('Registered Successfully!');
     },
   });
 
@@ -238,17 +240,17 @@ const Register = () => {
             </div>
           </div>
         </div>
-        {formik.values.message && (
+        {message && (
         <div className="form-group">
           <div
             className={
-                  formik.values.successful
-                    ? 'alert alert-success'
-                    : 'alert alert-danger'
+                  success
+                    ? 'alert alert-success bg-white text-success text-center'
+                    : 'alert alert-danger text-center text-danger'
                 }
             role="alert"
           >
-            { formik.values.message}
+            {success ? message : 'Something went wrong!'}
           </div>
         </div>
         )}
