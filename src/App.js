@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { exMembers } from 'redux/becudaExecutive/becudaExecutiveSlice';
 import Register from 'components/Sessions/Register';
 import Dashbord from 'components/Dashbord';
+import Login from 'components/Sessions/Login';
 import { setChiefs } from './redux/befangChiefs/befangChiefsSlice';
 import { setEvents } from './redux/events/eventsSlice';
 import { setProjects } from './redux/projects/projectsSlice';
@@ -67,6 +68,7 @@ const App = () => {
           <Route path="/constitution" element={<Constitution />} />
           <Route path="/comming-soon" element={<CommingSoon />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<Dashbord />} />
         </Route>
       </Routes>

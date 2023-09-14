@@ -28,13 +28,12 @@ const Register = () => {
         .max(20, 'Must be 20 characters or less')
         .required('Last Name must not be empty'),
       username: Yup.string()
-        .max(15, 'Must be 15 characters or less').required('Required'),
+        .max(15, 'Must be 15 characters or less').required('Username must not be empty'),
       email: Yup.string().email('Invalid email address').required('Email must not be empty'),
       branch: Yup.string().required('Branch must not be empty'),
       password: Yup.string().required('Password must not be empty'),
     }),
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
       localStorage.setItem('user', JSON.stringify(values));
       setSuccess(true);
       setMessage('Registered Successfully!');
