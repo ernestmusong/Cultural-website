@@ -11,6 +11,7 @@ const Login = () => {
   const [success, setSuccess] = useState(false);
   const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
+  const [isShown, setIsSHown] = useState(false);
   const formik = useFormik({
     initialValues: {
       username: '',
@@ -36,6 +37,10 @@ const Login = () => {
       }
     },
   });
+
+  const togglePassword = () => {
+    setIsSHown((isShown) => !isShown);
+  };
 
   return (
     <>
@@ -75,7 +80,7 @@ const Login = () => {
               <label htmlFor="password">
                 Password
                 <input
-                  type="password"
+                  type={isShown ? 'text' : 'password'}
                   className="form-control"
                   placeholder="Enter your password"
                   name="password"
@@ -91,6 +96,17 @@ const Login = () => {
 
                 </div>
               ) : null}
+            </div>
+            <div className="checkbox-container">
+              <label htmlFor="checkbox" id="show-password">
+                <span>Show password?</span>
+                <input
+                  type="checkbox"
+                  id="checkbox"
+                  checked={isShown}
+                  onChange={togglePassword}
+                />
+              </label>
             </div>
             <NavLink to="/forgot-password" className="session-link mt-1" id="forgot-password">Forgot your password?</NavLink>
             <div className="form-group">

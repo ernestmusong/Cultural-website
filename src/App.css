@@ -633,6 +633,11 @@ nav {
 #forgot a {
   color: var(--softWhite);
 }
+
+ #show-password {
+  display: flex;
+  gap: 0.25rem;
+ }
 /* -------------------------------------------------------------Footer */
 
 .footer-bg {
