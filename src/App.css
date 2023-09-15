@@ -624,6 +624,15 @@ nav {
 #forgot-password {
   float: right;
 }
+
+#forgot {
+  text-align: center;
+  color: var(--softWhite);
+  margin-bottom: 2rem;
+}
+#forgot a {
+  color: var(--softWhite);
+}
 /* -------------------------------------------------------------Footer */
 
 .footer-bg {
