@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 function WhatsAppNow({ number }) {
   return (
     <>
-      <a className="whatsapp-link" href={number}>
+      <a className="whatsapp-link text-success" href={number}>
         <FaWhatsapp style={{ marginLeft: '10px' }} />
         WhatsApp
       </a>
