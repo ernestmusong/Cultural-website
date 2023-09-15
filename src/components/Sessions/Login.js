@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { useFormik } from 'formik';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import * as Yup from 'yup';
 
 const Login = () => {
@@ -89,11 +89,11 @@ const Login = () => {
               </div>
             ) : null}
           </div>
-
+          <NavLink to="/forgot-password" className="session-link mt-1" id="forgot-password">Forgot your password?</NavLink>
           <div className="form-group">
             <button
               type="submit"
-              className="btn btn-primary btn-block w-100 mt-2"
+              className="btn btn-block w-100 mt-2"
               disabled={loading}
             >
               {loading && (
@@ -117,7 +117,9 @@ const Login = () => {
             </div>
           </div>
           )}
-
+          <span className="session-span">Don&apos;t have an account yet?</span>
+          {' '}
+          <NavLink to="/register" className="session-link">Register now</NavLink>
         </form>
       </div>
     </div>

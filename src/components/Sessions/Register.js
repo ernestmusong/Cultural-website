@@ -1,7 +1,7 @@
 /* eslint react/jsx-props-no-spreading: 0 */
 import React, { useState } from 'react';
 import { useFormik } from 'formik';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import * as Yup from 'yup';
 
 const Register = () => {
@@ -238,7 +238,7 @@ const Register = () => {
           </div>
           <div className="form-row mx-auto mt-4 mb-4">
             <div className="form-group col-lg-3">
-              <button type="submit" className="btn btn-success w-100 btn-block">Register</button>
+              <button type="submit" className="btn w-100 btn-block">Register</button>
             </div>
           </div>
         </div>
@@ -256,7 +256,9 @@ const Register = () => {
           </div>
         </div>
         )}
-
+        <span className="session-span text-white">Already have an account?</span>
+        {' '}
+        <NavLink to="/login" className="session-link">Login</NavLink>
       </form>
     </div>
   );

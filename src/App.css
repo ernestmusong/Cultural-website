@@ -607,6 +607,23 @@ nav {
   background-color: #900;
   border-radius: 0 0 5px 5px;
 }
+.form-group button {
+  background: var(--mainOrange);
+  color: var(--softWhite);
+}
+
+.session-link {
+  color: var(--mainOrange);
+  font-size: 0.75rem;
+}
+
+.session-span {
+  font-size: 0.75rem;
+}
+
+#forgot-password {
+  float: right;
+}
 /* -------------------------------------------------------------Footer */
 
 .footer-bg {

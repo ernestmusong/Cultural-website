@@ -1,7 +1,8 @@
 import React from 'react';
+import CommingSoon from './General/CommingSoon';
 
 const Dashbord = () => (
-  <div>Dashbord</div>
+  <><CommingSoon title="Your Dashboard" /></>
 );
 
 export default Dashbord;
