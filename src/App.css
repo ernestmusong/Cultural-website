@@ -606,11 +606,19 @@ nav {
   color: white;
   background-color: #900;
   border-radius: 0 0 5px 5px;
+  border: none;
 }
 .form-group button {
   background: var(--mainOrange);
   color: var(--softWhite);
 }
+.form-group button:hover {
+  background: transparent;
+  color: var(--mainOrange);
+  border: 2px solid var(--mainOrange);
+}
+
+
 
 .session-link {
   color: var(--mainOrange);
