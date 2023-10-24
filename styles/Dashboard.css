@@ -1,1 +1,33 @@
+:root {
+  --lightBlue: #1c2b3f;
+  --darkBlue: #182135;
+  --mainOrange: #f7902b;
+  --mainYellow: #ffa400;
+  --mainGreen: #008000;
+  --lightGreen: #00fff2;
+  --goldenYellow: #fff6a9;
+  --clr-grey: #8a8c8c;
+  --clr-grey-4: hsl(209, 28%, 39%);
+  --clr-white: #f0f0f0;
+  --softWhite: #fbfaf5;
+  --softGrey: #acaea9;
+  --heroWhite: #ffe6ff;
+  --clr-black: #000;
+  --lightRed: #ff65bd;
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --spacing: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --mainGold: #daa520;
+}
+
  
+ .sidebar {
+  left: 0;
+  width: 15%;
+  top: 87.16px;
+  position: fixed;
+  height: 100vh;
+  background: var(--darkBlue);
+ }
