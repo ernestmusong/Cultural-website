@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { exMembers } from 'redux/becudaExecutive/becudaExecutiveSlice';
 import Register from 'components/Sessions/Register';
-import Dashbord from 'components/Dashbord';
+import Dashbord from 'components/Dashboard/Dashbord';
 import ForgotPassword from 'components/Sessions/ForgotPassword';
 import Login from 'components/Sessions/Login';
 import { setChiefs } from './redux/befangChiefs/befangChiefsSlice';
