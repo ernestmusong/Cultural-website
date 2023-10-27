@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { exMembers } from 'redux/becudaExecutive/becudaExecutiveSlice';
 import Register from 'components/Sessions/Register';
-import Dashbord from 'components/Dashboard/Dashbord';
+import Dashboard from 'components/Dashboard/Dashboard';
 import ForgotPassword from 'components/Sessions/ForgotPassword';
 import Login from 'components/Sessions/Login';
 import { setChiefs } from './redux/befangChiefs/befangChiefsSlice';
@@ -70,7 +70,7 @@ const App = () => {
           <Route path="/comming-soon" element={<CommingSoon />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/dashboard" element={<Dashbord />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
         </Route>
       </Routes>
