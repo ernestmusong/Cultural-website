@@ -34,7 +34,8 @@
   <ul>
     <li><a href="#">HTML/CSS/React/Redux</a></li>
   </ul>
-
+</details>
+<details>
   <summary>Database</summary>
   <ul>
     <li><a href="#">LocalStorage</a></li>
