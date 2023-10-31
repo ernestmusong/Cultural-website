@@ -3,9 +3,11 @@ import { Route, Routes } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { exMembers } from 'redux/becudaExecutive/becudaExecutiveSlice';
 import Register from 'components/Sessions/Register';
-import Dashboard from 'components/Dashboard/Dashboard';
 import ForgotPassword from 'components/Sessions/ForgotPassword';
 import Login from 'components/Sessions/Login';
+import Profile from 'components/Dashboard/Profile';
+import MyContributions from 'components/Dashboard/MyContributions';
+import Error from 'components/General/Error';
 import { setChiefs } from './redux/befangChiefs/befangChiefsSlice';
 import { setEvents } from './redux/events/eventsSlice';
 import { setProjects } from './redux/projects/projectsSlice';
@@ -70,8 +72,10 @@ const App = () => {
           <Route path="/comming-soon" element={<CommingSoon />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/my-contributions" element={<MyContributions />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="*" element={<Error />} />
         </Route>
       </Routes>
       <Footer />

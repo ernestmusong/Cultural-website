@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate, useLocation } from 'react-router-dom';
 import {
-  FaAlignJustify, FaMapMarkerAlt, FaTimes, FaUser,
+  FaAlignJustify, FaMapMarkerAlt, FaTimes,
 } from 'react-icons/fa';
 import logo from 'becuda-logo.png';
+import Dashboard from './Dashboard/Dashboard';
 
 const branches = [
   { path: '/comming-soon', text: 'bamenda' },
@@ -29,6 +30,19 @@ const culture = [
 ];
 
 const Header = () => {
+  const paths = ['/profile', '/my-contributions'];
+  const location = useLocation();
+  const { pathname } = location;
+  console.log(pathname);
+  const match = paths.find((path) => path === pathname);
+  return (
+    <>
+      {pathname !== match ? <GlobalHeader /> : <Dashboard /> }
+    </>
+  );
+};
+
+const GlobalHeader = () => {
   const currentUser = JSON.parse(localStorage.getItem('user'));
   const [height, setHeight] = useState(0);
   const [overFlow, setOverFlow] = useState('hidden');
@@ -51,7 +65,6 @@ const Header = () => {
     localStorage.removeItem('user');
     navigate('/');
   };
-
   return (
     <>
       {/* top nav */}
@@ -77,18 +90,6 @@ const Header = () => {
             <FaMapMarkerAlt style={{ marginRight: '1rem' }} />
             <span className="text-capitalize">Cameroon, North West Region, Menchum Valley Sub Division.</span>
           </a>
-          {currentUser && (
-            <a href="/" style={{ color: 'var(--softWhite)' }}>
-              <FaUser style={{ marginRight: '1rem' }} />
-              <span className="text-uppercase text-light">
-                {currentUser.title}
-                {' '}
-                {currentUser.firstName}
-                {' '}
-                {currentUser.lastName}
-              </span>
-            </a>
-          )}
         </div>
       </div>
       {/* Navigation */}
@@ -202,7 +203,7 @@ const Header = () => {
 
                 <div className="register-link">
 
-                  <NavLink to="/dashboard">
+                  <NavLink to="/my-contributions">
                     Dashbord
                   </NavLink>
 
