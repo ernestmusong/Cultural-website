@@ -22,9 +22,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [Catalog of my things] <a name="about-project"></a>
+# 📖 [Cultural website] <a name="about-project"></a>
 
-**[Catalog of my things]** Budget App is a mobile web application where users can manage their budget: Users have a list of transactions associated with a category, so that they can see how much money they spent and on what.
+**[Cultural website]** A website created to manage the activities of my cultural association. Users can make contributions, keep track of their contributions and see records of all contributions of my cultural association. Built with React/Redux.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -54,6 +54,7 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
+- [Live Demo Link](https://becuda.netlify.app/#/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -69,7 +70,7 @@ Node
 Clone this repository to your desired folder:
 sh
   cd my-folder
- git clone #
+ git clone https://github.com/ernestmusong/Cultural-website.git
 
  ### Install:
  Run: npm install
@@ -101,7 +102,7 @@ sh
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](#).
+Feel free to check the [issues page](https://github.com/ernestmusong/Cultural-website/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,8 +110,6 @@ Feel free to check the [issues page](#).
 If you like this project, give it a star please!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
- 
 
 ## 📝 License <a name="license"></a>
   This project is [MIT](./LICENSE.txt) licensed.
