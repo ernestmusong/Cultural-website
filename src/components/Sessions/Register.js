@@ -61,7 +61,7 @@ const Register = () => {
                     id="title"
                     {...formik.getFieldProps('title')}
                   >
-                    <option className="text-muted" value="">Mr/Mrs/Miss</option>
+                    <option className="text-muted" value="" disabled selected hidden>Mr/Mrs/Miss</option>
                     <option value="Mr">Mr</option>
                     <option value="Mrs">Mrs</option>
                     <option value="Miss">Miss</option>
@@ -189,7 +189,7 @@ const Register = () => {
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   >
-                    <option value="">Select your branch</option>
+                    <option value="" disabled selected hidden>Select your branch</option>
                     <option value="Yaounde">Yaounde</option>
                     <option value="Douala">Douala</option>
                     <option value="Bamenda">Bamenda</option>

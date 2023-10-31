@@ -19,7 +19,7 @@ const IconDetails = ({ member }) => (
           Profession:
           {member.profession}
         </h4>
-        <p style={{ color: '#acaea9', fontSize: '12px' }}>{member.work}</p>
+        <p style={{ color: 'Var(softGrey)', fontSize: '12px' }}>{member.work}</p>
         <div>
           <Link to="/">
             <button type="button" className="btns">Go back</button>

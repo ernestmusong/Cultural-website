@@ -1,5 +1,5 @@
 <a name="readme-top"></a>
-  <h3><b>Budget app</b></h3>
+  <h3><b>Cultural website</b></h3>
 
 # 📗 Table of Contents
 
@@ -30,14 +30,14 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 <details>
-  <summary>Server</summary>
+  <summary>Client</summary>
   <ul>
-    <li><a href="#">Ruby on rails</a></li>
+    <li><a href="#">HTML/CSS/React/Redux</a></li>
   </ul>
 
   <summary>Database</summary>
   <ul>
-    <li><a href="#">postgreSQL</a></li>
+    <li><a href="#">LocalStorage</a></li>
   </ul>
 </details>
 
@@ -48,19 +48,12 @@
 - **[User signup]**
 - **[User Login]**
 - **[User Logout]**
-- **[Image upload]**
-- **[Add new category]**
-- **[Add new transactiontion]**
+- **[User Dashboard]**
+- **[ Contribute ]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](https://musong-budget-app.onrender.com/)
-
-## 🚀 Project Presentation <a name="live-demo"></a>
-
-- [Live Presentation Link](https://www.loom.com/share/9c944129bc504361a51c4d5355485227)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -68,34 +61,21 @@
 
 ### Preriquisites
 
-Ruby version >= 3.0.0
+React >= 18.2.0
 Node
-PostgresQL
 
 ### Setup
 
 Clone this repository to your desired folder:
 sh
   cd my-folder
- git clone https://github.com/ernestmusong/Budget-app.git
+ git clone #
 
  ### Install:
- Run: bundle install
  Run: npm install
 
- ### Create database:
- Run: rails db:create
-
- ### Create database schema:
- Run: rails db:migrate
-
  ### Start:
- Run: rails s
-
- ### Tests:
- Run: rspec
-
- 
+ Run: npm start
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -111,8 +91,8 @@ sh
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add transaction detail]**
-- [ ] **[Email confirmation]**
+- [ ] **[Add real backend]**
+- [ ] **[Add admin dashboard]**
 - [ ] **[User profile picture uplaod upon registration]**
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -121,7 +101,7 @@ sh
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ernestmusong/Budget-app/issues).
+Feel free to check the [issues page](#).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -130,16 +110,8 @@ If you like this project, give it a star please!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
- <ul>
-    <li>
-       <a href="https://www.microverse.org/">Thank you Gregoire Vella on Behance the author of the original design.
-      </a></li>
-  </ul>
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+ 
 
 ## 📝 License <a name="license"></a>
- <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+  This project is [MIT](./LICENSE.txt) licensed.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

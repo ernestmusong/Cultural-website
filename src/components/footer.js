@@ -1,9 +1,22 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 
 const Footer = () => {
+  const paths = ['/profile', '/my-contributions'];
+  const location = useLocation();
+  const { pathname } = location;
+  const match = paths.find((path) => path === pathname);
+  return (
+    <>
+      {pathname !== match && <GlobalFooter /> }
+    </>
+  );
+};
+
+const GlobalFooter = () => {
   const date = new Date().getFullYear();
   return (
-    <div>
+    <>
       <div className="container footer-bg py-4">
         <div className="row d-flex flex-column justify-content-around align-items-center">
           <div>
@@ -30,7 +43,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 export default Footer;

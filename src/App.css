@@ -228,7 +228,6 @@ nav {
   color: var(--mainOrange);
 }
 
-
 .dropdown {
   display: block;
   overflow: visible !important;
@@ -264,14 +263,9 @@ nav {
   display: block;
 }
 
-.register-link {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  width: 10%;
-  height: 30px;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
+.form-group button {
+  background: var(--mainOrange);
+  color: var(--softWhite);
 }
 
 .register-link button {
@@ -285,6 +279,22 @@ nav {
   transition: var(--transition);
   font-weight: bold;
   color: var(--heroWhite);
+}
+
+.form-group button:hover {
+  background: transparent;
+  color: var(--mainOrange);
+  border: 2px solid var(--mainOrange);
+}
+
+.register-link {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  width: 10%;
+  height: 30px;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 
 .register-link button:hover {
@@ -608,17 +618,6 @@ nav {
   border-radius: 0 0 5px 5px;
   border: none;
 }
-.form-group button {
-  background: var(--mainOrange);
-  color: var(--softWhite);
-}
-.form-group button:hover {
-  background: transparent;
-  color: var(--mainOrange);
-  border: 2px solid var(--mainOrange);
-}
-
-
 
 .session-link {
   color: var(--mainOrange);
@@ -638,14 +637,16 @@ nav {
   color: var(--softWhite);
   margin-bottom: 2rem;
 }
+
 #forgot a {
   color: var(--softWhite);
 }
 
- #show-password {
+#show-password {
   display: flex;
   gap: 0.25rem;
- }
+}
+
 /* -------------------------------------------------------------Footer */
 
 .footer-bg {
