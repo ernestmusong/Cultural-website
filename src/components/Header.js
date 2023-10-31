@@ -33,7 +33,6 @@ const Header = () => {
   const paths = ['/profile', '/my-contributions'];
   const location = useLocation();
   const { pathname } = location;
-  console.log(pathname);
   const match = paths.find((path) => path === pathname);
   return (
     <>

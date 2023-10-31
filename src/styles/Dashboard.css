@@ -37,29 +37,29 @@
   z-index: 2;
 }
 
- .hide-sidebar,
- .show-sidebar {
+.hide-sidebar,
+.show-sidebar {
   width: 50%;
   transition: 0.3s ease;
   height: 100vh;
   position: fixed;
   background: var(--darkBlue);
   z-index: 999;
- }
+}
 
- .hide-sidebar {
+.hide-sidebar {
   transform: translate(-100%);
- }
+}
 
- .show-sidebar {
+.show-sidebar {
   transform: translate(0);
- }
+}
 
- #mobile-sidebar {
+#mobile-sidebar {
   padding-top: 10px;
- }
+}
 
- .logo-wrapper {
+.logo-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,18 +67,18 @@
   height: 90px;
   border-bottom: 1px solid var(--softGrey);
   margin-bottom: 1rem;
- }
+}
 
- .logo-wrapper button,
- .list-item .logout-btn,
- #header button {
-   border: none;
-   outline: none;
-   background: transparent;
-   color: var(--mainOrange);
- }
+.logo-wrapper button,
+.list-item .logout-btn,
+#header button {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--mainOrange);
+}
 
- .list {
+.list {
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -86,9 +86,9 @@
   align-items: flex-start;
   padding-left: 0;
   width: 100%;
- }
+}
 
- .list-item {
+.list-item {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -97,23 +97,23 @@
   padding-left: 1rem;
   gap: 1rem;
   width: 100%;
- }
+}
 
- .list-item:hover {
+.list-item:hover {
   background: var(--clr-grey);
   color: var(--softWhite);
- }
+}
 
- .list .list-item a {
- text-decoration: none;
- color: inherit;
- }
+.list .list-item a {
+  text-decoration: none;
+  color: inherit;
+}
 
- .active {
+.active {
   color: var(--mainOrange);
- }
+}
 
- #mobile-dashboard-navnav {
+#mobile-dashboard-navnav {
   top: 0;
   left: 0;
   right: 0;
@@ -156,12 +156,12 @@
   padding: 1rem;
 }
 
- /* ---------------------------------------------------Media Queries */
+/* ---------------------------------------------------Media Queries */
 @media screen and (max-width: 768px) {
   #header,
   #sidebar {
     display: none;
-  }  
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -172,21 +172,18 @@
 
   .hide-sidebar,
   .show-sidebar {
-   left: 0;
-   top: 0;
-   width: 15%;
+    left: 0;
+    top: 0;
+    width: 15%;
   }
- .main {
-  width: 85%;
-  padding-right: 2rem;
-  right: 0;
-  top: 90px;
-  height: 100%;
-  padding-bottom: 4rem;
-  margin-left: 15%;
- }  
+
+  .main {
+    width: 85%;
+    padding-right: 2rem;
+    right: 0;
+    top: 90px;
+    height: 100%;
+    padding-bottom: 4rem;
+    margin-left: 15%;
+  }
 }
-
- 
-
- 
