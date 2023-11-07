@@ -637,6 +637,13 @@ const data = {
       link: '/comming-soon',
     },
   ],
+  forums: [
+    {
+      name:'',
+      forum:'ngien',
+
+    }
+  ],
 };
 
 export default data;
