@@ -7,7 +7,10 @@ import ForgotPassword from 'components/Sessions/ForgotPassword';
 import Login from 'components/Sessions/Login';
 import Profile from 'components/Dashboard/Profile';
 import MyContributions from 'components/Dashboard/MyContributions';
+import NgienDevForum from 'components/Forums/NgienDevForum';
+import NgienMeetings from 'components/Forums/NgienMeetings';
 import Error from 'components/General/Error';
+import { setForums } from 'redux/forums/forumsSlice';
 import { setChiefs } from './redux/befangChiefs/befangChiefsSlice';
 import { setEvents } from './redux/events/eventsSlice';
 import { setProjects } from './redux/projects/projectsSlice';
@@ -49,6 +52,7 @@ const App = () => {
     dispatch(setGreatIcons());
     dispatch(setContributors());
     dispatch(setWebSupporters());
+    dispatch(setForums());
   }, [dispatch]);
   return (
     <>
@@ -57,6 +61,8 @@ const App = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/all-projects" element={<AllProjects />} />
+          <Route path="/ngien" element={<NgienDevForum />} />
+          <Route path="/ngien-meetings" element={<NgienMeetings />} />
           <Route path="/projects/:id" element={<ProjectDetailsPage />} />
           <Route path="/events" element={<Events />} />
           <Route path="/event/:id" element={<EventDetailsPage />} />

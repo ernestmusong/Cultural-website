@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from 'uuid';
+
 const data = {
   facebookComments: {
     dataHref: 'https://becuda.herokuapp.com/all-projects',
@@ -639,10 +641,12 @@ const data = {
   ],
   forums: [
     {
-      name:'',
-      forum:'ngien',
-
-    }
+      id: uuidv4(),
+      name: 'Musong Ernest',
+      forum: 'ngien',
+      executive: true,
+      position: 'General secretary',
+    },
   ],
 };
 
