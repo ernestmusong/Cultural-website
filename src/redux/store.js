@@ -1,5 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import becudaExecutiveReducer from './becudaExecutive/becudaExecutiveSlice';
+import forumsReducer from './forums/forumsSlice';
 import befangChiefsReducer from './befangChiefs/befangChiefsSlice';
 import contributorsReducer from './contributors/contributorsSlice';
 import eventsReducer from './events/eventsSlice';
@@ -20,6 +21,7 @@ const store = configureStore({
     projects: projectsReducer,
     webSupporters: webSupportersReducer,
     branches: branchesReducer,
+    forums: forumsReducer,
   },
 });
 

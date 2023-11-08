@@ -6,6 +6,9 @@ import {
 import logo from 'becuda-logo.png';
 import Dashboard from './Dashboard/Dashboard';
 
+const forums = [
+  { path: '/ngien', text: 'Ngien Dev\'t forum' },
+];
 const branches = [
   { path: '/comming-soon', text: 'bamenda' },
   {
@@ -144,7 +147,21 @@ const GlobalHeader = () => {
                     </NavLink>
                   ))}
                 </div>
-
+              </div>
+              <div className="dropdown">
+                <NavLink to="#">Forums</NavLink>
+                <div className="dropdown-content">
+                  {forums.map((b) => (
+                    <NavLink
+                      to={b.path}
+                      key={b.text}
+                      className="clear dropdown-link"
+                      onClick={() => clearHeight()}
+                    >
+                      {b.text}
+                    </NavLink>
+                  ))}
+                </div>
               </div>
               <NavLink
                 to="/all-projects"

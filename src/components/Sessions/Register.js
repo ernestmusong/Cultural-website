@@ -38,7 +38,7 @@ const Register = () => {
       localStorage.setItem('user', JSON.stringify(values));
       setSuccess(true);
       setMessage('Registered Successfully!');
-      navigate('/dashboard');
+      navigate('/my-contributions');
     },
   });
 
