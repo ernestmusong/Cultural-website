@@ -11,7 +11,7 @@ const NgienMeetings = () => (
 
     <ul>
       <li>
-        Sunday 5th Nov, 2023:
+        Saturday 4th Nov, 2023:
         {' '}
         <a href="https://docs.google.com/document/d/1EuyBMytxP7OmVUzjgv__IFCxTH1EBEA3hUAJWHMq360/edit?usp=sharing" target="blank">Read Minutes</a>
       </li>
