@@ -80,12 +80,12 @@ const WhoWeAre = () => (
           {' '}
           ,
           and share a common goal of development.
-          Our sole objective is the development of our Quarter - Ngien in
+          Our sole objective is the development of our Quarter - Ngien
           in particular, and Befang at large.
           {' '}
           Membership is open to anyone who shares our mission, vision, and values.
           {' '}
-          Membership is fee is
+          Membership fee is
           {' '}
           <span className="text-warning">1000 CFA</span>
           {' '}
@@ -110,7 +110,7 @@ const WhoWeAre = () => (
       <div className="col-sm-9 col-md-8 col-lg-6 mx-auto text-center">
         <Title2 title="our vision" />
         <p style={{ color: 'Var(--softWhite)' }}>
-          To Be the refered as &quot;The-Quarter-to-be&quot; in Befang.
+          To Be refered as &quot;The-Quarter-to-be&quot; in Befang.
         </p>
       </div>
     </div>
