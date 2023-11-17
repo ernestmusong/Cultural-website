@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function CallNow({ number }) {
   return (
     <>
-      <a className="call-link" href={number}>call now</a>
+      <a className="call-link" href={number}>call</a>
     </>
   );
 }

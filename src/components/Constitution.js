@@ -3,7 +3,7 @@
 import React from 'react';
 
 const Constitution = () => (
-  <main>
+  <main className="constitution">
     <h1 className="page-hero-text">constitution of the befang cultural and development association</h1>
     <h2>preamble</h2>
     <p>

@@ -11,7 +11,7 @@ const data = {
 
     {
       id: 1,
-      url: './contribute-page',
+      url: '/contribute-page',
       img: '/images/projectImages/water.jpg',
       title: 'Water Distribution',
       amount: 670000,

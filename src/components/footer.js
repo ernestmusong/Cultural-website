@@ -1,5 +1,7 @@
+/* eslint react/no-unknown-property: 0 */
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const Footer = () => {
   const paths = ['/profile', '/my-contributions'];
@@ -43,6 +45,11 @@ const GlobalFooter = () => {
           </div>
         </div>
       </div>
+      {/* Whatsapp chat */}
+      <a href="https://wa.me/237676308067" align="center" className="whatsappbutton">
+        <FaWhatsapp className="chat" style={{ fontSize: '2rem' }} />
+        <span>Chat with Us</span>
+      </a>
     </>
   );
 };

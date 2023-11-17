@@ -79,6 +79,7 @@ a[href^="tel:"]::before {
   margin-right: 10px;
 }
 
+/* -------------------------------------------------Constitution--------------------------------------------------------- */
 main {
   width: 70%;
   padding-left: 1rem;
@@ -523,8 +524,8 @@ nav {
 .beyoin-counter {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 20%;
+  justify-content: center;
+  width: 100%;
 }
 
 .beyoin-counter .value {
@@ -657,6 +658,30 @@ nav {
   width: 100%;
   max-width: 100vw;
 }
+
+.whatsappbutton {
+  display: flex;
+  align-items: flex-end;
+  background-color: #7acc72;
+  color: var(--clr-white);
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  bottom: 0.5rem;
+  right: 0;
+  border-radius: 25px;
+  width: fit-content;
+  margin: auto;
+  cursor: pointer;
+  position: fixed;
+  padding-right: 0.5rem;
+}
+
+.whatsappbutton span {
+  font-size: 0.75rem;
+}
+
 
 /* ---------------------------------------------------Media Queries */
 @media screen and (max-width: 768px) {
@@ -797,6 +822,12 @@ nav {
     margin-top: 117.16px;
   }
 
+
+.callnow-container,
+.treasurer-links {
+  width: 100%;
+}
+
   .call-link,
   .whatsapp-link {
     font-size: 0.75rem;
@@ -856,6 +887,20 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
+  .whatsappbutton {
+    text-align: center;
+    font-size: 1rem;
+    padding: 5px 5px;
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .whatsappbutton span {
+    font-size: 1rem;
+  }
+.whatsappbutton .chat {
+  margin-right: 0.625rem;
+}
   .mobile-logo-container {
     display: none;
   }

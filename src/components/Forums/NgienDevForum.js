@@ -15,28 +15,29 @@ const NgienDevForum = () => {
         <h1 className="page-hero-text">Welcome to Ngien Development Forum</h1>
         <div className="beyoin-counter">
           <div
-            className="text-center"
             style={{
-              backgroundColor: 'var(--darkBlue)', padding: '10px', display: 'grid', placeItems: 'center',
+              backgroundColor: 'var(--darkBlue)', padding: '10px', display: 'flex', justifyContent: 'space-around', width: '100%',
             }}
           >
             <div>
               <h6 className=" text-capitalize" style={{ color: 'var(--mainOrange)' }}>members</h6>
-              <h1 className="value">
+              <h2 className="value">
                 <CountUp
                   start={0}
                   end={67}
                   duration={3}
                 />
-              </h1>
+              </h2>
+            </div>
+            <div>
+              <h6 className=" text-capitalize" style={{ color: 'var(--mainOrange)' }}>budget</h6>
+              <h2 className="value">0cfa</h2>
             </div>
           </div>
 
         </div>
-        <h6 className="motto">slogan : no ngien, no Befang</h6>
-        <Link className="text-uppercase text-muted" style={{ textDecoration: 'underline' }} to="/ngien-meetings">Check meetings here!</Link>
-        <br />
-        <Link className="text-uppercase text-muted" style={{ textDecoration: 'underline' }} to="/comming-soon">Check contributions</Link>
+        <h6 className="motto">no ngien, no Befang</h6>
+        <Link className="text-uppercase text-muted" style={{ textDecoration: 'underline' }} to="/ngien/meetings">Check meetings here!</Link>
       </div>
       <WhoWeAre />
       <Title title="all our members" />

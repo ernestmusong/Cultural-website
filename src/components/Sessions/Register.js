@@ -12,11 +12,10 @@ const Register = () => {
   const formik = useFormik({
     initialValues: {
       title: '',
-      branch: '',
-      socialGroup: '',
       firstName: '',
       lastName: '',
       username: '',
+      branch: '',
       email: '',
       password: '',
     },
