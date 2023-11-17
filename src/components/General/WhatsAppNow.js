@@ -7,7 +7,7 @@ function WhatsAppNow({ number }) {
     <>
       <a className="whatsapp-link text-success" href={number}>
         <FaWhatsapp style={{ marginLeft: '10px' }} />
-        WhatsApp
+        Chat
       </a>
 
     </>

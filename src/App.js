@@ -62,7 +62,7 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="/all-projects" element={<AllProjects />} />
           <Route path="/ngien" element={<NgienDevForum />} />
-          <Route path="/ngien-meetings" element={<NgienMeetings />} />
+          <Route path="/ngien/meetings" element={<NgienMeetings />} />
           <Route path="/projects/:id" element={<ProjectDetailsPage />} />
           <Route path="/events" element={<Events />} />
           <Route path="/event/:id" element={<EventDetailsPage />} />
