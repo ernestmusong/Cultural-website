@@ -515,9 +515,8 @@ nav {
 /* ----------------------------------------------------------befand youths association */
 .motto {
   color: var(--heroWhite);
-  font-family: "Sacramento", cursive;
   text-transform: capitalize;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: bolder;
 }
 
@@ -887,6 +886,9 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
+  .motto {
+    font-size: 2.5rem;
+  }
   .whatsappbutton {
     text-align: center;
     font-size: 1rem;

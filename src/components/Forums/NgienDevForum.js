@@ -37,7 +37,7 @@ const NgienDevForum = () => {
 
         </div>
         <h6 className="motto">no ngien, no Befang</h6>
-        <Link className="text-uppercase text-muted" style={{ textDecoration: 'underline' }} to="/ngien/meetings">Check meetings here!</Link>
+        <Link className="text-uppercase text-warning" style={{ textDecoration: 'underline' }} to="/ngien/meetings">Check meetings minutes!</Link>
       </div>
       <WhoWeAre />
       <Title title="all our members" />
