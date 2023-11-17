@@ -28,7 +28,6 @@ import Home from './components/Home/Home';
 import Footer from './components/footer';
 import ProjectDetailsPage from './components/Projects/ProjectDetailsPage';
 import Icon from './components/Home/Icon';
-import PopupModal from './components/PopupModal';
 import CommingSoon from './components/General/CommingSoon';
 import ContributePage from './components/Contributions/ContributePage';
 import ListOfSupporters from './components/Web-creator/ListOfWebSupporters';
@@ -56,7 +55,6 @@ const App = () => {
   }, [dispatch]);
   return (
     <>
-      <PopupModal />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
