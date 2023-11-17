@@ -821,11 +821,10 @@ nav {
     margin-top: 117.16px;
   }
 
-
-.callnow-container,
-.treasurer-links {
-  width: 100%;
-}
+  .callnow-container,
+  .treasurer-links {
+    width: 100%;
+  }
 
   .call-link,
   .whatsapp-link {
@@ -889,6 +888,7 @@ nav {
   .motto {
     font-size: 2.5rem;
   }
+
   .whatsappbutton {
     text-align: center;
     font-size: 1rem;
@@ -900,9 +900,11 @@ nav {
   .whatsappbutton span {
     font-size: 1rem;
   }
-.whatsappbutton .chat {
-  margin-right: 0.625rem;
-}
+
+  .whatsappbutton .chat {
+    margin-right: 0.625rem;
+  }
+
   .mobile-logo-container {
     display: none;
   }
