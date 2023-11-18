@@ -10,6 +10,8 @@ import MyContributions from 'components/Dashboard/MyContributions';
 import NgienDevForum from 'components/Forums/NgienDevForum';
 import NgienMeetings from 'components/Forums/NgienMeetings';
 import Error from 'components/General/Error';
+import PopupModal from 'components/PopupModal';
+import TranzactionsPage from 'components/Forums/TranzactionsPage';
 import { setForums } from 'redux/forums/forumsSlice';
 import { setChiefs } from './redux/befangChiefs/befangChiefsSlice';
 import { setEvents } from './redux/events/eventsSlice';
@@ -55,12 +57,14 @@ const App = () => {
   }, [dispatch]);
   return (
     <>
+      <PopupModal />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/all-projects" element={<AllProjects />} />
           <Route path="/ngien" element={<NgienDevForum />} />
           <Route path="/ngien/meetings" element={<NgienMeetings />} />
+          <Route path="/ngien/transactions/:id" element={<TranzactionsPage />} />
           <Route path="/projects/:id" element={<ProjectDetailsPage />} />
           <Route path="/events" element={<Events />} />
           <Route path="/event/:id" element={<EventDetailsPage />} />

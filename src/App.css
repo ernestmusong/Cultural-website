@@ -206,7 +206,7 @@ nav {
 .links-container {
   transition: var(--transition);
   background: var(--lightBlue);
-  width: inherit;
+  width: 70vw !important;
 }
 
 .links-container .links {
@@ -905,10 +905,7 @@ nav {
     margin-right: 0.625rem;
   }
 
-  .mobile-logo-container {
-    display: none;
-  }
-
+  .mobile-logo-container,
   .moble-support {
     display: none;
   }
