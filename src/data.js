@@ -646,6 +646,13 @@ const data = {
       forum: 'ngien',
       executive: true,
       position: 'General secretary',
+      savings: [
+        {
+          id: uuidv4(),
+          date: 'Sat 4th Nov, 2023',
+          amt: 10000,
+        },
+      ],
     },
   ],
 };
