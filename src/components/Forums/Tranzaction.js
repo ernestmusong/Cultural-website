@@ -7,6 +7,8 @@ const Tranzaction = ({ member }) => {
     name,
     id,
   } = member;
+  const amounts = savings.map((s) => s.amt);
+  const total = amounts.reduce((a, b) => a + b);
   return (
     <tr className="bg-light" key={id}>
       <td className="text-capitalize">
@@ -18,6 +20,9 @@ const Tranzaction = ({ member }) => {
           cfa
         </td>
       ))}
+      <td className="text-capitalize">
+        {total}
+      </td>
     </tr>
   );
 };
