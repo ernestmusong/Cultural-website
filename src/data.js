@@ -642,6 +642,34 @@ const data = {
   forums: [
     {
       id: uuidv4(),
+      name: 'Katche Devine',
+      forum: 'ngien',
+      executive: true,
+      position: 'President',
+      savings: [
+        {
+          id: uuidv4(),
+          date: 'Sat 4th Nov, 2023',
+          amt: 0,
+        },
+      ],
+    },
+    {
+      id: uuidv4(),
+      name: 'Colins',
+      forum: 'ngien',
+      executive: true,
+      position: 'Treasurer',
+      savings: [
+        {
+          id: uuidv4(),
+          date: 'Sat 4th Nov, 2023',
+          amt: 0,
+        },
+      ],
+    },
+    {
+      id: uuidv4(),
       name: 'Musong Ernest',
       forum: 'ngien',
       executive: true,
@@ -650,7 +678,35 @@ const data = {
         {
           id: uuidv4(),
           date: 'Sat 4th Nov, 2023',
-          amt: 10000,
+          amt: 0,
+        },
+      ],
+    },
+    {
+      id: uuidv4(),
+      name: 'Foh Terrence',
+      forum: 'ngien',
+      executive: true,
+      position: '',
+      savings: [
+        {
+          id: uuidv4(),
+          date: 'Sat 4th Nov, 2023',
+          amt: 0,
+        },
+      ],
+    },
+    {
+      id: uuidv4(),
+      name: 'Esoh Derick',
+      forum: 'ngien',
+      executive: true,
+      position: '',
+      savings: [
+        {
+          id: uuidv4(),
+          date: 'Sat 4th Nov, 2023',
+          amt: 0,
         },
       ],
     },
