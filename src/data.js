@@ -656,7 +656,7 @@ const data = {
     },
     {
       id: uuidv4(),
-      name: 'Colins',
+      name: 'Dang Colins',
       forum: 'ngien',
       executive: true,
       position: 'Treasurer',
@@ -686,7 +686,7 @@ const data = {
       id: uuidv4(),
       name: 'Foh Terrence',
       forum: 'ngien',
-      executive: true,
+      executive: false,
       position: '',
       savings: [
         {
@@ -698,9 +698,79 @@ const data = {
     },
     {
       id: uuidv4(),
-      name: 'Esoh Derick',
+      name: 'Katche Leslie',
       forum: 'ngien',
-      executive: true,
+      executive: false,
+      position: '',
+      savings: [
+        {
+          id: uuidv4(),
+          date: 'Sat 4th Nov, 2023',
+          amt: 0,
+        },
+      ],
+    },
+    {
+      id: uuidv4(),
+      name: 'Ichu Kalvin',
+      forum: 'ngien',
+      executive: false,
+      position: '',
+      savings: [
+        {
+          id: uuidv4(),
+          date: 'Sat 4th Nov, 2023',
+          amt: 0,
+        },
+      ],
+    },
+    {
+      id: uuidv4(),
+      name: 'Katche Roland',
+      forum: 'ngien',
+      executive: false,
+      position: '',
+      savings: [
+        {
+          id: uuidv4(),
+          date: 'Sat 4th Nov, 2023',
+          amt: 0,
+        },
+      ],
+    },
+    {
+      id: uuidv4(),
+      name: 'Kum Hans',
+      forum: 'ngien',
+      executive: false,
+      position: '',
+      savings: [
+        {
+          id: uuidv4(),
+          date: 'Sat 4th Nov, 2023',
+          amt: 0,
+        },
+      ],
+    },
+    {
+      id: uuidv4(),
+      name: 'Akeh Larinette',
+      forum: 'ngien',
+      executive: false,
+      position: '',
+      savings: [
+        {
+          id: uuidv4(),
+          date: 'Sat 4th Nov, 2023',
+          amt: 0,
+        },
+      ],
+    },
+    {
+      id: uuidv4(),
+      name: 'Bezeng Edwin',
+      forum: 'ngien',
+      executive: false,
       position: '',
       savings: [
         {
