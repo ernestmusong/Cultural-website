@@ -83,7 +83,7 @@ a[href^="tel:"]::before {
 main {
   width: 70%;
   padding-left: 1rem;
-  margin-top: '2rem';
+  margin-top: 2rem;
 }
 
 main h2 {
