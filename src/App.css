@@ -83,6 +83,7 @@ a[href^="tel:"]::before {
 main {
   width: 70%;
   padding-left: 1rem;
+  margin-top: 2rem;
 }
 
 main h2 {
@@ -680,7 +681,6 @@ nav {
 .whatsappbutton span {
   font-size: 0.75rem;
 }
-
 
 /* ---------------------------------------------------Media Queries */
 @media screen and (max-width: 768px) {
