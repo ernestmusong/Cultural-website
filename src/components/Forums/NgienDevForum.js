@@ -51,6 +51,20 @@ const NgienDevForum = () => {
       </div>
       <WhoWeAre />
       <Title title="all members" />
+      <br />
+      <center
+        style={{
+          fontWeight: 'bold',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          gap: '2rem',
+          textTransform: 'uppercase',
+          paddingTop: '0.5rem',
+        }}
+      >
+        <p>Year: 2024</p>
+      </center>
       <div>
         <table className="table table-bordered">
           <thead style={{ backgroundColor: '#DCDCDC' }}>
