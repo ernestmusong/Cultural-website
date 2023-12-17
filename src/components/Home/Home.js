@@ -1,32 +1,55 @@
-import React from 'react';
-import banner from '../../hero-image.jpeg';
-import Chief from './ChiefProfile';
-import BecudaExe from './becudaExe';
-import Title from '../Headings/Title';
-import GreatIcons from './GreatIcons';
-import CurrentProjects from './CurrentProjects';
-import Counter from './CountUpComponent';
-import LatestNews from './LatestNews';
+import { React, Suspense, lazy } from 'react';
+
+const Chief = lazy(() => import('./ChiefProfile'));
+const Hero = lazy(() => import('./Hero'));
+const BecudaExe = lazy(() => import('./becudaExe'));
+const Title = lazy(() => import('../Headings/Title'));
+const GreatIcons = lazy(() => import('./GreatIcons'));
+const CurrentProjects = lazy(() => import('./CurrentProjects'));
+const Counter = lazy(() => import('./CountUpComponent'));
+const LatestNews = lazy(() => import('./LatestNews'));
 
 const Home = () => (
   <>
-    <div className="banner mx-auto" style={{ backgroundImage: `url(${banner})` }}>
-      <div className="text1-wrapper " style={{ margin: '0 auto', marginBottom: '4rem', paddingTop: '4rem' }}>
-        <h1 className="text1">welcome to becuda</h1>
-      </div>
-    </div>
-    <Title title="all our branches" />
-    <Counter />
-    <Title title="make befang great again" />
-    <Chief />
-    <Title title="becuda executive members" />
-    <BecudaExe />
-    <Title title="Some of Befang great icons" />
-    <GreatIcons />
-    <Title title="Latest News" />
-    <LatestNews />
-    <Title title="Ongoing projects" />
-    <CurrentProjects />
+    <Suspense fallback={<div>Loading...</div>}>
+      <Hero />
+    </Suspense>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Title title="all our branches" />
+    </Suspense>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Counter />
+    </Suspense>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Title title="Chiefs of Befang" />
+    </Suspense>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Chief />
+    </Suspense>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Title title="becuda executive members" />
+    </Suspense>
+    <Suspense fallback={<div>Loading...</div>}>
+      <BecudaExe />
+    </Suspense>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Title title="Some of Befang great icons" />
+    </Suspense>
+    <Suspense fallback={<div>Loading...</div>}>
+      <GreatIcons />
+    </Suspense>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Title title="Latest News" />
+    </Suspense>
+    <Suspense fallback={<div>Loading...</div>}>
+      <LatestNews />
+    </Suspense>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Title title="Ongoing projects" />
+    </Suspense>
+    <Suspense fallback={<div>Loading...</div>}>
+      <CurrentProjects />
+    </Suspense>
   </>
 );
 

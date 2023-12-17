@@ -25,7 +25,7 @@ const associations = [
   { path: '/comming-soon', text: 'befang youths association', id: 2 },
 ];
 const culture = [
-  { id: 1, path: '/comming-soon', text: 'about befang' },
+  { id: 1, path: '/about-befang', text: 'History of Befang' },
   { id: 2, path: '/comming-soon', text: 'marriage' },
   { id: 3, path: '/comming-soon', text: 'cultural dance' },
   { id: 4, path: '/comming-soon', text: 'funeral' },
@@ -186,7 +186,7 @@ const GlobalHeader = () => {
                 </div>
               </div>
               <div className="dropdown">
-                <NavLink to="#" style={{ zIndex: '-1' }}>culture</NavLink>
+                <NavLink to="#" style={{ zIndex: '-1' }}>Culture</NavLink>
                 <div className="dropdown-content">
                   {culture.map((c) => (
                     <NavLink
@@ -255,7 +255,7 @@ const GlobalHeader = () => {
       </nav>
       <div className="info-wrapper">
         <p className="info text-uppercase">
-          Welcome to the befang cultural and development association...
+          Welcome to befang cultural and development association...
           <span className="text-uppercase">becuda</span>
         </p>
       </div>

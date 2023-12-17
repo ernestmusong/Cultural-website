@@ -1,10 +1,12 @@
-import React from 'react';
+import { React, Suspense, lazy } from 'react';
 import { Outlet } from 'react-router-dom';
-import Header from './Header';
 
+const Header = lazy(() => import('./Header'));
 const Layout = () => (
   <>
-    <Header />
+    <Suspense fallback={<div>Loading...</div>}>
+      <Header />
+    </Suspense>
     <Outlet />
   </>
 );

@@ -97,14 +97,6 @@ const data = {
       img: '/images/chiefs/chief-img.jpeg',
       position: 'our supreme ruler',
     },
-    {
-
-      id: 2,
-      chiefName: 'Chief Kum Godlove Bezeng',
-      chiefTitle: 'Chief Of Ukuo-owong',
-      img: '/images/chiefs/kum-godlove.jpg',
-      position: 'Native Chief of Ukuo-owong',
-    },
   ],
 
   becudaExecutive: [
@@ -642,6 +634,7 @@ const data = {
   forums: [
     {
       id: uuidv4(),
+      year: 2023,
       name: 'Katche Devine',
       forum: 'ngien',
       executive: true,
@@ -656,6 +649,7 @@ const data = {
     },
     {
       id: uuidv4(),
+      year: 2023,
       name: 'Dang Colins',
       forum: 'ngien',
       executive: true,
@@ -670,6 +664,7 @@ const data = {
     },
     {
       id: uuidv4(),
+      year: 2023,
       name: 'Musong Ernest',
       forum: 'ngien',
       executive: true,
@@ -684,6 +679,7 @@ const data = {
     },
     {
       id: uuidv4(),
+      year: 2023,
       name: 'Foh Terrence',
       forum: 'ngien',
       executive: false,
@@ -698,6 +694,7 @@ const data = {
     },
     {
       id: uuidv4(),
+      year: 2023,
       name: 'Katche Leslie',
       forum: 'ngien',
       executive: false,
@@ -712,6 +709,7 @@ const data = {
     },
     {
       id: uuidv4(),
+      year: 2023,
       name: 'Ichu Kalvin',
       forum: 'ngien',
       executive: false,
@@ -726,6 +724,7 @@ const data = {
     },
     {
       id: uuidv4(),
+      year: 2023,
       name: 'Katche Roland',
       forum: 'ngien',
       executive: false,
@@ -740,6 +739,7 @@ const data = {
     },
     {
       id: uuidv4(),
+      year: 2023,
       name: 'Kum Hans',
       forum: 'ngien',
       executive: false,
@@ -754,6 +754,7 @@ const data = {
     },
     {
       id: uuidv4(),
+      year: 2023,
       name: 'Akeh Larinette',
       forum: 'ngien',
       executive: false,
@@ -768,6 +769,7 @@ const data = {
     },
     {
       id: uuidv4(),
+      year: 2023,
       name: 'Bezeng Edwin',
       forum: 'ngien',
       executive: false,

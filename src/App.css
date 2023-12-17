@@ -103,9 +103,17 @@ main p {
   color: var(--softWhite) !important;
 }
 
-main ul li {
+main ol {
+  padding-left: 1rem;
+}
+
+main ul li,
+main ol li {
   color: var(--softWhite) !important;
   font-size: 1.1rem;
+}
+
+main ul li {
   list-style-type: none;
 }
 
