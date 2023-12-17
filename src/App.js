@@ -12,6 +12,7 @@ import NgienMeetings from 'components/Forums/NgienMeetings';
 import Error from 'components/General/Error';
 import PopupModal from 'components/PopupModal';
 import TranzactionsPage from 'components/Forums/TranzactionsPage';
+// import AboutBefang from 'components/Culture/AboutBefang/AboutBefang';
 import { setForums } from 'redux/forums/forumsSlice';
 import { setChiefs } from './redux/befangChiefs/befangChiefsSlice';
 import { setEvents } from './redux/events/eventsSlice';
@@ -43,7 +44,6 @@ import TreasurerPage from './components/Contributions/TreasurerPage';
 const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(exMembers());
     dispatch(exMembers());
     dispatch(setUsers());
     dispatch(setProjects());
@@ -83,6 +83,7 @@ const App = () => {
           <Route path="/profile" element={<Profile />} />
           <Route path="/my-contributions" element={<MyContributions />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
+          {/* <Route path="/about-befang" element={<AboutBefang />} /> */}
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>

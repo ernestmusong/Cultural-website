@@ -97,14 +97,6 @@ const data = {
       img: '/images/chiefs/chief-img.jpeg',
       position: 'our supreme ruler',
     },
-    {
-
-      id: 2,
-      chiefName: 'Chief Kum Godlove Bezeng',
-      chiefTitle: 'Chief Of Ukuo-owong',
-      img: '/images/chiefs/kum-godlove.jpg',
-      position: 'Native Chief of Ukuo-owong',
-    },
   ],
 
   becudaExecutive: [
