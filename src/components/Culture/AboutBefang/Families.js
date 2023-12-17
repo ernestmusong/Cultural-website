@@ -4,7 +4,7 @@ const Families = () => (
   <>
     <h2>The eight family groups of befang</h2>
     <p>
-      Befang is made up of eight families groups namely:
+      Befang is made up of eight family groups namely:
       {' '}
       <br />
       <ol>

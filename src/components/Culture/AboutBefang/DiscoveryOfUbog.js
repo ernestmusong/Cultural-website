@@ -10,8 +10,8 @@ const DiscoveryOfUbog = () => (
       {' '}
       <span className="text-uppercase" style={{ color: 'Var(--lightGreen)' }}>ba-ngon-uwong</span>
       {' '}
-      . Ba-ngon-uwong belonged to the Buo-dzem family group, but they all perished after
-      a great calamity that led to the death of all males of the family. Depression, anger,
+      . Ba-ngon-uwong (women) belonged to the Buo-dzem family group, but they all perished after
+      a great calamity that led to the death of their husbands. Depression, anger,
       frustration caused these women to commit suicide by voluntrilly holding themselves
       together, and throwing themselves deep down the valley where they all died.
       They could be heard crying and saying &quot;Live is meaningless&quot;. As a result the
