@@ -6,7 +6,7 @@ const Origin = () => (
     <p>
       The people of Befang are believed to have migrated from Widikum in Momo Division
       of the North West region of Cameroon due to inter-tribal wars, and settled at present day
-
+      {' '}
       <span className="text-capitalize" style={{ color: 'Var(--lightGreen)' }}>uwong</span>
       {' '}
       .
