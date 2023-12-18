@@ -95,7 +95,7 @@ const data = {
       chiefName: 'chief Edon michel',
       chiefTitle: 'Chief of befang',
       img: '/images/chiefs/chief-img.jpeg',
-      position: 'our supreme ruler',
+      position: 'Current chief',
     },
   ],
 
