@@ -305,7 +305,7 @@ const data = {
       img: '/images/iconsImages/dominic-gce.jpg',
       profession: 'Cameroon GCE Board Registrar',
       work: 'His works will be put here soon',
-
+      rip: 'rip',
     },
     {
 
@@ -314,7 +314,6 @@ const data = {
       img: '/images/iconsImages/kum-herny.jpg',
       profession: 'Head Of The DDRC Bamenda ',
       work: 'His works will be put here soon',
-
     },
   ],
 

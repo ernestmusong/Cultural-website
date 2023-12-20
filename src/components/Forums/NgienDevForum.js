@@ -63,7 +63,7 @@ const NgienDevForum = () => {
           paddingTop: '0.5rem',
         }}
       >
-        <p>Year: 2024</p>
+        <p className="text-white">Year: 2024</p>
       </center>
       <div>
         <table className="table table-bordered">

@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Families = () => (
   <>
@@ -8,14 +9,54 @@ const Families = () => (
       {' '}
       <br />
       <ol>
-        <li>Uko-uwong</li>
-        <li>Uko-mandzang</li>
-        <li>Buo-bon</li>
-        <li>Buo-kwo</li>
-        <li>Buo-zang</li>
-        <li>Buo-katche</li>
-        <li>Buo-bezeng</li>
-        <li>Buo-leh</li>
+        <li>
+          Uko-uwong
+          {' '}
+          <br />
+          <NavLink to="/comming-soon">Read more</NavLink>
+        </li>
+        <li>
+          Uko-mandzang
+          {' '}
+          <br />
+          <NavLink to="/comming-soon">Read more</NavLink>
+        </li>
+        <li>
+          Buo-bon
+          {' '}
+          <br />
+          <NavLink to="/comming-soon">Read more</NavLink>
+        </li>
+        <li>
+          Buo-kwo
+          {' '}
+          <br />
+          <NavLink to="/comming-soon">Read more</NavLink>
+        </li>
+        <li>
+          Buo-zang
+          {' '}
+          <br />
+          <NavLink to="/comming-soon">Read more</NavLink>
+        </li>
+        <li>
+          Buo-katche
+          {' '}
+          <br />
+          <NavLink to="/comming-soon">Read more</NavLink>
+        </li>
+        <li>
+          Buo-bezeng
+          {' '}
+          <br />
+          <NavLink to="/comming-soon">Read more</NavLink>
+        </li>
+        <li>
+          Buo-leh
+          {' '}
+          <br />
+          <NavLink to="/comming-soon">Read more</NavLink>
+        </li>
       </ol>
       The first five family groups are refered to as Kibien - meaning corners, while the last three
       are refered to as Buo-Ketsm or Matern - meaning center.

@@ -17,10 +17,14 @@ const GreatIcons = () => {
 };
 const Member = ({ member }) => (
   <div className=" becuda-member">
+    { member.rip && (
+      <h5 className="text-uppercase text-center my-2" style={{ color: 'Var(--heroWhite)' }}>
+        {member.rip}
+      </h5>
+    )}
     <div className="becuda-image-wrapper">
       <img src={member.img} alt="project" />
     </div>
-
     <div
       className="py-2 pl-2"
       style={{
