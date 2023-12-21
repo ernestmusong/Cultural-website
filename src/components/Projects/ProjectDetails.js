@@ -1,11 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import Comments from '../General/facebookComments';
-import Title4 from '../Headings/Title4';
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 
 const ProjectDetails = ({ project }) => {
-  const { img } = project;
+  const {
+    id,
+    amount,
+    body,
+    img,
+    realised,
+    url,
+  } = project;
+  const percentage = (realised / amount) * 100;
   if (!img) return null;
   return (
     <>
@@ -21,27 +29,43 @@ const ProjectDetails = ({ project }) => {
               {' '}
             </h1>
 
-            <p style={{ color: 'Var(--softWhite)' }}>{project.body}</p>
+            <p style={{ color: 'Var(--softWhite)' }}>{body}</p>
+            <div className="d-flex gap-3">
+              <div className="values">
+                <p style={{ color: 'Var(--lightRed)' }}>
+                  <strong className="text-uppercase">
+                    Amount:
+                    {' '}
+                    {amount}
+                    {' '}
+                    <span>cfa</span>
+                  </strong>
+                </p>
 
-            <p style={{ color: 'Var(--lightRed)' }}>
-              <strong className="text-uppercase">
-                Amount:
-                {' '}
-                {project.amount}
-                {' '}
-                <span>cfa</span>
-              </strong>
-            </p>
-
-            <p style={{ color: 'Var(--lightGreen)' }}>
-              <strong className="text-uppercase">
-                Realised:
-                {' '}
-                {project.realised}
-                {' '}
-                <span>cfa</span>
-              </strong>
-            </p>
+                <p style={{ color: 'Var(--lightGreen)' }}>
+                  <strong className="text-uppercase">
+                    Realised:
+                    {' '}
+                    {realised}
+                    {' '}
+                    <span>cfa</span>
+                  </strong>
+                </p>
+              </div>
+              <div className="progress-container">
+                <CircularProgressbar
+                  value={percentage}
+                  text={`${percentage.toFixed(0)}%`}
+                  styles={buildStyles({
+                    pathTransitionDuration: 0.5,
+                    pathColor: 'linear-gradient(to bottom, #307bbe, #379cf6)',
+                    trailColor: '#e8e8e8',
+                    textColor: '#e8e8e8',
+                    textSize: '2rem',
+                  })}
+                />
+              </div>
+            </div>
 
             {/* buttons */}
             <div>
@@ -49,7 +73,7 @@ const ProjectDetails = ({ project }) => {
                 <button type="button" className="btns">back to projects</button>
               </Link>
               {project.status === 'open' ? (
-                <Link to={project.url}>
+                <Link to={url}>
                   <button type="button" className="btns" style={{ background: 'transparent', color: 'var(--mainYellow)' }}>
                     Contribute
                   </button>
@@ -61,8 +85,8 @@ const ProjectDetails = ({ project }) => {
               )}
             </div>
             <div className="mt-3 text-warning">
-              <Link to={project.id === 2 ? '/web-supporters' : '/contributors'} className="text-white text-capitalize my-4 text-decoration-underline ">
-                {project.id === 2 ? 'see supporters' : 'see contributors'}
+              <Link to={id === 2 ? '/web-supporters' : '/contributors'} className="text-white text-capitalize my-4 text-decoration-underline ">
+                {id === 2 ? 'see supporters' : 'see contributors'}
                 {' '}
               </Link>
             </div>
@@ -70,8 +94,6 @@ const ProjectDetails = ({ project }) => {
           </div>
         </div>
       </div>
-      <Title4 title="please leave your commments below" />
-      <Comments />
     </>
   );
 };

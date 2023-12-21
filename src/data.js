@@ -15,7 +15,7 @@ const data = {
       img: '/images/projectImages/water.jpg',
       title: 'Water Distribution',
       amount: 670000,
-      realised: 0,
+      realised: 600000,
       status: 'closed',
       current: true,
       body: 'This project is aimed at ensuring the availability of pipe-borne water throughout the Befang territory.',
