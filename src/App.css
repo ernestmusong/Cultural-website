@@ -474,6 +474,14 @@ nav {
   height: 210px;
 }
 
+.progress-container {
+  width: 4.25rem;
+  height: 4.25rem;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
 /* ---------------------------------------------------------------------chief */
 .chief-container {
   background: var(--darkBlue);

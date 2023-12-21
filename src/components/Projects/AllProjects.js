@@ -1,6 +1,5 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import Comments from '../General/facebookComments';
 import Project from './Project';
 import Title4 from '../Headings/Title4';
 
@@ -14,8 +13,6 @@ const AllProjects = () => {
         ))}
       </div>
       <Title4 title="please leave your commments below" />
-      <Comments />
-
     </>
   );
 };
