@@ -8,9 +8,13 @@ const GreatIcons = lazy(() => import('./GreatIcons'));
 const CurrentProjects = lazy(() => import('./CurrentProjects'));
 const Counter = lazy(() => import('./CountUpComponent'));
 const LatestNews = lazy(() => import('./LatestNews'));
+const PopupModal = lazy(() => import('./PopupModal'));
 
 const Home = () => (
   <>
+    <Suspense fallback={<div>Loading...</div>}>
+      <PopupModal />
+    </Suspense>
     <Suspense fallback={<div>Loading...</div>}>
       <Hero />
     </Suspense>

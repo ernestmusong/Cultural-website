@@ -10,7 +10,6 @@ import MyContributions from 'components/Dashboard/MyContributions';
 import NgienDevForum from 'components/Forums/NgienDevForum';
 import NgienMeetings from 'components/Forums/NgienMeetings';
 import Error from 'components/General/Error';
-import PopupModal from 'components/PopupModal';
 import TranzactionsPage from 'components/Forums/TranzactionsPage';
 import AboutBefang from 'components/Culture/AboutBefang/AboutBefang';
 import { setForums } from 'redux/forums/forumsSlice';
@@ -57,7 +56,7 @@ const App = () => {
   }, [dispatch]);
   return (
     <>
-      <PopupModal />
+      {/* <PopupModal /> */}
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
