@@ -638,6 +638,7 @@ const data = {
       forum: 'ngien',
       executive: true,
       position: 'President',
+      reg: '0',
       savings: [
         {
           id: uuidv4(),
@@ -653,6 +654,7 @@ const data = {
       forum: 'ngien',
       executive: true,
       position: 'Treasurer',
+      reg: '0',
       savings: [
         {
           id: uuidv4(),
@@ -668,6 +670,7 @@ const data = {
       forum: 'ngien',
       executive: true,
       position: 'General secretary',
+      reg: '0',
       savings: [
         {
           id: uuidv4(),
@@ -683,6 +686,7 @@ const data = {
       forum: 'ngien',
       executive: false,
       position: '',
+      reg: '0',
       savings: [
         {
           id: uuidv4(),
@@ -698,6 +702,7 @@ const data = {
       forum: 'ngien',
       executive: false,
       position: '',
+      reg: '0',
       savings: [
         {
           id: uuidv4(),
@@ -713,6 +718,7 @@ const data = {
       forum: 'ngien',
       executive: false,
       position: '',
+      reg: '0',
       savings: [
         {
           id: uuidv4(),
@@ -728,6 +734,7 @@ const data = {
       forum: 'ngien',
       executive: false,
       position: '',
+      reg: '0',
       savings: [
         {
           id: uuidv4(),
@@ -743,6 +750,7 @@ const data = {
       forum: 'ngien',
       executive: false,
       position: '',
+      reg: '0',
       savings: [
         {
           id: uuidv4(),
@@ -758,6 +766,7 @@ const data = {
       forum: 'ngien',
       executive: false,
       position: '',
+      reg: '0',
       savings: [
         {
           id: uuidv4(),
@@ -773,6 +782,7 @@ const data = {
       forum: 'ngien',
       executive: false,
       position: '',
+      reg: '0',
       savings: [
         {
           id: uuidv4(),
