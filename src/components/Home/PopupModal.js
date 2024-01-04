@@ -28,7 +28,7 @@ function PopupModal() {
             </div>
             <div className="modal-footer">
               <button type="button" className="btn btn-secondary" onClick={() => handleShow()}>Close</button>
-              <Link to="/projects/3"><button type="button" className="btn btn-primary" onClick={() => handleShow()}>Read more</button></Link>
+              <Link to="/constitution"><button type="button" className="btn btn-primary" onClick={() => handleShow()}>Read more</button></Link>
             </div>
           </div>
         </div>

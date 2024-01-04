@@ -44,11 +44,7 @@ const Member = ({ member }) => {
         <Link to={`/ngien/transactions/${id}`}>See tranzations</Link>
       </td>
       <td className="text-capitalize">{position}</td>
-      <td className="text-capitalize">
-        {reg}
-        {' '}
-        cfa
-      </td>
+      <td className="text-capitalize">{reg}</td>
       <td className="text-capitalize">{shares}</td>
     </tr>
   );
