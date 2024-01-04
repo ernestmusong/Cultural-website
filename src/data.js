@@ -670,7 +670,7 @@ const data = {
       forum: 'ngien',
       executive: true,
       position: 'General secretary',
-      reg: '0',
+      reg: '1000',
       savings: [
         {
           id: uuidv4(),
@@ -763,6 +763,22 @@ const data = {
       id: uuidv4(),
       year: 2023,
       name: 'Akeh Larinette',
+      forum: 'ngien',
+      executive: false,
+      position: '',
+      reg: '0',
+      savings: [
+        {
+          id: uuidv4(),
+          date: 'Sat 4th Nov, 2023',
+          amt: 0,
+        },
+      ],
+    },
+    {
+      id: uuidv4(),
+      year: 2023,
+      name: 'Aleh Shana Oweh',
       forum: 'ngien',
       executive: false,
       position: '',
