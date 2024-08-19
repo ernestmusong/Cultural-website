@@ -791,6 +791,54 @@ const data = {
         },
       ],
     },
+     {
+      id: uuidv4(),
+      year: 2023,
+      name: 'Terrance Edeng',
+      forum: 'ngien',
+      executive: false,
+      position: '',
+      reg: '1000',
+      savings: [
+        {
+          id: uuidv4(),
+          date: 'Sat 4th Nov, 2023',
+          amt: 0,
+        },
+      ],
+    },
+     {
+      id: uuidv4(),
+      year: 2023,
+      name: 'Akeh Chantal',
+      forum: 'ngien',
+      executive: false,
+      position: '',
+      reg: '1000',
+      savings: [
+        {
+          id: uuidv4(),
+          date: 'Sat 4th Nov, 2023',
+          amt: 3000,
+        },
+      ],
+    },
+     {
+      id: uuidv4(),
+      year: 2023,
+      name: 'Kudi Ronick Ketchem',
+      forum: 'ngien',
+      executive: false,
+      position: '',
+      reg: '1000',
+      savings: [
+        {
+          id: uuidv4(),
+          date: 'Sat 4th Nov, 2023',
+          amt: 0,
+        },
+      ],
+    },
     {
       id: uuidv4(),
       year: 2023,
